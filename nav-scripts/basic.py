@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-imagename = "frame1.jpg"
+imagename = "frame2.jpg"
 img = cv2.imread(imagename, 0) # 0 params, for gray image
 rows, cols = img.shape[:2]  # image height and width
 #print(img)  # all image pixels value in array
@@ -19,9 +19,10 @@ obstacle = False
 while obstacle == False:
 	for i in range(rows):
 		for j in range(cols):
-			if img[i,j] == 0:
+			if img[i,j] == 255:
 				obstacle = True
 				break
+	break
 
 f = open("sim-nav-inst.txt", "a")
 

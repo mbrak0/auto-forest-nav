@@ -62,11 +62,12 @@ for y in range(0,rows,M):
 		tile = img[y:y+M, x:x+N]
 
 		tile_img_name = "/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img_" + str(x) + '_' + str(y) + ".jpg"
-		
-		#cv2.rectangle(img, (x,y), (x1,y1), (0,255,0))
-		#cv2.imwrite(tilr_img_name, tile)
 
 		tile = cv2.bitwise_not(tile)
+		cv2.rectangle(img, (x,y), (x1,y1), (0,255,0))
+		cv2.imwrite(tile_img_name, tile)
+
+		#tile = cv2.bitwise_not(tile)
 		cv2.imwrite(tile_img_name, tile)
 
 		tile_img = cv2.imread(tile_img_name, 0)

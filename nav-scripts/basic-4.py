@@ -23,6 +23,7 @@ while(1):
 	#print("c")
 	#print(latest_file)
 	"""
+
 	file_count = 0
 
 	for path in pathlib.Path("/home/matt-ip/Desktop/ForestGenerator-1.2/frames").iterdir():
@@ -31,10 +32,17 @@ while(1):
 	
 	#print(file_count)
 	print("c")
+	f = open("/home/matt-ip/Desktop/auto-forest-nav/test.txt", "a")
+	f.write(str(file_count) + '\n')
+	f.close()
+
+	#print(file_count)
+	#print("c")
 	imagename = "/home/matt-ip/Desktop/ForestGenerator-1.2/frames/frame--depth-" + str(file_count-1) + ".jpg"
 	#print(imagename)
 	#img = cv2.imread(latest_file, 0) # 0 params, for grey image
 	img = cv2.imread(imagename, 0) # 0 params, for grey image
+	print("c")
 	rows, cols = img.shape[:2]  # image height and width
 	#print(img)  # all image pixels value in array
 	#print(img[10, 10])  # one pixel value in 10,10 coordinate

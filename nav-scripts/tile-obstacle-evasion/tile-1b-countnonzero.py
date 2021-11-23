@@ -37,13 +37,13 @@ for y in range(0,rows,M):
 		pixels = cv2.countNonZero(thresh)
 
 		if pixels == (M * N):
-			print("OBSTACLE DETECTED")
+			#print("OBSTACLE DETECTED")
 			obstacle = True
-			break
+			#break
 	
-	else:
-		continue
-	break
+	#else:
+		#continue
+	#break
 
 cv2.imwrite("/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img-tiles.jpg", img)
 

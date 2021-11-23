@@ -5,6 +5,9 @@ import os
 import sys
 import time
 
+time.sleep(80)
+print("c")
+
 while(1):
 
 	list_of_files = glob.glob('/home/matt-ip/Desktop/ForestGenerator-1.2/frames/*')
@@ -18,9 +21,12 @@ while(1):
 
 	for i in range(rows):
 		for j in range(cols):
-			if img[i,j] >= 245:
+			if img[i,j] >= 230:
 				obstacle = True
 				break
+		else:
+			continue
+		break
 
 	if obstacle == False:
 		print("w")
@@ -29,4 +35,4 @@ while(1):
 
 	sys.stdout.flush()
 
-	time.sleep(0.1)
+	time.sleep(0.5)

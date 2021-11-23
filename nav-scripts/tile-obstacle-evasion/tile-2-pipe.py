@@ -1,11 +1,12 @@
 import cv2
 import numpy as np
-import pathlib
+import glob
+import os
 import sys
 import time
 
-import glob
-import os
+time.sleep(81)
+print("c")
 
 while(1):
 
@@ -15,8 +16,6 @@ while(1):
 
 	img = cv2.imread(latest_file, 0) # 0 params, for grey image
 	rows, cols = img.shape[:2]  # image height and width
-	#print(img)  # all image pixels value in array
-	#print(img[10, 10])  # one pixel value in 10,10 coordinate
 
 	y1 = 0
 	x1 = 0
@@ -31,23 +30,27 @@ while(1):
 			x1 = x + N
 			tile = img[y:y+M, x:x+N]
 
-			tile_img_name = "/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img_" + str(x) + '_' + str(y) + ".jpg"
+			##tile_img_name = "/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img_" + str(x) + '_' + str(y) + ".jpg"
 
-			tile = cv2.bitwise_not(tile)
-			cv2.rectangle(img, (x,y), (x1,y1), (0,255,0))
-			cv2.imwrite(tile_img_name, tile)
+			#cv2.rectangle(img, (x,y), (x1,y1), (0,255,0))
+			#cv2.imwrite(tile_img_name, tile)
 
-			#tile = cv2.bitwise_not(tile)
-			cv2.imwrite(tile_img_name, tile)
+			##tile_img = cv2.imread(tile_img_name, 0)
 
-			tile_img = cv2.imread(tile_img_name, 0)
+			thresh = cv2.threshold(tile, 230, 255, cv2.THRESH_BINARY)[1]
+			
+			pixels = cv2.countNonZero(thresh)
 
-			if cv2.countNonZero(tile_img) <= 255:
-				print("test")
+			if pixels == (M * N):
+				#print("OBSTACLE DETECTED")
 				obstacle = True
 				break
+		
+		else:
+			continue
+		break
 
-	cv2.imwrite("/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img-tiles.jpg", img)
+	##cv2.imwrite("/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img-tiles.jpg", img)
 
 	if obstacle == False:
 		print("w")

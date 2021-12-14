@@ -25,6 +25,12 @@ i.add_watch('/home/matt-ip/Desktop/ForestGenerator-1.2/frames/')
 j = inotify.adapters.Inotify()
 j.add_watch('/home/matt-ip/Desktop/ForestGenerator-1.2/checkpoints/')
 
+add_noise = False
+mean = 0
+sigma = 0.5
+x_noise = np.random.normal(mean,sigma,5001)
+z_noise = np.random.normal(mean,sigma,5001)
+
 frame_arr = []
 checkpoint_arr = []
 
@@ -36,11 +42,14 @@ z_direc_arr = []
 
 goal_angle_arr = []
 
-x_pos = -45
-z_pos = -45
+x_pos = 0
+z_pos = 0
 
 x_goal_pos = 45
 z_goal_pos = 45
+
+og_x_goal_pos = x_goal_pos
+og_z_goal_pos = x_goal_pos
 
 dir_check = 20
 
@@ -56,7 +65,7 @@ borders_reached = 0
 l_count_border = 0
 w_count_border = 0
 
-while goal_reached(x_pos, z_pos, x_goal_pos, z_goal_pos) == False:
+while goal_reached(x_pos, z_pos, og_x_goal_pos, og_z_goal_pos) == False:
 
 	if moves_exceeded(move_count) == False:
 
@@ -116,6 +125,10 @@ while goal_reached(x_pos, z_pos, x_goal_pos, z_goal_pos) == False:
 		z_direc_arr.append(z_direc)
 
 		cam_dir_vec = [x_direc, z_direc]
+
+		if add_noise == True:
+			x_goal_pos = og_x_goal_pos + x_noise[move_count]
+			z_goal_pos = og_z_goal_pos + z_noise[move_count]
 		
 		x_goal_dir = x_goal_pos - x_pos
 		z_goal_dir = z_goal_pos - z_pos
@@ -265,7 +278,7 @@ y_direc_end = float(str((pos_direc_end[6].split())[1]))
 z_direc_end = float(str((pos_direc_end[7].split())[1]))
 f3.close()
 
-f4 = open('/home/matt-ip/Desktop/logs/log6.txt', 'a')
+f4 = open('/home/matt-ip/Desktop/logs/seed2.txt', 'a')
 
 f4.write("Log: " + str(earliest_checkpoint.split("/")[6].split(".")[0]) + " - " + str(latest_checkpoint.split("/")[6].split(".")[0]) + "\n\n")
 
@@ -277,7 +290,14 @@ f4.write("Start Direction: x: " + str(x_direc_start) + " y: " + str(y_direc_star
 f4.write("End Position: x: " + str(x_pos_end) + " y: " + str(y_pos_end) + " z: " + str(z_pos_end) + "\n")
 f4.write("End Direction: x: " + str(x_direc_end) + " y: " + str(y_direc_end) + " z: " + str(z_direc_end) + "\n\n")
 
-f4.write("Goal Location: x: " + str(x_goal_pos) + " z: " + str(z_goal_pos) + "\n\n")
+f4.write("Goal Location: x: " + str(og_x_goal_pos) + " z: " + str(og_z_goal_pos) + "\n\n")
+
+f4.write("Noise on Goal: " + str(add_noise))
+
+if add_noise == True:
+	f4.write(" Mean = " + str(mean) + " Standard deviation = " + str(sigma) + "\n\n")
+else:
+	f4.write("\n\n")
 
 if moves_exceeded(move_count) == False:
 	f4.write("GOAL REACHED\n")

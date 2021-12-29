@@ -14,7 +14,7 @@ def goal_reached(x_pos, z_pos, x_goal_pos, z_goal_pos):
 		return False
 
 def moves_exceeded(move_count):
-	if move_count > 5000:
+	if move_count > 10000:
 		return True
 	else:
 		return False
@@ -27,7 +27,7 @@ j.add_watch('/home/matt-ip/Desktop/ForestGenerator-1.2/checkpoints/')
 
 add_noise = False
 mean = 0
-sigma = 0.5
+sigma = 0
 x_noise = np.random.normal(mean,sigma,5001)
 z_noise = np.random.normal(mean,sigma,5001)
 
@@ -42,14 +42,14 @@ z_direc_arr = []
 
 goal_angle_arr = []
 
-x_pos = 0
-z_pos = 0
+x_pos = -45
+z_pos = -45
 
 x_goal_pos = 45
 z_goal_pos = 45
 
 og_x_goal_pos = x_goal_pos
-og_z_goal_pos = x_goal_pos
+og_z_goal_pos = z_goal_pos
 
 dir_check = 20
 
@@ -278,7 +278,7 @@ y_direc_end = float(str((pos_direc_end[6].split())[1]))
 z_direc_end = float(str((pos_direc_end[7].split())[1]))
 f3.close()
 
-f4 = open('/home/matt-ip/Desktop/logs/seed2.txt', 'a')
+f4 = open('/home/matt-ip/Desktop/logs/logfile.txt', 'a')
 
 f4.write("Log: " + str(earliest_checkpoint.split("/")[6].split(".")[0]) + " - " + str(latest_checkpoint.split("/")[6].split(".")[0]) + "\n\n")
 

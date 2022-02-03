@@ -19,7 +19,8 @@ N = cols//20 # image width divided by 20
 
 obstacle = False
 
-for y in range(0,rows,M):
+#for y in range(0,rows,M): # whole image in tiles
+for y in range(int(0.4*rows),rows,M): # bottom 60% of image in tiles
 	for x in range(0,cols,N):
 		y1 = y + M
 		x1 = x + N
@@ -27,7 +28,7 @@ for y in range(0,rows,M):
 
 		tile_img_name = "/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img_" + str(x) + '_' + str(y) + ".jpg"
 
-		#cv2.rectangle(img, (x,y), (x1,y1), (0,255,0))
+		cv2.rectangle(img, (x,y), (x1,y1), (0,255,0))
 		cv2.imwrite(tile_img_name, tile)
 
 		##tile_img = cv2.imread(tile_img_name, 0)

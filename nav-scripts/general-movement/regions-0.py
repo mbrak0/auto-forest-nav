@@ -53,3 +53,23 @@ if obstacle == False:
 	print("w")
 else:
 	print("l")
+
+left_reg = img[0:rows, 0:cols//3]
+cv2.imwrite("/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img-left.jpg", left_reg)
+
+right_reg = img[0:rows, 2*cols//3:cols]
+cv2.imwrite("/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img-right.jpg", right_reg)
+
+mid_reg = img[0:rows, cols//3:2*cols//3]
+cv2.imwrite("/home/matt-ip/Desktop/auto-forest-nav/img-tiles/img-mid.jpg", mid_reg)
+
+left_mean, right_mean, mid_mean = np.mean(left_reg), np.mean(right_reg), np.mean(mid_reg)
+
+reg_mean_arr = [left_mean, mid_mean, right_mean]
+
+least_obs = np.argmin(reg_mean_arr)
+
+print("Left: " + str(left_mean) + ", Mid: " + str(mid_mean) + ", Mid: " + str(right_mean))
+print(least_obs)
+
+#if least_obs == 0:

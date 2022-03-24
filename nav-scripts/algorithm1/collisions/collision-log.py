@@ -19,6 +19,26 @@ def moves_exceeded(move_count):
 	else:
 		return False
 
+def rangeChange(angle):
+	if (angle > np.pi):
+		angle -= 2 * np.pi
+	elif angle <= -np.pi:
+		angle += 2 * np.pi
+	return angle
+
+def borderMove(border_angle):
+	if ((border_angle >= -0.01) and (border_angle <= 0.01)):
+		move_arr.append("w_bor")
+		return "w"
+	
+	elif border_angle > 0:
+		move_arr.append("j_bor")
+		return "j"
+	
+	elif border_angle < 0:
+		move_arr.append("l_bor")
+		return "l"
+
 i = inotify.adapters.Inotify()
 i.add_watch('/home/matt-ip/Desktop/ForestGenerator-1.2/frames/')
 
@@ -59,18 +79,7 @@ dir_check = 20
 move_count = 0
 move_arr = []
 
-w_count = 0
-
-l_count_fixdir = 0
-j_count_fixdir = 0
-
 obs_arr = []
-l_count_obs = 0
-j_count_obs = 0
-
-borders_reached = 0
-l_count_border = 0
-w_count_border = 0
 
 while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == False:
 
@@ -147,58 +156,40 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 
 		goal_dir_vec = [x_goal_dir, z_goal_dir]
 
-		angle = np.arctan2(x_goal_dir, z_goal_dir) - np.arctan2(x_direc, z_direc)
-		
-		if (angle > np.pi):
-			angle -= 2 * np.pi
-		elif angle <= -np.pi:
-			angle += 2 * np.pi
-
-		goal_angle_arr.append(angle)
-
-		f9 = open('/home/matt-ip/Desktop/logs/debug.txt', 'a')
-		f9.write("x_direc: " + str(x_direc) + ", z_direc: " + str(z_direc) + "\t x_goal_dir: " + str(x_goal_dir) + ", z_goal_dir: " + str(z_goal_dir) + "\t Angle: " + str(angle) + "\n")
-		#f9.close()
+		goal_angle = np.arctan2(x_goal_dir, z_goal_dir) - np.arctan2(x_direc, z_direc)
+		goal_angle = rangeChange(goal_angle)
+		goal_angle_arr.append(goal_angle)
 
 		if (abs(x_pos) >= 49) or (abs(z_pos) >= 49):
 
 			if x_pos >= 49:
-				if x_direc > -0.99:
-					print("l")
-					move_arr.append("l")
-					l_count_border += 1
-				else:
-					print("w")
-					move_arr.append("w")
-					w_count_border += 1
+
+				border_angle = np.arctan2(-1, 0) - np.arctan2(x_direc, z_direc)
+				border_angle = rangeChange(border_angle)
+				border_move = borderMove(border_angle)
+				print(border_move)
+				
 			elif x_pos <= -49:
-				if x_direc < 0.99:
-					print("l")
-					move_arr.append("l")
-					l_count_border += 1
-				else:
-					print("w")
-					move_arr.append("w")
-					w_count_border += 1
+
+				border_angle = np.arctan2(1, 0) - np.arctan2(x_direc, z_direc)
+				border_angle = rangeChange(border_angle)
+				border_move = borderMove(border_angle)
+				print(border_move)
+
 			elif z_pos >= 49:
-				if z_direc > -0.99:
-					print("l")
-					move_arr.append("l")
-					l_count_border += 1
-				else:
-					print("w")
-					move_arr.append("w")
-					w_count_border += 1
+
+				border_angle = np.arctan2(0, -1) - np.arctan2(x_direc, z_direc)
+				border_angle = rangeChange(border_angle)
+				border_move = borderMove(border_angle)
+				print(border_move)
+
 			elif z_pos <= -49:
-				if z_direc < 0.99:
-					print("l")
-					move_arr.append("l")
-					l_count_border += 1
-				else:
-					print("w")
-					move_arr.append("w")
-					w_count_border += 1
-			
+
+				border_angle = np.arctan2(0, 1) - np.arctan2(x_direc, z_direc)
+				border_angle = rangeChange(border_angle)
+				border_move = borderMove(border_angle)
+				print(border_move)				
+
 			obs_arr.append("N/A")
 			
 			sys.stdout.flush()
@@ -207,22 +198,20 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 		else:
 
 			if dir_check == 20:
-				
-				if ((angle >= -0.01) and (angle <= 0.01)):
+
+				if ((goal_angle >= -0.01) and (goal_angle <= 0.01)):
 					dir_check = 0
 
-				elif angle > 0:
+				elif goal_angle > 0:
 					print("j")
-					move_arr.append("j")
-					j_count_fixdir += 1
+					move_arr.append("j_fixdir")
 					sys.stdout.flush()
 					time.sleep(0.1)
 					obs_arr.append("N/A")
 				
-				elif angle < 0:
+				elif goal_angle < 0:
 					print("l")
-					move_arr.append("l")
-					l_count_fixdir += 1
+					move_arr.append("l_fixdir")
 					sys.stdout.flush()
 					time.sleep(0.1)
 					obs_arr.append("N/A")
@@ -242,13 +231,14 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				obs_left = 0
 				obs_right = 0
 
-				for y in range(int(0.6*rows),rows,M):
-					for x in range(int(cols*0.125),int(cols*0.875),N):
+				for y in range(0,rows,M):
+					for x in range(0,cols,N):
 						y1 = y + M
 						x1 = x + N
 						tile = img[y:y+M, x:x+N]
 
-						thresh = cv2.threshold(tile, 230, 255, cv2.THRESH_BINARY)[1]
+						thresh = cv2.threshold(tile, 63.75, 255, cv2.THRESH_BINARY_INV)[1]
+						#thresh = cv2.threshold(tile, 191.25, 255, cv2.THRESH_BINARY)[1]
 						pixels = cv2.countNonZero(thresh)
 
 						if pixels == (M * N):
@@ -257,58 +247,34 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 								obs_left +=1
 							else:
 								obs_right +=1
-							#break
-					
-					#else:
-						#continue
-
-					#break
 
 				if obstacle == False:
 					obs_arr.append("False")
-
-					#left_reg = img[]
-
 					print("w")
-					move_arr.append("w")
-					w_count += 1
+					move_arr.append("w_gen")
 					dir_check += 1
 
 				elif obstacle == True:
 
 					obs_arr.append("True")
 
-					#f9.write("obs_left: " + str(obs_left) + ", obs_right: " + str(obs_right))
-
 					if obs_left > obs_right:
-						#if (move_arr[move_count-1] == "j") and (obs_arr[move_count-1] == True):
 						if (move_arr[move_count-1] == "j_obs"):
 							print("j")
 							move_arr.append("j_obs")
-							j_count_obs += 1
-							#f9.write(",\tMove: Left\n")
 						else:
 							print("l")
 							move_arr.append("l_obs")
-							l_count_obs += 1
-							#f9.write(",\tMove: Right\n")
 					else:
-						#if (move_arr[move_count-1] == "l") and (obs_arr[move_count-1] == True):
 						if (move_arr[move_count-1] == "l_obs"):
 							print("l")
 							move_arr.append("l_obs")
-							l_count_obs += 1
-							#f9.write(",\tMove: Right\n")
 						else:
 							print("j")
 							move_arr.append("j_obs")
-							j_count_obs += 1
-							#f9.write(",\tMove: Left\n")
 
 				sys.stdout.flush()
 				time.sleep(0.1)
-
-		#f9.close()
 
 		move_count += 1
 		time.sleep(0.2)
@@ -347,50 +313,81 @@ y_direc_end = float(str((pos_direc_end[6].split())[1]))
 z_direc_end = float(str((pos_direc_end[7].split())[1]))
 f3.close()
 
-f4 = open('/home/matt-ip/Desktop/logs/logfile.txt', 'a')
+f4 = open("/home/matt-ip/Desktop/logs/cmdline-output-log.txt", "r")
+outputs = f4.readlines()
+f4.close()
 
-f4.write("Log: " + str(earliest_checkpoint.split("/")[6].split(".")[0]) + " - " + str(latest_checkpoint.split("/")[6].split(".")[0]) + "\n\n")
+collisions = 0
 
-f4.write("Seed: " + str(seed) + "\n\n")
+for i in range(len(outputs)):
+	if "COLLISION" in outputs[i]:
+		collisions += 1
 
-f4.write("Start Position: x: " + str(x_pos_start) + " y: " + str(y_pos_start) + " z: " + str(z_pos_start) + "\n")
-f4.write("Start Direction: x: " + str(x_direc_start) + " y: " + str(y_direc_start) + " z: " + str(z_direc_start) + "\n\n")
+w_border_count = move_arr.count("w_bor")
+l_border_count = move_arr.count("l_bor")
+j_border_count = move_arr.count("j_bor")
 
-f4.write("End Position: x: " + str(x_pos_end) + " y: " + str(y_pos_end) + " z: " + str(z_pos_end) + "\n")
-f4.write("End Direction: x: " + str(x_direc_end) + " y: " + str(y_direc_end) + " z: " + str(z_direc_end) + "\n\n")
+l_fixdir_count = move_arr.count("l_fixdir")
+j_fixdir_count = move_arr.count("j_fixdir")
 
-f4.write("Goal Location: x: " + str(true_x_goal_pos) + " z: " + str(true_z_goal_pos) + "\n\n")
+w_gen_count = move_arr.count("w_gen")
+l_obs_count = move_arr.count("l_obs")
+j_obs_count = move_arr.count("j_obs")
 
-f4.write("Noise on Camera and Goal Positions: " + str(add_noise))
+w_count = w_border_count + w_gen_count
+l_count = l_border_count + l_fixdir_count + l_obs_count
+j_count = j_border_count + j_fixdir_count + j_obs_count
+
+euc_dis = (7/30) * w_count
+wobble_rate = (l_count + j_count) / move_count
+
+f5 = open('/home/matt-ip/Desktop/logs/logfile.txt', 'a')
+
+f5.write("Log: " + str(earliest_checkpoint.split("/")[6].split(".")[0]) + " - " + str(latest_checkpoint.split("/")[6].split(".")[0]) + "\n\n")
+
+f5.write("Seed: " + str(seed) + "\n\n")
+
+f5.write("Start Position: x: " + str(x_pos_start) + " y: " + str(y_pos_start) + " z: " + str(z_pos_start) + "\n")
+f5.write("Start Direction: x: " + str(x_direc_start) + " y: " + str(y_direc_start) + " z: " + str(z_direc_start) + "\n\n")
+
+f5.write("End Position: x: " + str(x_pos_end) + " y: " + str(y_pos_end) + " z: " + str(z_pos_end) + "\n")
+f5.write("End Direction: x: " + str(x_direc_end) + " y: " + str(y_direc_end) + " z: " + str(z_direc_end) + "\n\n")
+
+f5.write("Goal Location: x: " + str(true_x_goal_pos) + " z: " + str(true_z_goal_pos) + "\n\n")
+
+f5.write("Noise on Camera and Goal Positions: " + str(add_noise))
 
 if add_noise == True:
-	f4.write(" Mean = " + str(mean) + " Standard deviation = " + str(sigma) + "\n\n")
+	f5.write(" -> Mean = " + str(mean) + ", Standard deviation = " + str(sigma) + "\n\n")
 else:
-	f4.write("\n\n")
+	f5.write("\n\n")
 
 if moves_exceeded(move_count) == False:
-	f4.write("GOAL REACHED\n")
+	f5.write("GOAL REACHED\n")
 else:
-	f4.write("Goal not reached...\n")
+	f5.write("Goal not reached...\n")
 
-f4.write("\nNumber of moves = " + str(move_count))
-f4.write("\nNumber of forward moves = " + str(w_count+w_count_border))
-f4.write("\nNumber of right turns = " + str(l_count_fixdir + l_count_obs + l_count_border))
-f4.write("\nNumber of left turns = " + str(j_count_fixdir + j_count_obs))
-f4.write("\nNumber of times forest border was reached = " + str(borders_reached))
+f5.write("\nNumber of moves = " + str(move_count))
+f5.write("\nNumber of forward moves = " + str(w_count))
+f5.write("\nNumber of right turns = " + str(l_count))
+f5.write("\nNumber of left turns = " + str(j_count))
+f5.write("\nNumber of times forest border was reached = " + str(w_border_count))
+f5.write("\nEuclidean distance travelled = " + str(euc_dis))
+f5.write("\nWobble rate = " + str(wobble_rate))
+f5.write("\nNumber of collisions = " + str(collisions))
 
-f4.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
+#f5.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
 
-f4.write("\n\nNavigation Log:\n\n")
+f5.write("\n\nNavigation Log:\n\n")
 
 for i in range(0,len(list_of_checkpoints)):
 	date_time = list_of_checkpoints[i].split("/")[6].split(".")[0]
-	f4.write(str(i) + ":\t" + str(date_time))
-	f4.write("\tPosition: x: " + str(x_pos_arr[i]) + " z: " + str(z_pos_arr[i]))
-	f4.write("\tDirection: x: " + str(x_direc_arr[i]) + " z: " + str(z_direc_arr[i]))
-	f4.write("\tGoal Angle: " + str(goal_angle_arr[i]))
-	f4.write("\tMove: " + str(move_arr[i]) + "\n")
+	f5.write(str(i) + ":\t" + str(date_time))
+	f5.write("\tPosition: x: " + str(x_pos_arr[i]) + " z: " + str(z_pos_arr[i]))
+	f5.write("\tDirection: x: " + str(x_direc_arr[i]) + " z: " + str(z_direc_arr[i]))
+	f5.write("\tGoal Angle: " + str(goal_angle_arr[i]))
+	f5.write("\tMove: " + str(move_arr[i]) + "\n")
 
-f4.write("\nEOF\n\n")
+f5.write("\nEOF\n\n")
 
-f4.close()
+f5.close()

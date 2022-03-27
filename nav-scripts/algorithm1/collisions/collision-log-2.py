@@ -160,30 +160,30 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 		goal_angle = rangeChange(goal_angle)
 		goal_angle_arr.append(goal_angle)
 
-		if (abs(x_pos) >= 49) or (abs(z_pos) >= 49):
+		if (abs(x_pos) >= 69) or (abs(z_pos) >= 69):
 
-			if x_pos >= 49:
+			if x_pos >= 69:
 
 				border_angle = np.arctan2(-1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 				
-			elif x_pos <= -49:
+			elif x_pos <= -69:
 
 				border_angle = np.arctan2(1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos >= 49:
+			elif z_pos >= 69:
 
 				border_angle = np.arctan2(0, -1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos <= -49:
+			elif z_pos <= -69:
 
 				border_angle = np.arctan2(0, 1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
@@ -231,14 +231,13 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				obs_left = 0
 				obs_right = 0
 
-				for y in range(0,rows,M):
+				for y in range(0,int(0.6*rows),M):
 					for x in range(0,cols,N):
 						y1 = y + M
 						x1 = x + N
 						tile = img[y:y+M, x:x+N]
 
-						thresh = cv2.threshold(tile, 63.75, 255, cv2.THRESH_BINARY_INV)[1]
-						#thresh = cv2.threshold(tile, 191.25, 255, cv2.THRESH_BINARY)[1]
+						thresh = cv2.threshold(tile, 25.5, 255, cv2.THRESH_BINARY_INV)[1]
 						pixels = cv2.countNonZero(thresh)
 
 						if pixels == (M * N):
@@ -272,9 +271,18 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 						else:
 							print("j")
 							move_arr.append("j_obs")
-
+				
 				sys.stdout.flush()
 				time.sleep(0.1)
+
+		"""
+		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
+		if dir_check < 20:
+			f6.write("obs_left = " + str(obs_left) + ", obs_right = " + str(obs_right) + ", move : " + str(move_arr[move_count]) + "\n")
+		else:
+			f6.write("GOAL CORRECTION ACTIVE\n")
+		f6.close()
+		"""
 
 		move_count += 1
 		time.sleep(0.2)
@@ -317,11 +325,14 @@ f4 = open("/home/matt-ip/Desktop/logs/cmdline-output-log.txt", "r")
 outputs = f4.readlines()
 f4.close()
 
+collision_instances = 0
 collisions = 0
 
 for i in range(len(outputs)):
 	if "COLLISION" in outputs[i]:
-		collisions += 1
+		collision_instances += 1
+		if ("COLLISION" not in outputs[i-1]) and ("COLLISION" not in outputs[i-3]):
+			collisions += 1
 
 w_border_count = move_arr.count("w_bor")
 l_border_count = move_arr.count("l_bor")
@@ -331,6 +342,7 @@ l_fixdir_count = move_arr.count("l_fixdir")
 j_fixdir_count = move_arr.count("j_fixdir")
 
 w_gen_count = move_arr.count("w_gen")
+
 l_obs_count = move_arr.count("l_obs")
 j_obs_count = move_arr.count("j_obs")
 

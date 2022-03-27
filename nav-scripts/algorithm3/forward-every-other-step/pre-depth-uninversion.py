@@ -218,60 +218,36 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 
 			if dir_check < 20:
 
-				img = cv2.imread(latest_file, 0) # 0 params, for grey image
-				rows, cols = img.shape[:2]  # image height and width
+				if move_count % 2 == 0:
+					img = cv2.imread(latest_file, 0) # 0 params, for grey image
+					rows, cols = img.shape[:2]  # image height and width
 
-				y1 = 0
-				x1 = 0
-				M = rows//20 # image height divided by 20
-				N = cols//20 # image width divided by 20
+					left_reg = img[0:rows, 0:266]
+					right_reg = img[0:rows, 534:cols]
+					mid_reg = img[0:rows, 266:534]
+					
+					left_mean, right_mean, mid_mean = np.mean(left_reg), np.mean(right_reg), np.mean(mid_reg)
 
-				obstacle = False
+					reg_mean_arr = [left_mean, mid_mean, right_mean]
 
-				obs_left = 0
-				obs_right = 0
+					least_obs = np.argmin(reg_mean_arr)
 
-				for y in range(0,rows,M):
-					for x in range(0,cols,N):
-						y1 = y + M
-						x1 = x + N
-						tile = img[y:y+M, x:x+N]
-
-						thresh = cv2.threshold(tile, 63.75, 255, cv2.THRESH_BINARY_INV)[1]
-						#thresh = cv2.threshold(tile, 191.25, 255, cv2.THRESH_BINARY)[1]
-						pixels = cv2.countNonZero(thresh)
-
-						if pixels == (M * N):
-							obstacle = True
-							if x < 400:
-								obs_left +=1
-							else:
-								obs_right +=1
-
-				if obstacle == False:
-					obs_arr.append("False")
+					if least_obs == 1:
+						print("w")
+						move_arr.append("w_reg")
+					
+					elif least_obs == 0:
+						print("j")
+						move_arr.append("j_reg")
+					
+					elif least_obs == 2:
+						print("l")
+						move_arr.append("l_reg")
+					
+				else:
 					print("w")
 					move_arr.append("w_gen")
 					dir_check += 1
-
-				elif obstacle == True:
-
-					obs_arr.append("True")
-
-					if obs_left > obs_right:
-						if (move_arr[move_count-1] == "j_obs"):
-							print("j")
-							move_arr.append("j_obs")
-						else:
-							print("l")
-							move_arr.append("l_obs")
-					else:
-						if (move_arr[move_count-1] == "l_obs"):
-							print("l")
-							move_arr.append("l_obs")
-						else:
-							print("j")
-							move_arr.append("j_obs")
 
 				sys.stdout.flush()
 				time.sleep(0.1)
@@ -313,16 +289,6 @@ y_direc_end = float(str((pos_direc_end[6].split())[1]))
 z_direc_end = float(str((pos_direc_end[7].split())[1]))
 f3.close()
 
-f4 = open("/home/matt-ip/Desktop/logs/cmdline-output-log.txt", "r")
-outputs = f4.readlines()
-f4.close()
-
-collisions = 0
-
-for i in range(len(outputs)):
-	if "COLLISION" in outputs[i]:
-		collisions += 1
-
 w_border_count = move_arr.count("w_bor")
 l_border_count = move_arr.count("l_bor")
 j_border_count = move_arr.count("j_bor")
@@ -330,64 +296,65 @@ j_border_count = move_arr.count("j_bor")
 l_fixdir_count = move_arr.count("l_fixdir")
 j_fixdir_count = move_arr.count("j_fixdir")
 
-w_gen_count = move_arr.count("w_gen")
-l_obs_count = move_arr.count("l_obs")
-j_obs_count = move_arr.count("j_obs")
+w_reg_count = move_arr.count("w_reg")
+l_reg_count = move_arr.count("l_reg")
+j_reg_count = move_arr.count("j_reg")
 
-w_count = w_border_count + w_gen_count
-l_count = l_border_count + l_fixdir_count + l_obs_count
-j_count = j_border_count + j_fixdir_count + j_obs_count
+w_gen_count = move_arr.count("w_gen")
+
+w_count = w_border_count + w_reg_count + w_gen_count
+l_count = l_border_count + l_fixdir_count + l_reg_count
+j_count = j_border_count + j_fixdir_count + j_reg_count
 
 euc_dis = (7/30) * w_count
 wobble_rate = (l_count + j_count) / move_count
 
-f5 = open('/home/matt-ip/Desktop/logs/logfile.txt', 'a')
+f4 = open('/home/matt-ip/Desktop/logs/logfile.txt', 'a')
 
-f5.write("Log: " + str(earliest_checkpoint.split("/")[6].split(".")[0]) + " - " + str(latest_checkpoint.split("/")[6].split(".")[0]) + "\n\n")
+f4.write("Log: " + str(earliest_checkpoint.split("/")[6].split(".")[0]) + " - " + str(latest_checkpoint.split("/")[6].split(".")[0]) + "\n\n")
 
-f5.write("Seed: " + str(seed) + "\n\n")
+f4.write("Seed: " + str(seed) + "\n\n")
 
-f5.write("Start Position: x: " + str(x_pos_start) + " y: " + str(y_pos_start) + " z: " + str(z_pos_start) + "\n")
-f5.write("Start Direction: x: " + str(x_direc_start) + " y: " + str(y_direc_start) + " z: " + str(z_direc_start) + "\n\n")
+f4.write("Start Position: x: " + str(x_pos_start) + " y: " + str(y_pos_start) + " z: " + str(z_pos_start) + "\n")
+f4.write("Start Direction: x: " + str(x_direc_start) + " y: " + str(y_direc_start) + " z: " + str(z_direc_start) + "\n\n")
 
-f5.write("End Position: x: " + str(x_pos_end) + " y: " + str(y_pos_end) + " z: " + str(z_pos_end) + "\n")
-f5.write("End Direction: x: " + str(x_direc_end) + " y: " + str(y_direc_end) + " z: " + str(z_direc_end) + "\n\n")
+f4.write("End Position: x: " + str(x_pos_end) + " y: " + str(y_pos_end) + " z: " + str(z_pos_end) + "\n")
+f4.write("End Direction: x: " + str(x_direc_end) + " y: " + str(y_direc_end) + " z: " + str(z_direc_end) + "\n\n")
 
-f5.write("Goal Location: x: " + str(true_x_goal_pos) + " z: " + str(true_z_goal_pos) + "\n\n")
+f4.write("Goal Location: x: " + str(true_x_goal_pos) + " z: " + str(true_z_goal_pos) + "\n\n")
 
-f5.write("Noise on Camera and Goal Positions: " + str(add_noise))
+f4.write("Noise on Camera and Goal Positions: " + str(add_noise))
 
 if add_noise == True:
-	f5.write(" -> Mean = " + str(mean) + ", Standard deviation = " + str(sigma) + "\n\n")
+	f4.write(" Mean = " + str(mean) + " Standard deviation = " + str(sigma) + "\n\n")
 else:
-	f5.write("\n\n")
+	f4.write("\n\n")
 
 if moves_exceeded(move_count) == False:
-	f5.write("GOAL REACHED\n")
+	f4.write("GOAL REACHED\n")
 else:
-	f5.write("Goal not reached...\n")
+	f4.write("Goal not reached...\n")
 
-f5.write("\nNumber of moves = " + str(move_count))
-f5.write("\nNumber of forward moves = " + str(w_count))
-f5.write("\nNumber of right turns = " + str(l_count))
-f5.write("\nNumber of left turns = " + str(j_count))
-f5.write("\nNumber of times forest border was reached = " + str(w_border_count))
-f5.write("\nEuclidean distance travelled = " + str(euc_dis))
-f5.write("\nWobble rate = " + str(wobble_rate))
-f5.write("\nNumber of collisions = " + str(collisions))
+f4.write("\nNumber of moves = " + str(move_count))
+f4.write("\nNumber of forward moves = " + str(w_count))
+f4.write("\nNumber of right turns = " + str(l_count))
+f4.write("\nNumber of left turns = " + str(j_count))
+f4.write("\nNumber of times forest border was reached = " + str(w_border_count))
+f4.write("\nEuclidean distance travelled = " + str(euc_dis))
+f4.write("\nWobble rate = " + str(wobble_rate))
 
-#f5.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
+f4.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
 
-f5.write("\n\nNavigation Log:\n\n")
+f4.write("\n\nNavigation Log:\n\n")
 
 for i in range(0,len(list_of_checkpoints)):
 	date_time = list_of_checkpoints[i].split("/")[6].split(".")[0]
-	f5.write(str(i) + ":\t" + str(date_time))
-	f5.write("\tPosition: x: " + str(x_pos_arr[i]) + " z: " + str(z_pos_arr[i]))
-	f5.write("\tDirection: x: " + str(x_direc_arr[i]) + " z: " + str(z_direc_arr[i]))
-	f5.write("\tGoal Angle: " + str(goal_angle_arr[i]))
-	f5.write("\tMove: " + str(move_arr[i]) + "\n")
+	f4.write(str(i) + ":\t" + str(date_time))
+	f4.write("\tPosition: x: " + str(x_pos_arr[i]) + " z: " + str(z_pos_arr[i]))
+	f4.write("\tDirection: x: " + str(x_direc_arr[i]) + " z: " + str(z_direc_arr[i]))
+	f4.write("\tGoal Angle: " + str(goal_angle_arr[i]))
+	f4.write("\tMove: " + str(move_arr[i]) + "\n")
 
-f5.write("\nEOF\n\n")
+f4.write("\nEOF\n\n")
 
-f5.close()
+f4.close()

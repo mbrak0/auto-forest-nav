@@ -237,8 +237,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 						x1 = x + N
 						tile = img[y:y+M, x:x+N]
 
-						thresh = cv2.threshold(tile, 63.75, 255, cv2.THRESH_BINARY_INV)[1]
-						#thresh = cv2.threshold(tile, 191.25, 255, cv2.THRESH_BINARY)[1]
+						thresh = cv2.threshold(tile, 230, 255, cv2.THRESH_BINARY)[1]
 						pixels = cv2.countNonZero(thresh)
 
 						if pixels == (M * N):
@@ -313,16 +312,6 @@ y_direc_end = float(str((pos_direc_end[6].split())[1]))
 z_direc_end = float(str((pos_direc_end[7].split())[1]))
 f3.close()
 
-f4 = open("/home/matt-ip/Desktop/logs/cmdline-output-log.txt", "r")
-outputs = f4.readlines()
-f4.close()
-
-collisions = 0
-
-for i in range(len(outputs)):
-	if "COLLISION" in outputs[i]:
-		collisions += 1
-
 w_border_count = move_arr.count("w_bor")
 l_border_count = move_arr.count("l_bor")
 j_border_count = move_arr.count("j_bor")
@@ -341,53 +330,52 @@ j_count = j_border_count + j_fixdir_count + j_obs_count
 euc_dis = (7/30) * w_count
 wobble_rate = (l_count + j_count) / move_count
 
-f5 = open('/home/matt-ip/Desktop/logs/logfile.txt', 'a')
+f4 = open('/home/matt-ip/Desktop/logs/logfile.txt', 'a')
 
-f5.write("Log: " + str(earliest_checkpoint.split("/")[6].split(".")[0]) + " - " + str(latest_checkpoint.split("/")[6].split(".")[0]) + "\n\n")
+f4.write("Log: " + str(earliest_checkpoint.split("/")[6].split(".")[0]) + " - " + str(latest_checkpoint.split("/")[6].split(".")[0]) + "\n\n")
 
-f5.write("Seed: " + str(seed) + "\n\n")
+f4.write("Seed: " + str(seed) + "\n\n")
 
-f5.write("Start Position: x: " + str(x_pos_start) + " y: " + str(y_pos_start) + " z: " + str(z_pos_start) + "\n")
-f5.write("Start Direction: x: " + str(x_direc_start) + " y: " + str(y_direc_start) + " z: " + str(z_direc_start) + "\n\n")
+f4.write("Start Position: x: " + str(x_pos_start) + " y: " + str(y_pos_start) + " z: " + str(z_pos_start) + "\n")
+f4.write("Start Direction: x: " + str(x_direc_start) + " y: " + str(y_direc_start) + " z: " + str(z_direc_start) + "\n\n")
 
-f5.write("End Position: x: " + str(x_pos_end) + " y: " + str(y_pos_end) + " z: " + str(z_pos_end) + "\n")
-f5.write("End Direction: x: " + str(x_direc_end) + " y: " + str(y_direc_end) + " z: " + str(z_direc_end) + "\n\n")
+f4.write("End Position: x: " + str(x_pos_end) + " y: " + str(y_pos_end) + " z: " + str(z_pos_end) + "\n")
+f4.write("End Direction: x: " + str(x_direc_end) + " y: " + str(y_direc_end) + " z: " + str(z_direc_end) + "\n\n")
 
-f5.write("Goal Location: x: " + str(true_x_goal_pos) + " z: " + str(true_z_goal_pos) + "\n\n")
+f4.write("Goal Location: x: " + str(true_x_goal_pos) + " z: " + str(true_z_goal_pos) + "\n\n")
 
-f5.write("Noise on Camera and Goal Positions: " + str(add_noise))
+f4.write("Noise on Camera and Goal Positions: " + str(add_noise))
 
 if add_noise == True:
-	f5.write(" -> Mean = " + str(mean) + ", Standard deviation = " + str(sigma) + "\n\n")
+	f4.write(" Mean = " + str(mean) + " Standard deviation = " + str(sigma) + "\n\n")
 else:
-	f5.write("\n\n")
+	f4.write("\n\n")
 
 if moves_exceeded(move_count) == False:
-	f5.write("GOAL REACHED\n")
+	f4.write("GOAL REACHED\n")
 else:
-	f5.write("Goal not reached...\n")
+	f4.write("Goal not reached...\n")
 
-f5.write("\nNumber of moves = " + str(move_count))
-f5.write("\nNumber of forward moves = " + str(w_count))
-f5.write("\nNumber of right turns = " + str(l_count))
-f5.write("\nNumber of left turns = " + str(j_count))
-f5.write("\nNumber of times forest border was reached = " + str(w_border_count))
-f5.write("\nEuclidean distance travelled = " + str(euc_dis))
-f5.write("\nWobble rate = " + str(wobble_rate))
-f5.write("\nNumber of collisions = " + str(collisions))
+f4.write("\nNumber of moves = " + str(move_count))
+f4.write("\nNumber of forward moves = " + str(w_count))
+f4.write("\nNumber of right turns = " + str(l_count))
+f4.write("\nNumber of left turns = " + str(j_count))
+f4.write("\nNumber of times forest border was reached = " + str(w_border_count))
+f4.write("\nEuclidean distance travelled = " + str(euc_dis))
+f4.write("\nWobble rate = " + str(wobble_rate))
 
-#f5.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
+f4.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
 
-f5.write("\n\nNavigation Log:\n\n")
+f4.write("\n\nNavigation Log:\n\n")
 
 for i in range(0,len(list_of_checkpoints)):
 	date_time = list_of_checkpoints[i].split("/")[6].split(".")[0]
-	f5.write(str(i) + ":\t" + str(date_time))
-	f5.write("\tPosition: x: " + str(x_pos_arr[i]) + " z: " + str(z_pos_arr[i]))
-	f5.write("\tDirection: x: " + str(x_direc_arr[i]) + " z: " + str(z_direc_arr[i]))
-	f5.write("\tGoal Angle: " + str(goal_angle_arr[i]))
-	f5.write("\tMove: " + str(move_arr[i]) + "\n")
+	f4.write(str(i) + ":\t" + str(date_time))
+	f4.write("\tPosition: x: " + str(x_pos_arr[i]) + " z: " + str(z_pos_arr[i]))
+	f4.write("\tDirection: x: " + str(x_direc_arr[i]) + " z: " + str(z_direc_arr[i]))
+	f4.write("\tGoal Angle: " + str(goal_angle_arr[i]))
+	f4.write("\tMove: " + str(move_arr[i]) + "\n")
 
-f5.write("\nEOF\n\n")
+f4.write("\nEOF\n\n")
 
-f5.close()
+f4.close()

@@ -221,44 +221,68 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				img = cv2.imread(latest_file, 0) # 0 params, for grey image
 				rows, cols = img.shape[:2]  # image height and width
 
-				left_reg = img[0:rows, 0:266]
-				right_reg = img[0:rows, 534:cols]
-				mid_reg = img[0:rows, 266:534]
-				
-				left_mean, right_mean, mid_mean = np.mean(left_reg), np.mean(right_reg), np.mean(mid_reg)
+				y1 = 0
+				x1 = 0
+				M = rows//20 # image height divided by 20
+				N = cols//20 # image width divided by 20
 
-				reg_mean_arr = [left_mean, mid_mean, right_mean]
+				obstacle = False
 
-				least_obs = np.argmax(reg_mean_arr)
+				obs_left = 0
+				obs_right = 0
 
-				if move_count % 2 == 0:
+				for y in range(0,int(0.6*rows),M):
+					for x in range(0,cols,N):
+						y1 = y + M
+						x1 = x + N
+						tile = img[y:y+M, x:x+N]
 
-					if least_obs == 1:
-						print("w")
-						move_arr.append("w_reg")
-					
-					elif least_obs == 0:
-						print("j")
-						move_arr.append("j_reg")
-					
-					elif least_obs == 2:
-						print("l")
-						move_arr.append("l_reg")
-					
-				else:
+						thresh = cv2.threshold(tile, 25.5, 255, cv2.THRESH_BINARY_INV)[1]
+						pixels = cv2.countNonZero(thresh)
+
+						if pixels == (M * N):
+							obstacle = True
+							if x < 400:
+								obs_left +=1
+							else:
+								obs_right +=1
+
+				if obstacle == False:
+					obs_arr.append("False")
 					print("w")
 					move_arr.append("w_gen")
 					dir_check += 1
 
+				elif obstacle == True:
+
+					obs_arr.append("True")
+
+					if obs_left > obs_right:
+						if (move_arr[move_count-1] == "j_obs"):
+							print("j")
+							move_arr.append("j_obs")
+						else:
+							print("l")
+							move_arr.append("l_obs")
+					else:
+						if (move_arr[move_count-1] == "l_obs"):
+							print("l")
+							move_arr.append("l_obs")
+						else:
+							print("j")
+							move_arr.append("j_obs")
+				
 				sys.stdout.flush()
 				time.sleep(0.1)
-		
+
+		"""
 		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
 		if dir_check < 20:
-			f6.write(str(move_count) + ": Largest average intensity = " + str(reg_mean_arr[least_obs]) + "\n")
+			f6.write("obs_left = " + str(obs_left) + ", obs_right = " + str(obs_right) + ", move : " + str(move_arr[move_count]) + "\n")
 		else:
-			f6.write(str(move_count) + ": GOAL CORRECTION ACTIVE\n")
+			f6.write("GOAL CORRECTION ACTIVE\n")
 		f6.close()
+		"""
 
 		move_count += 1
 		time.sleep(0.2)
@@ -317,15 +341,14 @@ j_border_count = move_arr.count("j_bor")
 l_fixdir_count = move_arr.count("l_fixdir")
 j_fixdir_count = move_arr.count("j_fixdir")
 
-w_reg_count = move_arr.count("w_reg")
-l_reg_count = move_arr.count("l_reg")
-j_reg_count = move_arr.count("j_reg")
-
 w_gen_count = move_arr.count("w_gen")
 
-w_count = w_border_count + w_reg_count + w_gen_count
-l_count = l_border_count + l_fixdir_count + l_reg_count
-j_count = j_border_count + j_fixdir_count + j_reg_count
+l_obs_count = move_arr.count("l_obs")
+j_obs_count = move_arr.count("j_obs")
+
+w_count = w_border_count + w_gen_count
+l_count = l_border_count + l_fixdir_count + l_obs_count
+j_count = j_border_count + j_fixdir_count + j_obs_count
 
 euc_dis = (7/30) * w_count
 wobble_rate = (l_count + j_count) / move_count

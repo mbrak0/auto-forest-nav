@@ -231,24 +231,24 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 
 				least_obs = np.argmax(reg_mean_arr)
 
-				if move_count % 2 == 0:
+				#if move_count % 2 == 0:
 
-					if least_obs == 1:
-						print("w")
-						move_arr.append("w_reg")
-					
-					elif least_obs == 0:
-						print("j")
-						move_arr.append("j_reg")
-					
-					elif least_obs == 2:
-						print("l")
-						move_arr.append("l_reg")
-					
-				else:
+				if least_obs == 1:
 					print("w")
-					move_arr.append("w_gen")
-					dir_check += 1
+					move_arr.append("w_reg")
+				
+				elif least_obs == 0:
+					print("j")
+					move_arr.append("j_reg")
+				
+				elif least_obs == 2:
+					print("l")
+					move_arr.append("l_reg")
+					
+				#else:
+					#print("w")
+					#move_arr.append("w_gen")
+					#dir_check += 1
 
 				sys.stdout.flush()
 				time.sleep(0.1)
@@ -363,7 +363,7 @@ f5.write("\nNumber of left turns = " + str(j_count))
 f5.write("\nNumber of times forest border was reached = " + str(w_border_count))
 f5.write("\nEuclidean distance travelled = " + str(euc_dis))
 f5.write("\nWobble rate = " + str(wobble_rate))
-f5.write("\nNumber of collisions = " + str(collisions))
+f5.write("\nNumber of collisions = " + str(collisions) + " (Number of collision instances = " + str(collision_instances) + ")")
 
 #f5.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
 

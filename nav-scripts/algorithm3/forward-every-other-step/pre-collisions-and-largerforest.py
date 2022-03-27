@@ -160,30 +160,30 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 		goal_angle = rangeChange(goal_angle)
 		goal_angle_arr.append(goal_angle)
 
-		if (abs(x_pos) >= 69) or (abs(z_pos) >= 69):
+		if (abs(x_pos) >= 49) or (abs(z_pos) >= 49):
 
-			if x_pos >= 69:
+			if x_pos >= 49:
 
 				border_angle = np.arctan2(-1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 				
-			elif x_pos <= -69:
+			elif x_pos <= -49:
 
 				border_angle = np.arctan2(1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos >= 69:
+			elif z_pos >= 49:
 
 				border_angle = np.arctan2(0, -1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos <= -69:
+			elif z_pos <= -49:
 
 				border_angle = np.arctan2(0, 1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
@@ -301,14 +301,11 @@ f4 = open("/home/matt-ip/Desktop/logs/cmdline-output-log.txt", "r")
 outputs = f4.readlines()
 f4.close()
 
-collision_instances = 0
 collisions = 0
 
 for i in range(len(outputs)):
 	if "COLLISION" in outputs[i]:
-		collision_instances += 1
-		if ("COLLISION" not in outputs[i-1]) and ("COLLISION" not in outputs[i-3]):
-			collisions += 1
+		collisions += 1
 
 w_border_count = move_arr.count("w_bor")
 l_border_count = move_arr.count("l_bor")

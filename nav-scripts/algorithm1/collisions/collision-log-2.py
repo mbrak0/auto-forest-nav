@@ -160,30 +160,30 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 		goal_angle = rangeChange(goal_angle)
 		goal_angle_arr.append(goal_angle)
 
-		if (abs(x_pos) >= 49) or (abs(z_pos) >= 49):
+		if (abs(x_pos) >= 69) or (abs(z_pos) >= 69):
 
-			if x_pos >= 49:
+			if x_pos >= 69:
 
 				border_angle = np.arctan2(-1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 				
-			elif x_pos <= -49:
+			elif x_pos <= -69:
 
 				border_angle = np.arctan2(1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos >= 49:
+			elif z_pos >= 69:
 
 				border_angle = np.arctan2(0, -1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos <= -49:
+			elif z_pos <= -69:
 
 				border_angle = np.arctan2(0, 1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
@@ -231,14 +231,13 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				obs_left = 0
 				obs_right = 0
 
-				for y in range(0,rows,M):
+				for y in range(0,int(0.6*rows),M):
 					for x in range(0,cols,N):
 						y1 = y + M
 						x1 = x + N
 						tile = img[y:y+M, x:x+N]
 
 						thresh = cv2.threshold(tile, 31.875, 255, cv2.THRESH_BINARY_INV)[1]
-						#thresh = cv2.threshold(tile, 191.25, 255, cv2.THRESH_BINARY)[1]
 						pixels = cv2.countNonZero(thresh)
 
 						if pixels == (M * N):
@@ -318,10 +317,13 @@ outputs = f4.readlines()
 f4.close()
 
 collisions = 0
+collision_instances = 0
 
 for i in range(len(outputs)):
 	if "COLLISION" in outputs[i]:
-		collisions += 1
+		collision_instances += 1
+		if ("COLLISION" not in outputs[i-1]) and ("COLLISION" not in outputs[i-3]):
+			collisions += 1
 
 w_border_count = move_arr.count("w_bor")
 l_border_count = move_arr.count("l_bor")
@@ -375,9 +377,9 @@ f5.write("\nNumber of left turns = " + str(j_count))
 f5.write("\nNumber of times forest border was reached = " + str(w_border_count))
 f5.write("\nEuclidean distance travelled = " + str(euc_dis))
 f5.write("\nWobble rate = " + str(wobble_rate))
-f5.write("\nNumber of collisions = " + str(collisions))
+f5.write("\nNumber of collisions = " + str(collisions) + " (Number of collision instances = " + str(collision_instances) + ")")
 
-#f5.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
+f5.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
 
 f5.write("\n\nNavigation Log:\n\n")
 

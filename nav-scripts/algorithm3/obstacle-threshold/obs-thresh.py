@@ -160,30 +160,30 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 		goal_angle = rangeChange(goal_angle)
 		goal_angle_arr.append(goal_angle)
 
-		if (abs(x_pos) >= 49) or (abs(z_pos) >= 49):
+		if (abs(x_pos) >= 69) or (abs(z_pos) >= 69):
 
-			if x_pos >= 49:
+			if x_pos >= 69:
 
 				border_angle = np.arctan2(-1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 				
-			elif x_pos <= -49:
+			elif x_pos <= -69:
 
 				border_angle = np.arctan2(1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos >= 49:
+			elif z_pos >= 69:
 
 				border_angle = np.arctan2(0, -1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos <= -49:
+			elif z_pos <= -69:
 
 				border_angle = np.arctan2(0, 1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
@@ -221,60 +221,44 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				img = cv2.imread(latest_file, 0) # 0 params, for grey image
 				rows, cols = img.shape[:2]  # image height and width
 
-				y1 = 0
-				x1 = 0
-				M = rows//20 # image height divided by 20
-				N = cols//20 # image width divided by 20
+				left_reg = img[0:rows, 0:266]
+				right_reg = img[0:rows, 534:cols]
+				mid_reg = img[0:rows, 266:534]
+				
+				left_mean, right_mean, mid_mean = np.mean(left_reg), np.mean(right_reg), np.mean(mid_reg)
 
-				obstacle = False
+				reg_mean_arr = [left_mean, mid_mean, right_mean]
 
-				obs_left = 0
-				obs_right = 0
+				least_obs = np.argmax(reg_mean_arr)
 
-				for y in range(0,rows,M):
-					for x in range(0,cols,N):
-						y1 = y + M
-						x1 = x + N
-						tile = img[y:y+M, x:x+N]
+				if move_count % 2 == 0:
 
-						thresh = cv2.threshold(tile, 31.875, 255, cv2.THRESH_BINARY_INV)[1]
-						#thresh = cv2.threshold(tile, 191.25, 255, cv2.THRESH_BINARY)[1]
-						pixels = cv2.countNonZero(thresh)
-
-						if pixels == (M * N):
-							obstacle = True
-							if x < 400:
-								obs_left +=1
-							else:
-								obs_right +=1
-
-				if obstacle == False:
-					obs_arr.append("False")
+					if least_obs == 1:
+						print("w")
+						move_arr.append("w_reg")
+					
+					elif least_obs == 0:
+						print("j")
+						move_arr.append("j_reg")
+					
+					elif least_obs == 2:
+						print("l")
+						move_arr.append("l_reg")
+					
+				else:
 					print("w")
 					move_arr.append("w_gen")
 					dir_check += 1
 
-				elif obstacle == True:
-
-					obs_arr.append("True")
-
-					if obs_left > obs_right:
-						if (move_arr[move_count-1] == "j_obs"):
-							print("j")
-							move_arr.append("j_obs")
-						else:
-							print("l")
-							move_arr.append("l_obs")
-					else:
-						if (move_arr[move_count-1] == "l_obs"):
-							print("l")
-							move_arr.append("l_obs")
-						else:
-							print("j")
-							move_arr.append("j_obs")
-
 				sys.stdout.flush()
 				time.sleep(0.1)
+		
+		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
+		if dir_check < 20:
+			f6.write(str(move_count) + ": Largest average intensity = " + str(reg_mean_arr[least_obs]) + "\n")
+		else:
+			f6.write(str(move_count) + ": GOAL CORRECTION ACTIVE\n")
+		f6.close()
 
 		move_count += 1
 		time.sleep(0.2)
@@ -318,10 +302,13 @@ outputs = f4.readlines()
 f4.close()
 
 collisions = 0
+collision_instances = 0
 
 for i in range(len(outputs)):
 	if "COLLISION" in outputs[i]:
-		collisions += 1
+		collision_instances += 1
+		if ("COLLISION" not in outputs[i-1]) and ("COLLISION" not in outputs[i-3]):
+			collisions += 1
 
 w_border_count = move_arr.count("w_bor")
 l_border_count = move_arr.count("l_bor")
@@ -330,14 +317,15 @@ j_border_count = move_arr.count("j_bor")
 l_fixdir_count = move_arr.count("l_fixdir")
 j_fixdir_count = move_arr.count("j_fixdir")
 
+w_reg_count = move_arr.count("w_reg")
+l_reg_count = move_arr.count("l_reg")
+j_reg_count = move_arr.count("j_reg")
+
 w_gen_count = move_arr.count("w_gen")
 
-l_obs_count = move_arr.count("l_obs")
-j_obs_count = move_arr.count("j_obs")
-
-w_count = w_border_count + w_gen_count
-l_count = l_border_count + l_fixdir_count + l_obs_count
-j_count = j_border_count + j_fixdir_count + j_obs_count
+w_count = w_border_count + w_reg_count + w_gen_count
+l_count = l_border_count + l_fixdir_count + l_reg_count
+j_count = j_border_count + j_fixdir_count + j_reg_count
 
 euc_dis = (7/30) * w_count
 wobble_rate = (l_count + j_count) / move_count
@@ -375,7 +363,7 @@ f5.write("\nNumber of left turns = " + str(j_count))
 f5.write("\nNumber of times forest border was reached = " + str(w_border_count))
 f5.write("\nEuclidean distance travelled = " + str(euc_dis))
 f5.write("\nWobble rate = " + str(wobble_rate))
-f5.write("\nNumber of collisions = " + str(collisions))
+f5.write("\nNumber of collisions = " + str(collisions) + " (Number of collision instances = " + str(collision_instances) + ")")
 
 #f5.write("\n\nArray length checks:\tCheckpoints: " + str(len(list_of_checkpoints)) + " Pos: " + str(len(x_pos_arr)) + "," + str(len(z_pos_arr)) + " Dir: " + str(len(x_direc_arr)) + "," + str(len(z_direc_arr)) + " Angle: " + str(len(goal_angle_arr)) + " Move: " + str(len(move_arr)) + " Frames: " + str(len(frame_arr)) + " Checkpoints: " + str(len(checkpoint_arr)))
 

@@ -237,7 +237,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 						x1 = x + N
 						tile = img[y:y+M, x:x+N]
 
-						thresh = cv2.threshold(tile, 63.75, 255, cv2.THRESH_BINARY_INV)[1]
+						thresh = cv2.threshold(tile, 31.875, 255, cv2.THRESH_BINARY_INV)[1]
 						#thresh = cv2.threshold(tile, 191.25, 255, cv2.THRESH_BINARY)[1]
 						pixels = cv2.countNonZero(thresh)
 
@@ -331,6 +331,7 @@ l_fixdir_count = move_arr.count("l_fixdir")
 j_fixdir_count = move_arr.count("j_fixdir")
 
 w_gen_count = move_arr.count("w_gen")
+
 l_obs_count = move_arr.count("l_obs")
 j_obs_count = move_arr.count("j_obs")
 

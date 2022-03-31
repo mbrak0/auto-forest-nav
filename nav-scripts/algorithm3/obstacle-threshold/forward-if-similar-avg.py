@@ -82,8 +82,7 @@ move_arr = []
 obs_arr = []
 
 least_obs_arr = []
-reg_stuck = False
-
+stuck = False
 
 while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == False:
 
@@ -239,74 +238,37 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				least_obs = np.argmax(reg_mean_arr)
 				least_obs_arr.append(least_obs)
 
-				most_obs = np.argmin(reg_mean_arr)
-
-				if reg_mean_arr[most_obs] <= 40:
-
-					obs_arr.append("True")
-
-					left_half = img[0:rows, 0:int(0.5*cols)]
-					right_half = img[0:rows, int(0.5*cols):cols]
-
-					left_half_mean, right_half_mean = np.mean(left_half), np.mean(right_half)
-
-					if left_half_mean < right_half_mean:
-						if (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg") or (move_arr[move_count-1] == "j_reg_stuck"):
-							print("j")
-							move_arr.append("j_obs")
-						else:
-							print("l")
-							move_arr.append("l_obs")
+				if (least_obs_arr[move_count-1] == 2) and (least_obs == 0):
+					stuck = True
+				
+				if stuck == True:
+					if least_obs != 1:
+						print("j")
+						move_arr.append("j_stuck")
 					else:
-						if (move_arr[move_count-1] == "l_obs") or (move_arr[move_count-1] == "l_reg"):
-							print("l")
-							move_arr.append("l_obs")
-						else:
-							print("j")
-							move_arr.append("j_obs")
+						stuck = False
 
-				else:
-					
-					obs_arr.append("False")
-
-					if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
+				if stuck == False:
+					if (least_obs == 1) or ((left_mean > mid_mean-2) and (left_mean < mid_mean+2)) or ((right_mean > mid_mean-2) and (right_mean < mid_mean+2)):
+					#if (least_obs == 1):
 						print("w")
-						move_arr.append("w_gen")
+						move_arr.append("w_reg")
 						dir_check += 1
 					
-					else:
-
-						if (least_obs_arr[move_count-1] == 2) and (least_obs == 0):
-							reg_stuck = True
-						
-						if reg_stuck == True:
-							if least_obs != 1:
-								print("j")
-								move_arr.append("j_reg_stuck")
-							else:
-								reg_stuck = False
-
-						if reg_stuck == False:
-							if (least_obs == 1) or ((left_mean > mid_mean-5) and (left_mean < mid_mean+5)) or ((right_mean > mid_mean-5) and (right_mean < mid_mean+5)):
-							#if (least_obs == 1):
-								print("w")
-								move_arr.append("w_reg")
-								dir_check += 1
-							
-							elif least_obs == 0:
-								print("j")
-								move_arr.append("j_reg")
-							
-							elif least_obs == 2:
-								print("l")
-								move_arr.append("l_reg")
+					elif least_obs == 0:
+						print("j")
+						move_arr.append("j_reg")
+					
+					elif least_obs == 2:
+						print("l")
+						move_arr.append("l_reg")
 
 				sys.stdout.flush()
 				time.sleep(0.1)
 		
 		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
 		if dir_check < 20:
-			f6.write(str(move_count) + "-> " + str(move_arr[move_count]) + " : x: " + str(x_pos) + ", z: " + str(z_pos) + " -> reg_stuck = " + str(reg_stuck) + ", Left mean = " + str(left_mean) + ", Mid mean = " + str(mid_mean) + ", Right mean = " + str(right_mean) + "\n")
+			f6.write(str(move_count) + ": x: " + str(x_pos) + ", z: " + str(z_pos) + " -> Stuck = " + str(stuck) + ", Left mean = " + str(left_mean) + ", Mid mean = " + str(mid_mean) + ", Right mean = " + str(right_mean) + "\n")
 		else:
 			f6.write(str(move_count) + ": GOAL CORRECTION ACTIVE\n")
 		f6.close()
@@ -374,14 +336,11 @@ j_reg_count = move_arr.count("j_reg")
 
 w_gen_count = move_arr.count("w_gen")
 
-l_obs_count = move_arr.count("l_obs")
-j_obs_count = move_arr.count("j_obs")
-
-j_reg_stuck_count = move_arr.count("j_reg_stuck")
+j_stuck_count = move_arr.count("j_stuck")
 
 w_count = w_border_count + w_reg_count + w_gen_count
-l_count = l_border_count + l_fixdir_count + l_reg_count + l_obs_count
-j_count = j_border_count + j_fixdir_count + j_reg_count + j_reg_stuck_count + j_obs_count
+l_count = l_border_count + l_fixdir_count + l_reg_count
+j_count = j_border_count + j_fixdir_count + j_reg_count + j_stuck_count
 
 euc_dis = (7/30) * w_count
 wobble_rate = (l_count + j_count) / move_count

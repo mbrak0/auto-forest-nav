@@ -62,8 +62,8 @@ z_direc_arr = []
 
 goal_angle_arr = []
 
-x_pos = -45 #0.8660254
-z_pos = -45 #0.5
+x_pos = -45
+z_pos = -45
 
 true_x_pos = x_pos
 true_z_pos = z_pos

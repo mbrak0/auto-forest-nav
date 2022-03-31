@@ -241,7 +241,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 
 				most_obs = np.argmin(reg_mean_arr)
 
-				if reg_mean_arr[most_obs] <= 40:
+				if reg_mean_arr[most_obs] <= 85:
 
 					obs_arr.append("True")
 
@@ -252,6 +252,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 
 					if left_half_mean < right_half_mean:
 						if (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg") or (move_arr[move_count-1] == "j_reg_stuck"):
+						#if move_arr[move_count-1] == "j_obs":
 							print("j")
 							move_arr.append("j_obs")
 						else:
@@ -259,6 +260,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 							move_arr.append("l_obs")
 					else:
 						if (move_arr[move_count-1] == "l_obs") or (move_arr[move_count-1] == "l_reg"):
+						#if move_arr[move_count-1] == "l_obs":
 							print("l")
 							move_arr.append("l_obs")
 						else:

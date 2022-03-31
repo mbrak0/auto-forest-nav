@@ -241,7 +241,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 
 				most_obs = np.argmin(reg_mean_arr)
 
-				if reg_mean_arr[most_obs] <= 40:
+				if reg_mean_arr[most_obs] <= 95:
 
 					obs_arr.append("True")
 
@@ -252,6 +252,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 
 					if left_half_mean < right_half_mean:
 						if (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg") or (move_arr[move_count-1] == "j_reg_stuck"):
+						#if move_arr[move_count-1] == "j_obs":
 							print("j")
 							move_arr.append("j_obs")
 						else:
@@ -259,6 +260,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 							move_arr.append("l_obs")
 					else:
 						if (move_arr[move_count-1] == "l_obs") or (move_arr[move_count-1] == "l_reg"):
+						#if move_arr[move_count-1] == "l_obs":
 							print("l")
 							move_arr.append("l_obs")
 						else:
@@ -266,40 +268,33 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 							move_arr.append("j_obs")
 
 				else:
-					
+
 					obs_arr.append("False")
 
-					if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
-						print("w")
-						move_arr.append("w_gen")
-						dir_check += 1
+					if (least_obs_arr[move_count-1] == 2) and (least_obs == 0):
+						reg_stuck = True
 					
-					else:
+					if reg_stuck == True:
+						if least_obs != 1:
+							print("j")
+							move_arr.append("j_reg_stuck")
+						else:
+							reg_stuck = False
 
-						if (least_obs_arr[move_count-1] == 2) and (least_obs == 0):
-							reg_stuck = True
+					if reg_stuck == False:
+						if (least_obs == 1) or ((left_mean > mid_mean-5) and (left_mean < mid_mean+5)) or ((right_mean > mid_mean-5) and (right_mean < mid_mean+5)):
+						#if (least_obs == 1):
+							print("w")
+							move_arr.append("w_reg")
+							dir_check += 1
 						
-						if reg_stuck == True:
-							if least_obs != 1:
-								print("j")
-								move_arr.append("j_reg_stuck")
-							else:
-								reg_stuck = False
-
-						if reg_stuck == False:
-							if (least_obs == 1) or ((left_mean > mid_mean-5) and (left_mean < mid_mean+5)) or ((right_mean > mid_mean-5) and (right_mean < mid_mean+5)):
-							#if (least_obs == 1):
-								print("w")
-								move_arr.append("w_reg")
-								dir_check += 1
-							
-							elif least_obs == 0:
-								print("j")
-								move_arr.append("j_reg")
-							
-							elif least_obs == 2:
-								print("l")
-								move_arr.append("l_reg")
+						elif least_obs == 0:
+							print("j")
+							move_arr.append("j_reg")
+						
+						elif least_obs == 2:
+							print("l")
+							move_arr.append("l_reg")
 
 				sys.stdout.flush()
 				time.sleep(0.1)

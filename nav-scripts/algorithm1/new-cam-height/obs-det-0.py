@@ -39,7 +39,7 @@ for y in range(0,int(0.6*rows),M): # bottom 60% of image in tiles
 		##tile_img = cv2.imread(tile_img_name, 0)
 
 		#thresh = cv2.threshold(tile, 230, 255, cv2.THRESH_BINARY)[1]
-		thresh = cv2.threshold(tile, 25.5, 255, cv2.THRESH_BINARY_INV)[1]
+		thresh = cv2.threshold(tile, 31.875, 255, cv2.THRESH_BINARY_INV)[1]
 		pixels = cv2.countNonZero(thresh)
 
 		if pixels == (M * N):

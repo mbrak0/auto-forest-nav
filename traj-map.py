@@ -77,5 +77,5 @@ plt.xlim = ([-50,50])
 plt.ylim = ([-50,50])
 plt.grid()
 
-plt.savefig("/home/matt-ip/Desktop/logs/algorithm1/density/sparse/seed2_2/traj-map.png")
+plt.savefig("/home/matt-ip/Desktop/logs/algorithm3/density/default/seed3-0point15/traj-map.png")
 plt.show()

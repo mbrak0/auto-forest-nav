@@ -237,8 +237,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 						x1 = x + N
 						tile = img[y:y+M, x:x+N]
 
-						#thresh = cv2.threshold(tile, 31.875, 255, cv2.THRESH_BINARY_INV)[1]
-						thresh = cv2.threshold(tile, 25.5, 255, cv2.THRESH_BINARY_INV)[1]
+						thresh = cv2.threshold(tile, 31.875, 255, cv2.THRESH_BINARY_INV)[1]
 						pixels = cv2.countNonZero(thresh)
 
 						if pixels == (M * N):

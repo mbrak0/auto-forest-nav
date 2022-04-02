@@ -39,6 +39,20 @@ def borderMove(border_angle):
 		move_arr.append("l_bor")
 		return "l"
 
+def weightedMatLin(rows, columns):
+	weighted_mat = np.zeros((rows,columns))
+	for x in range(0,rows):
+		for y in range(0,columns):
+			weighted_mat[x][y] = x+1
+	return weighted_mat
+
+def weightedMatLog(rows, columns):
+	weighted_mat = np.zeros((rows,columns))
+	for x in range(0,rows):
+		for y in range(0,columns):
+			weighted_mat[x][y] = 2**x
+	return weighted_mat
+
 i = inotify.adapters.Inotify()
 i.add_watch('/home/matt-ip/Desktop/ForestGenerator-1.2/frames/')
 
@@ -80,6 +94,10 @@ move_count = 0
 move_arr = []
 
 obs_arr = []
+
+least_obs_arr = []
+reg_stuck = False
+
 
 while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == False:
 
@@ -191,6 +209,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				print(border_move)				
 
 			obs_arr.append("N/A")
+			least_obs_arr.append("N/A")
 			
 			sys.stdout.flush()
 			time.sleep(0.1)
@@ -208,6 +227,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					sys.stdout.flush()
 					time.sleep(0.1)
 					obs_arr.append("N/A")
+					least_obs_arr.append("N/A")
 				
 				elif goal_angle < 0:
 					print("l")
@@ -215,70 +235,106 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					sys.stdout.flush()
 					time.sleep(0.1)
 					obs_arr.append("N/A")
+					least_obs_arr.append("N/A")
 
 			if dir_check < 20:
 
 				img = cv2.imread(latest_file, 0) # 0 params, for grey image
 				rows, cols = img.shape[:2]  # image height and width
 
-				y1 = 0
-				x1 = 0
-				M = rows//20 # image height divided by 20
-				N = cols//20 # image width divided by 20
+				left_reg = img[0:rows, 0:int(round((1/3)*cols)-1)]
+				right_reg = img[0:rows, int(round((2/3)*cols)+1):cols]
+				mid_reg = img[0:rows, int(round((1/3)*cols)-1):int(round((2/3)*cols)+1)]
+				
+				left_mean, right_mean, mid_mean = np.mean(left_reg), np.mean(right_reg), np.mean(mid_reg)
+				reg_mean_arr = [left_mean, mid_mean, right_mean]
 
-				obstacle = False
+				least_obs = np.argmax(reg_mean_arr)
+				#least_obs_arr.append(least_obs)
+				most_obs = np.argmin(reg_mean_arr)
 
-				obs_left = 0
-				obs_right = 0
+				weighted_mat_lr = weightedMatLog(rows, 266)
+				weighted_mat_mid = weightedMatLog(rows, 268)
 
-				for y in range(0,int(0.6*rows),M):
-					for x in range(0,cols,N):
-						y1 = y + M
-						x1 = x + N
-						tile = img[y:y+M, x:x+N]
+				left_w_avg = np.average(left_reg, weights = weighted_mat_lr)
+				right_w_avg = np.average(right_reg, weights = weighted_mat_lr)
+				mid_w_avg = np.average(mid_reg, weights = weighted_mat_mid)
 
-						#thresh = cv2.threshold(tile, 31.875, 255, cv2.THRESH_BINARY_INV)[1]
-						thresh = cv2.threshold(tile, 25.5, 255, cv2.THRESH_BINARY_INV)[1]
-						pixels = cv2.countNonZero(thresh)
+				reg_w_avg_arr = [left_w_avg, mid_w_avg, right_w_avg]
+				least_obs_w = np.argmax(reg_w_avg_arr)
+				least_obs_arr.append(least_obs_w)
+				most_obs_w = np.argmin(reg_w_avg_arr)
 
-						if pixels == (M * N):
-							obstacle = True
-							if x < 400:
-								obs_left +=1
-							else:
-								obs_right +=1
-
-				if obstacle == False:
-					obs_arr.append("False")
-					print("w")
-					move_arr.append("w_gen")
-					dir_check += 1
-
-				elif obstacle == True:
+				if reg_w_avg_arr[most_obs_w] <= 40:
 
 					obs_arr.append("True")
 
-					if obs_left > obs_right:
-						if (move_arr[move_count-1] == "j_obs"):
+					left_half = img[0:rows, 0:int(0.5*cols)]
+					right_half = img[0:rows, int(0.5*cols):cols]
+
+					left_half_mean, right_half_mean = np.mean(left_half), np.mean(right_half)
+
+					weighted_mat_half = weightedMatLog(rows, 400)
+					
+					left_half_w_avg = np.average(left_half, weights = weighted_mat_half)
+					right_half_w_avg = np.average(right_half, weights = weighted_mat_half)
+
+					if left_half_w_avg < right_half_w_avg:
+						if (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg") or (move_arr[move_count-1] == "j_reg_stuck"):
 							print("j")
 							move_arr.append("j_obs")
 						else:
 							print("l")
 							move_arr.append("l_obs")
 					else:
-						if (move_arr[move_count-1] == "l_obs"):
+						if (move_arr[move_count-1] == "l_obs") or (move_arr[move_count-1] == "l_reg"):
 							print("l")
 							move_arr.append("l_obs")
 						else:
 							print("j")
 							move_arr.append("j_obs")
-				
+
+				else:
+					
+					obs_arr.append("False")
+
+					if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
+						print("w")
+						move_arr.append("w_gen")
+						dir_check += 1
+					
+					else:
+
+						if (least_obs_arr[move_count-1] == 2) and (least_obs_w == 0):
+							reg_stuck = True
+						
+						if reg_stuck == True:
+							if least_obs_w != 1:
+								print("j")
+								move_arr.append("j_reg_stuck")
+							else:
+								reg_stuck = False
+
+						if reg_stuck == False:
+							if (least_obs_w == 1) or ((left_w_avg > mid_w_avg-5) and (left_w_avg < mid_w_avg+5)) or ((right_w_avg > mid_w_avg-5) and (right_w_avg < mid_w_avg+5)):
+								print("w")
+								move_arr.append("w_reg")
+								dir_check += 1
+							
+							elif least_obs_w == 0:
+								print("j")
+								move_arr.append("j_reg")
+							
+							elif least_obs_w == 2:
+								print("l")
+								move_arr.append("l_reg")
+
 				sys.stdout.flush()
 				time.sleep(0.1)
-
+		
 		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
 		if dir_check < 20:
-			f6.write(str(move_count) + "-> " + str(move_arr[move_count]) + " : x: " + str(x_pos) + ", z: " + str(z_pos) + " -> obstacle = " + str(obstacle) + ", obs_left = " + str(obs_left) + ", obs_right = " + str(obs_right) + "\n")
+			f6.write(str(move_count) + "-> " + str(move_arr[move_count]) + " : x: " + str(x_pos) + ", z: " + str(z_pos) + " -> reg_stuck = " + str(reg_stuck) + ", Left w avg = " + str(left_w_avg) + ", Mid w avg = " + str(mid_w_avg) + ", Right w avg = " + str(right_w_avg) + "\n")
 		else:
 			f6.write(str(move_count) + ": GOAL CORRECTION ACTIVE\n")
 		f6.close()
@@ -340,14 +396,20 @@ j_border_count = move_arr.count("j_bor")
 l_fixdir_count = move_arr.count("l_fixdir")
 j_fixdir_count = move_arr.count("j_fixdir")
 
+w_reg_count = move_arr.count("w_reg")
+l_reg_count = move_arr.count("l_reg")
+j_reg_count = move_arr.count("j_reg")
+
 w_gen_count = move_arr.count("w_gen")
 
 l_obs_count = move_arr.count("l_obs")
 j_obs_count = move_arr.count("j_obs")
 
-w_count = w_border_count + w_gen_count
-l_count = l_border_count + l_fixdir_count + l_obs_count
-j_count = j_border_count + j_fixdir_count + j_obs_count
+j_reg_stuck_count = move_arr.count("j_reg_stuck")
+
+w_count = w_border_count + w_reg_count + w_gen_count
+l_count = l_border_count + l_fixdir_count + l_reg_count + l_obs_count
+j_count = j_border_count + j_fixdir_count + j_reg_count + j_reg_stuck_count + j_obs_count
 
 euc_dis = (7/30) * w_count
 wobble_rate = (l_count + j_count) / move_count

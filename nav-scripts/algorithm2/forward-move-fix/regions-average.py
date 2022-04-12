@@ -281,7 +281,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					
 					else:
 
-						if (move_arr[move_count-2] == "j_reg") and (move_arr[move_count-1] == "l_reg") and (move_arr[move_count] == "j_reg"):
+						if (least_obs_arr[move_count-1] == 2) and (least_obs == 0):
 							reg_stuck = True
 						
 						if reg_stuck == True:
@@ -292,7 +292,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 								reg_stuck = False
 
 						if reg_stuck == False:
-							
+							#if (least_obs == 1) or ((left_mean > mid_mean-5) and (left_mean < mid_mean+5)) or ((right_mean > mid_mean-5) and (right_mean < mid_mean+5)):
 							if least_obs == 1:
 								print("w")
 								move_arr.append("w_reg")

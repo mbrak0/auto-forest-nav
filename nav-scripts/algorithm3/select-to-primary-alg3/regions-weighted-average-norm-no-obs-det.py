@@ -6,6 +6,7 @@ import sys
 import time
 import numpy as np
 import inotify.adapters
+from scipy.stats import norm
 
 def goal_reached(x_pos, z_pos, x_goal_pos, z_goal_pos):
 	if ((x_pos >= x_goal_pos-0.5) and (x_pos <= x_goal_pos+0.5) and (z_pos >= z_goal_pos-0.5) and (z_pos <= z_goal_pos+0.5)):
@@ -38,6 +39,13 @@ def borderMove(border_angle):
 	elif border_angle < 0:
 		move_arr.append("l_bor")
 		return "l"
+
+def weightedMat(rows, columns, weights):
+	weighted_mat = np.zeros((rows,columns))
+	for x in range(0,rows):
+		for y in range(0,columns):
+			weighted_mat[x][y] = weights[x]
+	return weighted_mat
 
 i = inotify.adapters.Inotify()
 i.add_watch('/home/matt-ip/Desktop/ForestGenerator-1.2/frames/')
@@ -85,10 +93,34 @@ dir_check_count = dir_check_limit
 
 move_count = 0
 
-avg_obs_det_thresh = 40
+avg_obs_det_thresh = 50
 
 least_obs_arr = []
 reg_stuck = False
+
+weight_scale_arr = ["normal distribution", "linear", "logarithmic"]
+weight_scale = weight_scale_arr[0]
+
+row_indices = np.arange(1,601,1)
+weights = []
+
+if weight_scale == "normal distribution":
+	pdf = norm.pdf(row_indices, loc=300.5, scale=60)
+	for k in pdf:
+		weights.append(k/max(pdf))
+
+elif weight_scale == "linear":
+	for l in row_indices:
+		weights.append(l/600)
+
+elif weight_scale == "logarithmic":
+	base = 2
+	for m in row_indices:
+		weights.append((base**(int(m)-1))/(base**599))
+	
+weighted_mat_lr = weightedMat(600, 266, weights)
+weighted_mat_mid = weightedMat(600, 268, weights)
+weighted_mat_half = weightedMat(600, 400, weights)
 
 while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == False:
 
@@ -238,15 +270,21 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				mid_reg = img[0:rows, int(round((1/3)*cols)-1):int(round((2/3)*cols)+1)]
 				
 				left_mean, right_mean, mid_mean = np.mean(left_reg), np.mean(right_reg), np.mean(mid_reg)
-
 				reg_mean_arr = [left_mean, mid_mean, right_mean]
 
 				least_obs = np.argmax(reg_mean_arr)
-				least_obs_arr.append(least_obs)
-
 				most_obs = np.argmin(reg_mean_arr)
 
-				if reg_mean_arr[most_obs] <= avg_obs_det_thresh:
+				left_w_avg = np.average(left_reg, weights = weighted_mat_lr)
+				right_w_avg = np.average(right_reg, weights = weighted_mat_lr)
+				mid_w_avg = np.average(mid_reg, weights = weighted_mat_mid)
+
+				reg_w_avg_arr = [left_w_avg, mid_w_avg, right_w_avg]
+				least_obs_w = np.argmax(reg_w_avg_arr)
+				least_obs_arr.append(least_obs_w)
+				most_obs_w = np.argmin(reg_w_avg_arr)
+				"""
+				if reg_w_avg_arr[most_obs_w] <= avg_obs_det_thresh:
 
 					obs_arr.append("True")
 
@@ -254,8 +292,11 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					right_half = img[0:rows, int(0.5*cols):cols]
 
 					left_half_mean, right_half_mean = np.mean(left_half), np.mean(right_half)
+					
+					left_half_w_avg = np.average(left_half, weights = weighted_mat_half)
+					right_half_w_avg = np.average(right_half, weights = weighted_mat_half)
 
-					if left_half_mean < right_half_mean:
+					if left_half_w_avg < right_half_w_avg:
 						if (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg") or (move_arr[move_count-1] == "j_reg_stuck"):
 							print("j")
 							move_arr.append("j_obs")
@@ -273,59 +314,59 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				else:
 					
 					obs_arr.append("False")
+				"""
+				if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
+					print("w")
+					move_arr.append("w_gen")
+					dir_check_count += 1
+				
+				else:
 
-					if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
-						print("w")
-						move_arr.append("w_gen")
-						dir_check_count += 1
+					if (move_arr[move_count-2] == "j_reg") and (move_arr[move_count-1] == "l_reg") and (move_arr[move_count] == "j_reg"):
+						reg_stuck = True
 					
-					else:
+					if reg_stuck == True:
+						if least_obs_w != 1:
+							print("j")
+							move_arr.append("j_reg_stuck")
+						else:
+							reg_stuck = False
 
-						if (move_arr[move_count-2] == "j_reg") and (move_arr[move_count-1] == "l_reg") and (move_arr[move_count] == "j_reg"):
-							reg_stuck = True
+					if reg_stuck == False:
 						
-						if reg_stuck == True:
-							if least_obs != 1:
-								print("j")
-								move_arr.append("j_reg_stuck")
-							else:
-								reg_stuck = False
-
-						if reg_stuck == False:
-							
-							if least_obs == 1:
+						if least_obs_w == 1:
+							print("w")
+							move_arr.append("w_reg")
+							dir_check_count += 1
+						
+						elif least_obs_w == 0:
+							if (left_w_avg > mid_w_avg-5) and (left_w_avg < mid_w_avg+5):
 								print("w")
 								move_arr.append("w_reg")
 								dir_check_count += 1
-							
-							elif least_obs == 0:
-								if (left_mean > mid_mean-5) and (left_mean < mid_mean+5):
-									print("w")
-									move_arr.append("w_reg")
-									dir_check_count += 1
-								else:
-									print("j")
-									move_arr.append("j_reg")
-							
-							elif least_obs == 2:
-								if (right_mean > mid_mean-5) and (right_mean < mid_mean+5):
-									print("w")
-									move_arr.append("w_reg")
-									dir_check_count += 1
-								else:
-									print("l")
-									move_arr.append("l_reg")
+							else:
+								print("j")
+								move_arr.append("j_reg")
+						
+						elif least_obs_w == 2:
+							if (right_w_avg > mid_w_avg-5) and (right_w_avg < mid_w_avg+5):
+								print("w")
+								move_arr.append("w_reg")
+								dir_check_count += 1
+							else:
+								print("l")
+								move_arr.append("l_reg")
 
 				sys.stdout.flush()
 				time.sleep(0.1)
 		
 		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
 		if dir_check_count < dir_check_limit:
-			f6.write(str(move_count) + "-> " + str(move_arr[move_count]) + " : x: " + str(x_pos) + ", z: " + str(z_pos) + " -> reg_stuck = " + str(reg_stuck) + ", Left mean = " + str(left_mean) + ", Mid mean = " + str(mid_mean) + ", Right mean = " + str(right_mean) + "\n")
+			f6.write(str(move_count) + "-> " + str(move_arr[move_count]) + " : x: " + str(x_pos) + ", z: " + str(z_pos) + " -> reg_stuck = " + str(reg_stuck) + ", Left w avg = " + str(left_w_avg) + ", Mid w avg = " + str(mid_w_avg) + ", Right w avg = " + str(right_w_avg) + "\n")
 		else:
 			f6.write(str(move_count) + ": GOAL CORRECTION ACTIVE\n")
 		f6.close()
-		
+
 		move_count += 1
 		time.sleep(0.2)
 	

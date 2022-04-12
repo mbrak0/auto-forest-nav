@@ -62,6 +62,12 @@ z_direc_arr = []
 
 goal_angle_arr = []
 
+move_arr = []
+obs_arr = []
+
+forest_width = 140
+border_det_distance = (forest_width/2)-1
+
 x_pos = -45
 z_pos = -45
 
@@ -74,12 +80,14 @@ z_goal_pos = 45
 true_x_goal_pos = x_goal_pos
 true_z_goal_pos = z_goal_pos
 
-dir_check = 20
+dir_check_limit = 20
+dir_check_count = dir_check_limit
 
 move_count = 0
-move_arr = []
 
-obs_arr = []
+max_depth_output = 20
+obs_det_distance = 2
+obs_det_thresh = obs_det_distance * (255/max_depth_output)
 
 while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == False:
 
@@ -160,30 +168,30 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 		goal_angle = rangeChange(goal_angle)
 		goal_angle_arr.append(goal_angle)
 
-		if (abs(x_pos) >= 69) or (abs(z_pos) >= 69):
+		if (abs(x_pos) >= border_det_distance) or (abs(z_pos) >= border_det_distance):
 
-			if x_pos >= 69:
+			if x_pos >= border_det_distance:
 
 				border_angle = np.arctan2(-1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 				
-			elif x_pos <= -69:
+			elif x_pos <= -border_det_distance:
 
 				border_angle = np.arctan2(1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos >= 69:
+			elif z_pos >= border_det_distance:
 
 				border_angle = np.arctan2(0, -1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos <= -69:
+			elif z_pos <= -border_det_distance:
 
 				border_angle = np.arctan2(0, 1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
@@ -197,10 +205,10 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 			
 		else:
 
-			if dir_check == 20:
+			if dir_check_count == dir_check_limit:
 
 				if ((goal_angle >= -0.01) and (goal_angle <= 0.01)):
-					dir_check = 0
+					dir_check_count = 0
 
 				elif goal_angle > 0:
 					print("j")
@@ -216,7 +224,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					time.sleep(0.1)
 					obs_arr.append("N/A")
 
-			if dir_check < 20:
+			if dir_check_count < dir_check_limit:
 
 				img = cv2.imread(latest_file, 0) # 0 params, for grey image
 				rows, cols = img.shape[:2]  # image height and width
@@ -237,13 +245,12 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 						x1 = x + N
 						tile = img[y:y+M, x:x+N]
 
-						#thresh = cv2.threshold(tile, 31.875, 255, cv2.THRESH_BINARY_INV)[1]
-						thresh = cv2.threshold(tile, 25.5, 255, cv2.THRESH_BINARY_INV)[1]
+						thresh = cv2.threshold(tile, obs_det_thresh, 255, cv2.THRESH_BINARY_INV)[1]
 						pixels = cv2.countNonZero(thresh)
 
 						if pixels == (M * N):
 							obstacle = True
-							if x < 400:
+							if x < 0.5*cols:
 								obs_left +=1
 							else:
 								obs_right +=1
@@ -252,7 +259,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					obs_arr.append("False")
 					print("w")
 					move_arr.append("w_gen")
-					dir_check += 1
+					dir_check_count += 1
 
 				elif obstacle == True:
 
@@ -277,7 +284,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				time.sleep(0.1)
 
 		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
-		if dir_check < 20:
+		if dir_check_count < dir_check_limit:
 			f6.write(str(move_count) + "-> " + str(move_arr[move_count]) + " : x: " + str(x_pos) + ", z: " + str(z_pos) + " -> obstacle = " + str(obstacle) + ", obs_left = " + str(obs_left) + ", obs_right = " + str(obs_right) + "\n")
 		else:
 			f6.write(str(move_count) + ": GOAL CORRECTION ACTIVE\n")

@@ -281,7 +281,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					
 					else:
 
-						if (move_arr[move_count-2] == "j_reg") and (move_arr[move_count-1] == "l_reg") and (move_arr[move_count] == "j_reg"):
+						if (least_obs_arr[move_count-1] == 2) and (least_obs == 0):
 							reg_stuck = True
 						
 						if reg_stuck == True:

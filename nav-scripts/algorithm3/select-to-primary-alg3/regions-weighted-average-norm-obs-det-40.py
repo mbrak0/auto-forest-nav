@@ -40,7 +40,7 @@ def borderMove(border_angle):
 		move_arr.append("l_bor")
 		return "l"
 
-def weightedMatNorm(rows, columns, weights):
+def weightedMat(rows, columns, weights):
 	weighted_mat = np.zeros((rows,columns))
 	for x in range(0,rows):
 		for y in range(0,columns):
@@ -70,6 +70,12 @@ z_direc_arr = []
 
 goal_angle_arr = []
 
+move_arr = []
+obs_arr = []
+
+forest_width = 140
+border_det_distance = (forest_width/2)-1
+
 x_pos = -45
 z_pos = -45
 
@@ -82,25 +88,39 @@ z_goal_pos = 45
 true_x_goal_pos = x_goal_pos
 true_z_goal_pos = z_goal_pos
 
-dir_check = 20
+dir_check_limit = 20
+dir_check_count = dir_check_limit
 
 move_count = 0
-move_arr = []
 
-obs_arr = []
+avg_obs_det_thresh = 40
 
 least_obs_arr = []
 reg_stuck = False
 
-row_indices = np.arange(1,601,1)
-pdf = norm.pdf(row_indices, loc=300.5, scale=60)
-weights = []
-for k in pdf:
-	weights.append(k/max(pdf))
+weight_scale_arr = ["normal distribution", "linear", "logarithmic"]
+weight_scale = weight_scale_arr[0]
 
-weighted_mat_lr = weightedMatNorm(600, 266, weights)
-weighted_mat_mid = weightedMatNorm(600, 268, weights)
-weighted_mat_half = weightedMatNorm(600, 400, weights)
+row_indices = np.arange(1,601,1)
+weights = []
+
+if weight_scale == "normal distribution":
+	pdf = norm.pdf(row_indices, loc=300.5, scale=60)
+	for k in pdf:
+		weights.append(k/max(pdf))
+
+elif weight_scale == "linear":
+	for l in row_indices:
+		weights.append(l/600)
+
+elif weight_scale == "logarithmic":
+	base = 2
+	for m in row_indices:
+		weights.append((base**(int(m)-1))/(base**599))
+	
+weighted_mat_lr = weightedMat(600, 266, weights)
+weighted_mat_mid = weightedMat(600, 268, weights)
+weighted_mat_half = weightedMat(600, 400, weights)
 
 while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == False:
 
@@ -181,30 +201,30 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 		goal_angle = rangeChange(goal_angle)
 		goal_angle_arr.append(goal_angle)
 
-		if (abs(x_pos) >= 69) or (abs(z_pos) >= 69):
+		if (abs(x_pos) >= border_det_distance) or (abs(z_pos) >= border_det_distance):
 
-			if x_pos >= 69:
+			if x_pos >= border_det_distance:
 
 				border_angle = np.arctan2(-1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 				
-			elif x_pos <= -69:
+			elif x_pos <= -border_det_distance:
 
 				border_angle = np.arctan2(1, 0) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos >= 69:
+			elif z_pos >= border_det_distance:
 
 				border_angle = np.arctan2(0, -1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
 				border_move = borderMove(border_angle)
 				print(border_move)
 
-			elif z_pos <= -69:
+			elif z_pos <= -border_det_distance:
 
 				border_angle = np.arctan2(0, 1) - np.arctan2(x_direc, z_direc)
 				border_angle = rangeChange(border_angle)
@@ -219,10 +239,10 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 			
 		else:
 
-			if dir_check == 20:
+			if dir_check_count == dir_check_limit:
 
 				if ((goal_angle >= -0.01) and (goal_angle <= 0.01)):
-					dir_check = 0
+					dir_check_count = 0
 
 				elif goal_angle > 0:
 					print("j")
@@ -240,7 +260,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					obs_arr.append("N/A")
 					least_obs_arr.append("N/A")
 
-			if dir_check < 20:
+			if dir_check_count < dir_check_limit:
 
 				img = cv2.imread(latest_file, 0) # 0 params, for grey image
 				rows, cols = img.shape[:2]  # image height and width
@@ -253,7 +273,6 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				reg_mean_arr = [left_mean, mid_mean, right_mean]
 
 				least_obs = np.argmax(reg_mean_arr)
-				#least_obs_arr.append(least_obs)
 				most_obs = np.argmin(reg_mean_arr)
 
 				left_w_avg = np.average(left_reg, weights = weighted_mat_lr)
@@ -264,8 +283,8 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				least_obs_w = np.argmax(reg_w_avg_arr)
 				least_obs_arr.append(least_obs_w)
 				most_obs_w = np.argmin(reg_w_avg_arr)
-
-				if reg_w_avg_arr[most_obs_w] <= 50:
+				
+				if reg_w_avg_arr[most_obs_w] <= avg_obs_det_thresh:
 
 					obs_arr.append("True")
 
@@ -295,15 +314,15 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				else:
 					
 					obs_arr.append("False")
-
+				
 					if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
 						print("w")
 						move_arr.append("w_gen")
-						dir_check += 1
+						dir_check_count += 1
 					
 					else:
 
-						if (least_obs_arr[move_count-1] == 2) and (least_obs_w == 0):
+						if (move_arr[move_count-2] == "j_reg") and (move_arr[move_count-1] == "l_reg") and (move_arr[move_count] == "j_reg"):
 							reg_stuck = True
 						
 						if reg_stuck == True:
@@ -314,24 +333,35 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 								reg_stuck = False
 
 						if reg_stuck == False:
-							if (least_obs_w == 1) or ((left_w_avg > mid_w_avg-5) and (left_w_avg < mid_w_avg+5)) or ((right_w_avg > mid_w_avg-5) and (right_w_avg < mid_w_avg+5)):
+							
+							if least_obs_w == 1:
 								print("w")
 								move_arr.append("w_reg")
-								dir_check += 1
+								dir_check_count += 1
 							
 							elif least_obs_w == 0:
-								print("j")
-								move_arr.append("j_reg")
+								if (left_w_avg > mid_w_avg-5) and (left_w_avg < mid_w_avg+5):
+									print("w")
+									move_arr.append("w_reg")
+									dir_check_count += 1
+								else:
+									print("j")
+									move_arr.append("j_reg")
 							
 							elif least_obs_w == 2:
-								print("l")
-								move_arr.append("l_reg")
+								if (right_w_avg > mid_w_avg-5) and (right_w_avg < mid_w_avg+5):
+									print("w")
+									move_arr.append("w_reg")
+									dir_check_count += 1
+								else:
+									print("l")
+									move_arr.append("l_reg")
 
 				sys.stdout.flush()
 				time.sleep(0.1)
 		
 		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
-		if dir_check < 20:
+		if dir_check_count < dir_check_limit:
 			f6.write(str(move_count) + "-> " + str(move_arr[move_count]) + " : x: " + str(x_pos) + ", z: " + str(z_pos) + " -> reg_stuck = " + str(reg_stuck) + ", Left w avg = " + str(left_w_avg) + ", Mid w avg = " + str(mid_w_avg) + ", Right w avg = " + str(right_w_avg) + "\n")
 		else:
 			f6.write(str(move_count) + ": GOAL CORRECTION ACTIVE\n")

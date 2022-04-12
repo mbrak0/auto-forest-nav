@@ -199,7 +199,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				border_move = borderMove(border_angle)
 				print(border_move)				
 
-			obs_arr.append("N/A")
+			#obs_arr.append("N/A")
 			least_obs_arr.append("N/A")
 			
 			sys.stdout.flush()
@@ -217,7 +217,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					move_arr.append("j_fixdir")
 					sys.stdout.flush()
 					time.sleep(0.1)
-					obs_arr.append("N/A")
+					#obs_arr.append("N/A")
 					least_obs_arr.append("N/A")
 				
 				elif goal_angle < 0:
@@ -225,7 +225,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					move_arr.append("l_fixdir")
 					sys.stdout.flush()
 					time.sleep(0.1)
-					obs_arr.append("N/A")
+					#obs_arr.append("N/A")
 					least_obs_arr.append("N/A")
 
 			if dir_check_count < dir_check_limit:
@@ -245,7 +245,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				least_obs_arr.append(least_obs)
 
 				most_obs = np.argmin(reg_mean_arr)
-
+				"""
 				if reg_mean_arr[most_obs] <= avg_obs_det_thresh:
 
 					obs_arr.append("True")
@@ -271,50 +271,52 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 							move_arr.append("j_obs")
 
 				else:
-					
-					obs_arr.append("False")
+				"""
+				#obs_arr.append("False")
 
-					if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
-						print("w")
-						move_arr.append("w_gen")
-						dir_check_count += 1
-					
-					else:
+				obs_arr.append("False")
 
-						if (move_arr[move_count-2] == "j_reg") and (move_arr[move_count-1] == "l_reg") and (move_arr[move_count] == "j_reg"):
-							reg_stuck = True
+				if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
+					print("w")
+					move_arr.append("w_gen")
+					dir_check_count += 1
+				
+				else:
+
+					if (least_obs_arr[move_count-1] == 2) and (least_obs == 0):
+						reg_stuck = True
+					
+					if reg_stuck == True:
+						if least_obs != 1:
+							print("j")
+							move_arr.append("j_reg_stuck")
+						else:
+							reg_stuck = False
+
+					if reg_stuck == False:
 						
-						if reg_stuck == True:
-							if least_obs != 1:
-								print("j")
-								move_arr.append("j_reg_stuck")
-							else:
-								reg_stuck = False
-
-						if reg_stuck == False:
-							
-							if least_obs == 1:
+						if least_obs == 1:
+							print("w")
+							move_arr.append("w_reg")
+							dir_check_count += 1
+						
+						elif least_obs == 0:
+							if (left_mean > mid_mean-5) and (left_mean < mid_mean+5):
 								print("w")
 								move_arr.append("w_reg")
 								dir_check_count += 1
-							
-							elif least_obs == 0:
-								if (left_mean > mid_mean-5) and (left_mean < mid_mean+5):
-									print("w")
-									move_arr.append("w_reg")
-									dir_check_count += 1
-								else:
-									print("j")
-									move_arr.append("j_reg")
-							
-							elif least_obs == 2:
-								if (right_mean > mid_mean-5) and (right_mean < mid_mean+5):
-									print("w")
-									move_arr.append("w_reg")
-									dir_check_count += 1
-								else:
-									print("l")
-									move_arr.append("l_reg")
+							else:
+								print("j")
+								move_arr.append("j_reg")
+						
+						elif least_obs == 2:
+							if (right_mean > mid_mean-5) and (right_mean < mid_mean+5):
+								print("w")
+								move_arr.append("w_reg")
+								dir_check_count += 1
+							else:
+								print("l")
+								move_arr.append("l_reg")
 
 				sys.stdout.flush()
 				time.sleep(0.1)

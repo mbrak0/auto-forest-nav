@@ -80,7 +80,7 @@ z_goal_pos = 45
 true_x_goal_pos = x_goal_pos
 true_z_goal_pos = z_goal_pos
 
-dir_check_limit = 20
+dir_check_limit = 40
 dir_check_count = dir_check_limit
 
 move_count = 0
@@ -281,7 +281,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					
 					else:
 
-						if (move_arr[move_count-2] == "j_reg") and (move_arr[move_count-1] == "l_reg") and (move_arr[move_count] == "j_reg"):
+						if (least_obs_arr[move_count-1] == 2) and (least_obs == 0):
 							reg_stuck = True
 						
 						if reg_stuck == True:
@@ -292,29 +292,18 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 								reg_stuck = False
 
 						if reg_stuck == False:
-							
-							if least_obs == 1:
+							if (least_obs == 1) or ((left_mean > mid_mean-5) and (left_mean < mid_mean+5)) or ((right_mean > mid_mean-5) and (right_mean < mid_mean+5)):
 								print("w")
 								move_arr.append("w_reg")
 								dir_check_count += 1
 							
 							elif least_obs == 0:
-								if (left_mean > mid_mean-5) and (left_mean < mid_mean+5):
-									print("w")
-									move_arr.append("w_reg")
-									dir_check_count += 1
-								else:
-									print("j")
-									move_arr.append("j_reg")
+								print("j")
+								move_arr.append("j_reg")
 							
 							elif least_obs == 2:
-								if (right_mean > mid_mean-5) and (right_mean < mid_mean+5):
-									print("w")
-									move_arr.append("w_reg")
-									dir_check_count += 1
-								else:
-									print("l")
-									move_arr.append("l_reg")
+								print("l")
+								move_arr.append("l_reg")
 
 				sys.stdout.flush()
 				time.sleep(0.1)

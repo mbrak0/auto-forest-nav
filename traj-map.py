@@ -8,7 +8,8 @@ x_pos_arr = []
 z_pos_arr = []
 
 #path = "/home/matt-ip/Desktop/logs/Post-ProgressReport/FinalisedRegions/Density/default10_90/seed2/logfile.txt"
-path = "/home/matt-ip/Desktop/logs/logfile.txt"
+path = "/home/matt-ip/Desktop/logs/algorithm3/density/default/seed11/logfile.txt"
+#path = "/home/matt-ip/Desktop/logs/logfile.txt"
 
 f = open(path, "r")
 log = f.readlines()
@@ -77,5 +78,5 @@ plt.xlim = ([-50,50])
 plt.ylim = ([-50,50])
 plt.grid()
 
-plt.savefig("/home/matt-ip/Desktop/logs/algorithm3/density/default/seed7/traj-map.png")
+plt.savefig("/home/matt-ip/Desktop/logs/algorithm3/density/default/seed11/traj-map.png")
 plt.show()

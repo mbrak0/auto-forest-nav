@@ -282,7 +282,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				least_obs_w = np.argmax(reg_w_avg_arr)
 				least_obs_arr.append(least_obs_w)
 				most_obs_w = np.argmin(reg_w_avg_arr)
-				
+				"""
 				if reg_w_avg_arr[most_obs_w] <= avg_obs_det_thresh:
 
 					obs_arr.append("True")
@@ -313,42 +313,42 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 				else:
 					
 					obs_arr.append("False")
+				"""
+				if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
+					print("w")
+					move_arr.append("w_gen")
+					dir_check_count += 1
 				
-					if ((x_pos >= x_goal_pos-10) and (x_pos <= x_goal_pos+10) and (z_pos >= z_goal_pos-10) and (z_pos <= z_goal_pos+10)):
+				else:
+
+					if least_obs_w == 1:
 						print("w")
-						move_arr.append("w_gen")
+						move_arr.append("w_reg")
 						dir_check_count += 1
 					
-					else:
-
-						if least_obs_w == 1:
+					elif least_obs_w == 0:
+						if (left_w_avg > mid_w_avg-5) and (left_w_avg < mid_w_avg+5):
 							print("w")
 							move_arr.append("w_reg")
 							dir_check_count += 1
-						
-						elif least_obs_w == 0:
-							if (left_w_avg > mid_w_avg-5) and (left_w_avg < mid_w_avg+5):
-								print("w")
-								move_arr.append("w_reg")
-								dir_check_count += 1
-							elif (move_arr[move_count-1] == "l_obs") or (move_arr[move_count-1] == "l_reg"):
-								print("l")
-								move_arr.append("l_reg")
-							else:
-								print("j")
-								move_arr.append("j_reg")
-						
-						elif least_obs_w == 2:
-							if (right_w_avg > mid_w_avg-5) and (right_w_avg < mid_w_avg+5):
-								print("w")
-								move_arr.append("w_reg")
-								dir_check_count += 1
-							elif (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg"):
-								print("j")
-								move_arr.append("j_reg")
-							else:
-								print("l")
-								move_arr.append("l_reg")
+						elif (move_arr[move_count-1] == "l_obs") or (move_arr[move_count-1] == "l_reg"):
+							print("l")
+							move_arr.append("l_reg")
+						else:
+							print("j")
+							move_arr.append("j_reg")
+					
+					elif least_obs_w == 2:
+						if (right_w_avg > mid_w_avg-5) and (right_w_avg < mid_w_avg+5):
+							print("w")
+							move_arr.append("w_reg")
+							dir_check_count += 1
+						elif (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg"):
+							print("j")
+							move_arr.append("j_reg")
+						else:
+							print("l")
+							move_arr.append("l_reg")
 
 				sys.stdout.flush()
 				time.sleep(0.1)

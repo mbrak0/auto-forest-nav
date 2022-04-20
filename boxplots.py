@@ -4,18 +4,19 @@ import os
 from tabulate import tabulate
 
 seed_num = [1,2,3,5,6,7,8,9,10,11]
-#seed_num = [1,2,3,5,6]
+#seed_num = [1,2,3,5,6,7]
 #print(seed_num)
 
 #alg_select = [1,2,3]
-alg_select = [3]
+alg_select = [1]
 
-#sim_param = "density"
-#sim_param = "goal-correction"
-sim_param_select = ["density-no-obs-det","density-linear","density-log2"]
+sim_param_select = ["density-real","tiles-obstacle-detection-31875"]
+#sim_param_select = ["density-real","goal-correct-40","goal-correct-60"]
+#sim_param_select = ["tiles-obstacle-detection-19125","density-real","tiles-obstacle-detection-31875"]
+#sim_param_select = ["density-real","linear","log-base-1-01"]
 
 #sim_param_variant_list  = ["sparse", "default", "dense"]
-sim_param_variant_list  = ["default"]
+sim_param_variant_list  = ["dense"]
 #sim_param_variant_list  = ["goal-corr20","goal-corr40"]
 #sim_param_variant_list  = ["density","density-no-obs-det"]
 
@@ -170,11 +171,11 @@ bp = ax.boxplot(data)
 axes = plt.gca()
 axes.yaxis.grid()
 
-#plt.xticks([1, 2, 3], ["Algorithm 1", "Algorithm 2", "Algorithm 3"])
+plt.xticks([1, 2, 3], ["Algorithm 1", "Algorithm 2", "Algorithm 3"])
 #plt.xticks([1, 2, 3], ["Sparse", "Default", "Dense"])
 #plt.xticks([1, 2, 3], ["20", "40", "Algorithm 3"])
 #plt.xticks([1, 2], ["Obs 40", "Obs 50"])
-plt.xticks([1, 2, 3], ["Normal Dist", "Linear", "Log Base 2"])
+#plt.xticks([1, 2, 3], ["Normal Dist", "Linear", "Log Base 2"])
 
 boxplot_label = "Dense_Algorithm123_" + str(metric)
 

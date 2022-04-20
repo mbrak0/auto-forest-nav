@@ -96,6 +96,7 @@ move_count = 0
 avg_obs_det_thresh = 50
 
 least_obs_arr = []
+reg_stuck = False
 
 weight_scale_arr = ["normal distribution", "linear", "logarithmic"]
 weight_scale = weight_scale_arr[0]
@@ -296,7 +297,7 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					right_half_w_avg = np.average(right_half, weights = weighted_mat_half)
 
 					if left_half_w_avg < right_half_w_avg:
-						if (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg"):
+						if (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg") or (move_arr[move_count-1] == "j_reg_stuck"):
 							print("j")
 							move_arr.append("j_obs")
 						else:
@@ -321,41 +322,47 @@ while goal_reached(true_x_pos, true_z_pos, true_x_goal_pos, true_z_goal_pos) == 
 					
 					else:
 
-						if least_obs_w == 1:
-							print("w")
-							move_arr.append("w_reg")
-							dir_check_count += 1
+						if (move_arr[move_count-3] == "j_reg") and (move_arr[move_count-2] == "l_reg") and (move_arr[move_count-1] == "j_reg"):
+							reg_stuck = True
 						
-						elif least_obs_w == 0:
-							if (left_w_avg > mid_w_avg-5) and (left_w_avg < mid_w_avg+5):
+						if reg_stuck == True:
+							if least_obs_w != 1:
+								print("j")
+								move_arr.append("j_reg_stuck")
+							else:
+								reg_stuck = False
+
+						if reg_stuck == False:
+							
+							if least_obs_w == 1:
 								print("w")
 								move_arr.append("w_reg")
 								dir_check_count += 1
-							elif (move_arr[move_count-1] == "l_obs") or (move_arr[move_count-1] == "l_reg"):
-								print("l")
-								move_arr.append("l_reg")
-							else:
-								print("j")
-								move_arr.append("j_reg")
-						
-						elif least_obs_w == 2:
-							if (right_w_avg > mid_w_avg-5) and (right_w_avg < mid_w_avg+5):
-								print("w")
-								move_arr.append("w_reg")
-								dir_check_count += 1
-							elif (move_arr[move_count-1] == "j_obs") or (move_arr[move_count-1] == "j_reg"):
-								print("j")
-								move_arr.append("j_reg")
-							else:
-								print("l")
-								move_arr.append("l_reg")
+							
+							elif least_obs_w == 0:
+								if (left_w_avg > mid_w_avg-5) and (left_w_avg < mid_w_avg+5):
+									print("w")
+									move_arr.append("w_reg")
+									dir_check_count += 1
+								else:
+									print("j")
+									move_arr.append("j_reg")
+							
+							elif least_obs_w == 2:
+								if (right_w_avg > mid_w_avg-5) and (right_w_avg < mid_w_avg+5):
+									print("w")
+									move_arr.append("w_reg")
+									dir_check_count += 1
+								else:
+									print("l")
+									move_arr.append("l_reg")
 
 				sys.stdout.flush()
 				time.sleep(0.1)
 		
 		f6 = open("/home/matt-ip/Desktop/logs/debug.txt", "a")
 		if dir_check_count < dir_check_limit:
-			f6.write(str(move_count) + ": x: " + str(x_pos) + ", z: " + str(z_pos) + " -> Left w avg = " + str(left_w_avg) + ", Mid w avg = " + str(mid_w_avg) + ", Right w avg = " + str(right_w_avg) + " -> " + str(move_arr[move_count]) + "\n")
+			f6.write(str(move_count) + "-> " + str(move_arr[move_count]) + " : x: " + str(x_pos) + ", z: " + str(z_pos) + " -> reg_stuck = " + str(reg_stuck) + ", Left w avg = " + str(left_w_avg) + ", Mid w avg = " + str(mid_w_avg) + ", Right w avg = " + str(right_w_avg) + "\n")
 		else:
 			f6.write(str(move_count) + ": GOAL CORRECTION ACTIVE\n")
 		f6.close()
@@ -426,9 +433,11 @@ w_gen_count = move_arr.count("w_gen")
 l_obs_count = move_arr.count("l_obs")
 j_obs_count = move_arr.count("j_obs")
 
+j_reg_stuck_count = move_arr.count("j_reg_stuck")
+
 w_count = w_border_count + w_reg_count + w_gen_count
 l_count = l_border_count + l_fixdir_count + l_reg_count + l_obs_count
-j_count = j_border_count + j_fixdir_count + j_reg_count + j_obs_count
+j_count = j_border_count + j_fixdir_count + j_reg_count + j_reg_stuck_count + j_obs_count
 
 euc_dis = (7/30) * w_count
 wobble_rate = (l_count + j_count) / move_count

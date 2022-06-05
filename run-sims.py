@@ -10,19 +10,21 @@ subprocess.run(["mv", "/home/matt-ip/Desktop/Testing123", "/home/matt-ip/Desktop
 #tree_density = "default"
 
 #algorithm_index_list = ["algorithm1", "algorithm2", "algorithm3"]
-algorithm_index_list = ["algorithm1"]
+#algorithm_index_list = ["algorithm1","algorithm3"]
+algorithm_index_list = ["algorithm2"]
 
-#sim_param = "density"
-sim_param = "tiles-obstacle-detection-19125"
+sim_param = "density"
+#sim_param = "tiles-obstacle-detection-19125"
 #sim_param = "goal-correction"
 
 #sim_param_variant_list = ["default", "sparse", "dense"]
-sim_param_variant_list = ["sparse", "dense"]
+#sim_param_variant_list = ["sparse","dense"]
+sim_param_variant_list = ["default"]
 #sim_param_variant_list = ["goal-corr40"]
 
-seed_list = [1,2,3,5,6,7,8,9,10,11]
-#seed_list = [5,6,7,8,9,10,11]
-#seed_list = [1]
+#seed_list = [1,2,3,5,6,7,8,9,10,11]
+seed_list = [8]
+#seed_list = [9]
 
 #subprocess.run(["python3", "/home/matt-ip/Desktop/auto-forest-nav/nav-scripts/algorithm1/tiles-obstacle-detection.py", "|", "java", "-jar", "/home/matt-ip/Desktop/ForestGenerator-1.2/ForestGenerator-1.2-unix.jar", "/home/matt-ip/Desktop/ForestGenerator-1.2/src/main/resources/sparse.yaml", ">", "/home/matt-ip/Desktop/logs/cmdline-output-log.txt"])
 #os.system("python3 /home/matt-ip/Desktop/auto-forest-nav/nav-scripts/algorithm1/tiles-obstacle-detection.py | java -jar /home/matt-ip/Desktop/ForestGenerator-1.2/ForestGenerator-1.2-unix.jar /home/matt-ip/Desktop/ForestGenerator-1.2/src/main/resources/sparse.yaml > /home/matt-ip/Desktop/logs/cmdline-output-log.txt")
@@ -35,11 +37,11 @@ for algorithm in algorithm_index_list:
             #algorithm_name = "regions-average-no-reg-nav-halt"
             
             if algorithm == "algorithm1":
-                algorithm_name = "tiles-obstacle-detection-19125"
+                algorithm_name = "regions-weighted-average-gc-40"
             elif algorithm == "algorithm2":
-                algorithm_name = "regions-average-obs-det-60"
+                algorithm_name = "regions-weighted-average-no-obs-det-2-gc-40"
             elif algorithm == "algorithm3":
-                algorithm_name = "tiles-obstacle-detection-31875"
+                algorithm_name = "regions-weighted-average-gc-60"
             
             """
             if variant == "goal-corr40":

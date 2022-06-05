@@ -8,8 +8,10 @@ x_pos_arr = []
 z_pos_arr = []
 
 #path = "/home/matt-ip/Desktop/logs/Post-ProgressReport/FinalisedRegions/Density/default10_90/seed2/logfile.txt"
-path = "/home/matt-ip/Desktop/logs/algorithm3/density/default/seed11/logfile.txt"
-#path = "/home/matt-ip/Desktop/logs/logfile.txt"
+#path = "/home/matt-ip/Desktop/logs/algorithm1/tiles-obstacle-detection-31875/dense/seed3/logfile.txt"
+#path = "/home/matt-ip/Desktop/logs/algorithm2/no-obs-det/default/seed3/logfile.txt"
+path = "/home/matt-ip/Desktop/logs/algorithm1/density-real/dense/seed3/logfile.txt"
+# path = "/home/matt-ip/Desktop/logs/logfile.txt"
 
 f = open(path, "r")
 log = f.readlines()
@@ -65,18 +67,20 @@ for j in nav_log:
 fig, ax = plt.subplots(figsize=(8,8))
 #fig, ax = plt.subplots()
 #ax.imshow(img, extent=[-50, 50, -50, 50])
-ax.scatter(x_pos_arr, z_pos_arr, s=2)
+ax.scatter(x_pos_arr, z_pos_arr, s=2, label="Path Travelled")
 
-plt.plot(x_goal_pos, z_goal_pos, "gs")
-plt.plot(x_pos_arr[0], z_pos_arr[0], "r^", x_pos_arr[-1], z_pos_arr[-1], "y^")
+plt.plot(x_goal_pos, z_goal_pos, "gs", label="Goal")
+plt.plot(x_pos_arr[0], z_pos_arr[0], "r^", label="Start Position")
+plt.plot(x_pos_arr[-1], z_pos_arr[-1], "y^", label="End Position")
+plt.legend()
 
-plt.xlabel("x")
-plt.ylabel("z")
+plt.xlabel("x (metres)")
+plt.ylabel("z (metres)")
 plt.yticks(np.arange(-50, 60, 10))
 plt.xticks(np.arange(-50, 60, 10))
 plt.xlim = ([-50,50])
 plt.ylim = ([-50,50])
 plt.grid()
 
-plt.savefig("/home/matt-ip/Desktop/logs/algorithm3/density/default/seed11/traj-map.png")
+#plt.savefig("/home/matt-ip/Desktop/logs/algorithm3/density/default/seed11/traj-map.png")
 plt.show()

@@ -1,0 +1,959 @@
+0: GOAL CORRECTION ACTIVE
+1: GOAL CORRECTION ACTIVE
+2: GOAL CORRECTION ACTIVE
+3: GOAL CORRECTION ACTIVE
+4: GOAL CORRECTION ACTIVE
+5: GOAL CORRECTION ACTIVE
+6: GOAL CORRECTION ACTIVE
+7: GOAL CORRECTION ACTIVE
+8: GOAL CORRECTION ACTIVE
+9: GOAL CORRECTION ACTIVE
+10: GOAL CORRECTION ACTIVE
+11: GOAL CORRECTION ACTIVE
+12: GOAL CORRECTION ACTIVE
+13: GOAL CORRECTION ACTIVE
+14: GOAL CORRECTION ACTIVE
+15: GOAL CORRECTION ACTIVE
+16: GOAL CORRECTION ACTIVE
+17: GOAL CORRECTION ACTIVE
+18: GOAL CORRECTION ACTIVE
+19: GOAL CORRECTION ACTIVE
+20: GOAL CORRECTION ACTIVE
+21: GOAL CORRECTION ACTIVE
+22: GOAL CORRECTION ACTIVE
+23: GOAL CORRECTION ACTIVE
+24: GOAL CORRECTION ACTIVE
+25: GOAL CORRECTION ACTIVE
+26: GOAL CORRECTION ACTIVE
+27: GOAL CORRECTION ACTIVE
+28: GOAL CORRECTION ACTIVE
+29: GOAL CORRECTION ACTIVE
+30: GOAL CORRECTION ACTIVE
+31: GOAL CORRECTION ACTIVE
+32: GOAL CORRECTION ACTIVE
+33: GOAL CORRECTION ACTIVE
+34: GOAL CORRECTION ACTIVE
+35: GOAL CORRECTION ACTIVE
+36: GOAL CORRECTION ACTIVE
+37: GOAL CORRECTION ACTIVE
+38: GOAL CORRECTION ACTIVE
+39: GOAL CORRECTION ACTIVE
+40: GOAL CORRECTION ACTIVE
+41: GOAL CORRECTION ACTIVE
+42: GOAL CORRECTION ACTIVE
+43: GOAL CORRECTION ACTIVE
+44: GOAL CORRECTION ACTIVE
+45-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 85, obs_right = 0
+46-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 85, obs_right = 0
+47-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 76, obs_right = 0
+48-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 72, obs_right = 0
+49-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 72, obs_right = 0
+50-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 64, obs_right = 0
+51-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 61, obs_right = 0
+52-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 54, obs_right = 0
+53-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 54, obs_right = 0
+54-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 52, obs_right = 0
+55-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 49, obs_right = 0
+56-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 39, obs_right = 0
+57-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 35, obs_right = 0
+58-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 30, obs_right = 0
+59-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 27, obs_right = 0
+60-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 20, obs_right = 0
+61-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 17, obs_right = 0
+62-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 14, obs_right = 0
+63-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 7, obs_right = 0
+64-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 4, obs_right = 0
+65-> l_obs : x: -45.0, z: -45.0 -> obstacle = True, obs_left = 1, obs_right = 0
+66-> w_gen : x: -45.0, z: -45.0 -> obstacle = False, obs_left = 0, obs_right = 0
+67-> w_gen : x: -44.905094, z: -44.78684 -> obstacle = False, obs_left = 0, obs_right = 0
+68-> w_gen : x: -44.81019, z: -44.573677 -> obstacle = False, obs_left = 0, obs_right = 0
+69-> w_gen : x: -44.715282, z: -44.360516 -> obstacle = False, obs_left = 0, obs_right = 0
+70-> w_gen : x: -44.620377, z: -44.147354 -> obstacle = False, obs_left = 0, obs_right = 0
+71-> w_gen : x: -44.52547, z: -43.934193 -> obstacle = False, obs_left = 0, obs_right = 0
+72-> w_gen : x: -44.430565, z: -43.72103 -> obstacle = False, obs_left = 0, obs_right = 0
+73-> w_gen : x: -44.33566, z: -43.50787 -> obstacle = False, obs_left = 0, obs_right = 0
+74-> w_gen : x: -44.240753, z: -43.29471 -> obstacle = False, obs_left = 0, obs_right = 0
+75-> w_gen : x: -44.145847, z: -43.081547 -> obstacle = False, obs_left = 0, obs_right = 0
+76-> w_gen : x: -44.05094, z: -42.868385 -> obstacle = False, obs_left = 0, obs_right = 0
+77-> w_gen : x: -43.956036, z: -42.655224 -> obstacle = False, obs_left = 0, obs_right = 0
+78-> w_gen : x: -43.86113, z: -42.442062 -> obstacle = False, obs_left = 0, obs_right = 0
+79-> w_gen : x: -43.766224, z: -42.2289 -> obstacle = False, obs_left = 0, obs_right = 0
+80-> w_gen : x: -43.671318, z: -42.01574 -> obstacle = False, obs_left = 0, obs_right = 0
+81-> w_gen : x: -43.576412, z: -41.802578 -> obstacle = False, obs_left = 0, obs_right = 0
+82-> w_gen : x: -43.481506, z: -41.589417 -> obstacle = False, obs_left = 0, obs_right = 0
+83-> w_gen : x: -43.3866, z: -41.376255 -> obstacle = False, obs_left = 0, obs_right = 0
+84-> w_gen : x: -43.291695, z: -41.163094 -> obstacle = False, obs_left = 0, obs_right = 0
+85-> w_gen : x: -43.19679, z: -40.949932 -> obstacle = False, obs_left = 0, obs_right = 0
+86-> w_gen : x: -43.101883, z: -40.73677 -> obstacle = False, obs_left = 0, obs_right = 0
+87-> w_gen : x: -43.006977, z: -40.52361 -> obstacle = False, obs_left = 0, obs_right = 0
+88-> w_gen : x: -42.91207, z: -40.310448 -> obstacle = False, obs_left = 0, obs_right = 0
+89-> w_gen : x: -42.817165, z: -40.097286 -> obstacle = False, obs_left = 0, obs_right = 0
+90-> w_gen : x: -42.72226, z: -39.884125 -> obstacle = False, obs_left = 0, obs_right = 0
+91-> w_gen : x: -42.627354, z: -39.670963 -> obstacle = False, obs_left = 0, obs_right = 0
+92-> w_gen : x: -42.532448, z: -39.4578 -> obstacle = False, obs_left = 0, obs_right = 0
+93-> w_gen : x: -42.437542, z: -39.24464 -> obstacle = False, obs_left = 0, obs_right = 0
+94-> w_gen : x: -42.342636, z: -39.03148 -> obstacle = False, obs_left = 0, obs_right = 0
+95-> w_gen : x: -42.24773, z: -38.818317 -> obstacle = False, obs_left = 0, obs_right = 0
+96-> w_gen : x: -42.152824, z: -38.605156 -> obstacle = False, obs_left = 0, obs_right = 0
+97-> w_gen : x: -42.05792, z: -38.391994 -> obstacle = False, obs_left = 0, obs_right = 0
+98-> w_gen : x: -41.963013, z: -38.178833 -> obstacle = False, obs_left = 0, obs_right = 0
+99-> w_gen : x: -41.868107, z: -37.96567 -> obstacle = False, obs_left = 0, obs_right = 0
+100-> w_gen : x: -41.7732, z: -37.75251 -> obstacle = False, obs_left = 0, obs_right = 0
+101-> w_gen : x: -41.678295, z: -37.53935 -> obstacle = False, obs_left = 0, obs_right = 0
+102-> w_gen : x: -41.58339, z: -37.326187 -> obstacle = False, obs_left = 0, obs_right = 0
+103-> w_gen : x: -41.488483, z: -37.113026 -> obstacle = False, obs_left = 0, obs_right = 0
+104-> w_gen : x: -41.393578, z: -36.899864 -> obstacle = False, obs_left = 0, obs_right = 0
+105: GOAL CORRECTION ACTIVE
+106: GOAL CORRECTION ACTIVE
+107: GOAL CORRECTION ACTIVE
+108: GOAL CORRECTION ACTIVE
+109: GOAL CORRECTION ACTIVE
+110: GOAL CORRECTION ACTIVE
+111: GOAL CORRECTION ACTIVE
+112: GOAL CORRECTION ACTIVE
+113: GOAL CORRECTION ACTIVE
+114: GOAL CORRECTION ACTIVE
+115: GOAL CORRECTION ACTIVE
+116: GOAL CORRECTION ACTIVE
+117: GOAL CORRECTION ACTIVE
+118: GOAL CORRECTION ACTIVE
+119: GOAL CORRECTION ACTIVE
+120: GOAL CORRECTION ACTIVE
+121: GOAL CORRECTION ACTIVE
+122: GOAL CORRECTION ACTIVE
+123: GOAL CORRECTION ACTIVE
+124: GOAL CORRECTION ACTIVE
+125: GOAL CORRECTION ACTIVE
+126: GOAL CORRECTION ACTIVE
+127: GOAL CORRECTION ACTIVE
+128: GOAL CORRECTION ACTIVE
+129-> w_gen : x: -41.203766, z: -36.47354 -> obstacle = False, obs_left = 0, obs_right = 0
+130-> w_gen : x: -41.033115, z: -36.314407 -> obstacle = False, obs_left = 0, obs_right = 0
+131-> w_gen : x: -40.862465, z: -36.155273 -> obstacle = False, obs_left = 0, obs_right = 0
+132-> w_gen : x: -40.691814, z: -35.99614 -> obstacle = False, obs_left = 0, obs_right = 0
+133-> w_gen : x: -40.521164, z: -35.837006 -> obstacle = False, obs_left = 0, obs_right = 0
+134-> w_gen : x: -40.350513, z: -35.67787 -> obstacle = False, obs_left = 0, obs_right = 0
+135-> w_gen : x: -40.179863, z: -35.518738 -> obstacle = False, obs_left = 0, obs_right = 0
+136-> w_gen : x: -40.009212, z: -35.359604 -> obstacle = False, obs_left = 0, obs_right = 0
+137-> w_gen : x: -39.838562, z: -35.20047 -> obstacle = False, obs_left = 0, obs_right = 0
+138-> w_gen : x: -39.66791, z: -35.041336 -> obstacle = False, obs_left = 0, obs_right = 0
+139-> w_gen : x: -39.49726, z: -34.882202 -> obstacle = False, obs_left = 0, obs_right = 0
+140-> w_gen : x: -39.32661, z: -34.72307 -> obstacle = False, obs_left = 0, obs_right = 0
+141-> w_gen : x: -39.15596, z: -34.563934 -> obstacle = False, obs_left = 0, obs_right = 0
+142-> w_gen : x: -38.98531, z: -34.4048 -> obstacle = False, obs_left = 0, obs_right = 0
+143-> w_gen : x: -38.81466, z: -34.245667 -> obstacle = False, obs_left = 0, obs_right = 0
+144-> w_gen : x: -38.64401, z: -34.086533 -> obstacle = False, obs_left = 0, obs_right = 0
+145-> w_gen : x: -38.47336, z: -33.9274 -> obstacle = False, obs_left = 0, obs_right = 0
+146-> w_gen : x: -38.302708, z: -33.768265 -> obstacle = False, obs_left = 0, obs_right = 0
+147-> w_gen : x: -38.132057, z: -33.60913 -> obstacle = False, obs_left = 0, obs_right = 0
+148-> w_gen : x: -37.961407, z: -33.449997 -> obstacle = False, obs_left = 0, obs_right = 0
+149-> w_gen : x: -37.790756, z: -33.290863 -> obstacle = False, obs_left = 0, obs_right = 0
+150-> w_gen : x: -37.620106, z: -33.13173 -> obstacle = False, obs_left = 0, obs_right = 0
+151-> w_gen : x: -37.449455, z: -32.972595 -> obstacle = False, obs_left = 0, obs_right = 0
+152-> w_gen : x: -37.278805, z: -32.81346 -> obstacle = False, obs_left = 0, obs_right = 0
+153-> w_gen : x: -37.108154, z: -32.654327 -> obstacle = False, obs_left = 0, obs_right = 0
+154-> w_gen : x: -36.937504, z: -32.495193 -> obstacle = False, obs_left = 0, obs_right = 0
+155-> w_gen : x: -36.766853, z: -32.33606 -> obstacle = False, obs_left = 0, obs_right = 0
+156-> w_gen : x: -36.596203, z: -32.176926 -> obstacle = False, obs_left = 0, obs_right = 0
+157-> w_gen : x: -36.425552, z: -32.01779 -> obstacle = False, obs_left = 0, obs_right = 0
+158-> w_gen : x: -36.2549, z: -31.858658 -> obstacle = False, obs_left = 0, obs_right = 0
+159-> w_gen : x: -36.08425, z: -31.699524 -> obstacle = False, obs_left = 0, obs_right = 0
+160-> w_gen : x: -35.9136, z: -31.54039 -> obstacle = False, obs_left = 0, obs_right = 0
+161-> w_gen : x: -35.74295, z: -31.381256 -> obstacle = False, obs_left = 0, obs_right = 0
+162-> w_gen : x: -35.5723, z: -31.222122 -> obstacle = False, obs_left = 0, obs_right = 0
+163-> w_gen : x: -35.40165, z: -31.062988 -> obstacle = False, obs_left = 0, obs_right = 0
+164-> w_gen : x: -35.231, z: -30.903854 -> obstacle = False, obs_left = 0, obs_right = 0
+165-> w_gen : x: -35.06035, z: -30.74472 -> obstacle = False, obs_left = 0, obs_right = 0
+166-> w_gen : x: -34.889698, z: -30.585587 -> obstacle = False, obs_left = 0, obs_right = 0
+167-> w_gen : x: -34.719048, z: -30.426453 -> obstacle = False, obs_left = 0, obs_right = 0
+168: GOAL CORRECTION ACTIVE
+169-> w_gen : x: -34.377747, z: -30.108185 -> obstacle = False, obs_left = 0, obs_right = 0
+170-> w_gen : x: -34.207096, z: -29.94905 -> obstacle = False, obs_left = 0, obs_right = 0
+171-> w_gen : x: -34.036446, z: -29.789917 -> obstacle = False, obs_left = 0, obs_right = 0
+172-> w_gen : x: -33.865795, z: -29.630783 -> obstacle = False, obs_left = 0, obs_right = 0
+173-> w_gen : x: -33.695145, z: -29.47165 -> obstacle = False, obs_left = 0, obs_right = 0
+174-> w_gen : x: -33.524494, z: -29.312515 -> obstacle = False, obs_left = 0, obs_right = 0
+175-> w_gen : x: -33.353844, z: -29.153381 -> obstacle = False, obs_left = 0, obs_right = 0
+176-> w_gen : x: -33.183193, z: -28.994247 -> obstacle = False, obs_left = 0, obs_right = 0
+177-> w_gen : x: -33.012543, z: -28.835114 -> obstacle = False, obs_left = 0, obs_right = 0
+178-> w_gen : x: -32.841892, z: -28.67598 -> obstacle = False, obs_left = 0, obs_right = 0
+179-> w_gen : x: -32.67124, z: -28.516846 -> obstacle = False, obs_left = 0, obs_right = 0
+180-> w_gen : x: -32.50059, z: -28.357712 -> obstacle = False, obs_left = 0, obs_right = 0
+181-> w_gen : x: -32.32994, z: -28.198578 -> obstacle = False, obs_left = 0, obs_right = 0
+182-> w_gen : x: -32.15929, z: -28.039444 -> obstacle = False, obs_left = 0, obs_right = 0
+183-> w_gen : x: -31.988642, z: -27.88031 -> obstacle = False, obs_left = 0, obs_right = 0
+184-> w_gen : x: -31.817993, z: -27.721176 -> obstacle = False, obs_left = 0, obs_right = 0
+185-> w_gen : x: -31.647345, z: -27.562042 -> obstacle = False, obs_left = 0, obs_right = 0
+186-> w_gen : x: -31.476696, z: -27.402908 -> obstacle = False, obs_left = 0, obs_right = 0
+187-> w_gen : x: -31.306047, z: -27.243774 -> obstacle = False, obs_left = 0, obs_right = 0
+188-> w_gen : x: -31.135399, z: -27.08464 -> obstacle = False, obs_left = 0, obs_right = 0
+189-> w_gen : x: -30.96475, z: -26.925507 -> obstacle = False, obs_left = 0, obs_right = 0
+190-> w_gen : x: -30.794102, z: -26.766373 -> obstacle = False, obs_left = 0, obs_right = 0
+191-> w_gen : x: -30.623453, z: -26.607239 -> obstacle = False, obs_left = 0, obs_right = 0
+192-> w_gen : x: -30.452805, z: -26.448105 -> obstacle = False, obs_left = 0, obs_right = 0
+193-> w_gen : x: -30.282156, z: -26.28897 -> obstacle = False, obs_left = 0, obs_right = 0
+194-> w_gen : x: -30.111507, z: -26.129837 -> obstacle = False, obs_left = 0, obs_right = 0
+195-> w_gen : x: -29.940859, z: -25.970703 -> obstacle = False, obs_left = 0, obs_right = 0
+196-> w_gen : x: -29.77021, z: -25.81157 -> obstacle = False, obs_left = 0, obs_right = 0
+197-> w_gen : x: -29.599562, z: -25.652435 -> obstacle = False, obs_left = 0, obs_right = 0
+198-> w_gen : x: -29.428913, z: -25.493301 -> obstacle = False, obs_left = 0, obs_right = 0
+199-> w_gen : x: -29.258265, z: -25.334167 -> obstacle = False, obs_left = 0, obs_right = 0
+200-> w_gen : x: -29.087616, z: -25.175034 -> obstacle = False, obs_left = 0, obs_right = 0
+201-> w_gen : x: -28.916967, z: -25.0159 -> obstacle = False, obs_left = 0, obs_right = 0
+202-> w_gen : x: -28.746319, z: -24.856766 -> obstacle = False, obs_left = 0, obs_right = 0
+203-> w_gen : x: -28.57567, z: -24.697632 -> obstacle = False, obs_left = 0, obs_right = 0
+204-> w_gen : x: -28.405022, z: -24.538498 -> obstacle = False, obs_left = 0, obs_right = 0
+205-> w_gen : x: -28.234373, z: -24.379364 -> obstacle = False, obs_left = 0, obs_right = 0
+206-> w_gen : x: -28.063725, z: -24.22023 -> obstacle = False, obs_left = 0, obs_right = 0
+207-> w_gen : x: -27.893076, z: -24.061096 -> obstacle = False, obs_left = 0, obs_right = 0
+208: GOAL CORRECTION ACTIVE
+209-> w_gen : x: -27.551779, z: -23.742828 -> obstacle = False, obs_left = 0, obs_right = 0
+210-> w_gen : x: -27.38113, z: -23.583694 -> obstacle = False, obs_left = 0, obs_right = 0
+211-> w_gen : x: -27.210482, z: -23.42456 -> obstacle = False, obs_left = 0, obs_right = 0
+212-> w_gen : x: -27.039833, z: -23.265427 -> obstacle = False, obs_left = 0, obs_right = 0
+213-> w_gen : x: -26.869184, z: -23.106293 -> obstacle = False, obs_left = 0, obs_right = 0
+214-> w_gen : x: -26.698536, z: -22.947159 -> obstacle = False, obs_left = 0, obs_right = 0
+215-> w_gen : x: -26.527887, z: -22.788025 -> obstacle = False, obs_left = 0, obs_right = 0
+216-> w_gen : x: -26.357239, z: -22.628891 -> obstacle = False, obs_left = 0, obs_right = 0
+217-> w_gen : x: -26.18659, z: -22.469757 -> obstacle = False, obs_left = 0, obs_right = 0
+218-> w_gen : x: -26.015942, z: -22.310623 -> obstacle = False, obs_left = 0, obs_right = 0
+219-> w_gen : x: -25.845293, z: -22.15149 -> obstacle = False, obs_left = 0, obs_right = 0
+220-> w_gen : x: -25.674644, z: -21.992355 -> obstacle = False, obs_left = 0, obs_right = 0
+221-> w_gen : x: -25.503996, z: -21.833221 -> obstacle = False, obs_left = 0, obs_right = 0
+222-> w_gen : x: -25.333347, z: -21.674088 -> obstacle = False, obs_left = 0, obs_right = 0
+223-> w_gen : x: -25.162699, z: -21.514954 -> obstacle = False, obs_left = 0, obs_right = 0
+224-> w_gen : x: -24.99205, z: -21.35582 -> obstacle = False, obs_left = 0, obs_right = 0
+225-> w_gen : x: -24.821402, z: -21.196686 -> obstacle = False, obs_left = 0, obs_right = 0
+226-> w_gen : x: -24.650753, z: -21.037552 -> obstacle = False, obs_left = 0, obs_right = 0
+227-> w_gen : x: -24.480104, z: -20.878418 -> obstacle = False, obs_left = 0, obs_right = 0
+228-> w_gen : x: -24.309456, z: -20.719284 -> obstacle = False, obs_left = 0, obs_right = 0
+229-> w_gen : x: -24.138807, z: -20.56015 -> obstacle = False, obs_left = 0, obs_right = 0
+230-> w_gen : x: -23.968159, z: -20.401016 -> obstacle = False, obs_left = 0, obs_right = 0
+231-> w_gen : x: -23.79751, z: -20.241882 -> obstacle = False, obs_left = 0, obs_right = 0
+232-> w_gen : x: -23.626862, z: -20.082748 -> obstacle = False, obs_left = 0, obs_right = 0
+233-> w_gen : x: -23.456213, z: -19.923615 -> obstacle = False, obs_left = 0, obs_right = 0
+234-> w_gen : x: -23.285564, z: -19.76448 -> obstacle = False, obs_left = 0, obs_right = 0
+235-> w_gen : x: -23.114916, z: -19.605347 -> obstacle = False, obs_left = 0, obs_right = 0
+236-> w_gen : x: -22.944267, z: -19.446213 -> obstacle = False, obs_left = 0, obs_right = 0
+237-> w_gen : x: -22.773619, z: -19.287079 -> obstacle = False, obs_left = 0, obs_right = 0
+238-> w_gen : x: -22.60297, z: -19.127945 -> obstacle = False, obs_left = 0, obs_right = 0
+239-> w_gen : x: -22.432322, z: -18.968811 -> obstacle = False, obs_left = 0, obs_right = 0
+240-> w_gen : x: -22.261673, z: -18.809677 -> obstacle = False, obs_left = 0, obs_right = 0
+241-> w_gen : x: -22.091024, z: -18.650543 -> obstacle = False, obs_left = 0, obs_right = 0
+242-> w_gen : x: -21.920376, z: -18.49141 -> obstacle = False, obs_left = 0, obs_right = 0
+243-> w_gen : x: -21.749727, z: -18.332275 -> obstacle = False, obs_left = 0, obs_right = 0
+244-> w_gen : x: -21.579079, z: -18.173141 -> obstacle = False, obs_left = 0, obs_right = 0
+245-> w_gen : x: -21.40843, z: -18.014008 -> obstacle = False, obs_left = 0, obs_right = 0
+246-> w_gen : x: -21.237782, z: -17.854874 -> obstacle = False, obs_left = 0, obs_right = 0
+247-> w_gen : x: -21.067133, z: -17.69574 -> obstacle = False, obs_left = 0, obs_right = 0
+248: GOAL CORRECTION ACTIVE
+249-> w_gen : x: -20.725836, z: -17.377472 -> obstacle = False, obs_left = 0, obs_right = 0
+250-> w_gen : x: -20.555187, z: -17.218338 -> obstacle = False, obs_left = 0, obs_right = 0
+251-> w_gen : x: -20.384539, z: -17.059204 -> obstacle = False, obs_left = 0, obs_right = 0
+252-> w_gen : x: -20.21389, z: -16.90007 -> obstacle = False, obs_left = 0, obs_right = 0
+253-> w_gen : x: -20.043242, z: -16.740936 -> obstacle = False, obs_left = 0, obs_right = 0
+254-> w_gen : x: -19.872593, z: -16.581802 -> obstacle = False, obs_left = 0, obs_right = 0
+255-> w_gen : x: -19.701944, z: -16.422668 -> obstacle = False, obs_left = 0, obs_right = 0
+256-> w_gen : x: -19.531296, z: -16.263535 -> obstacle = False, obs_left = 0, obs_right = 0
+257-> w_gen : x: -19.360647, z: -16.1044 -> obstacle = False, obs_left = 0, obs_right = 0
+258-> w_gen : x: -19.189999, z: -15.945268 -> obstacle = False, obs_left = 0, obs_right = 0
+259-> w_gen : x: -19.01935, z: -15.786135 -> obstacle = False, obs_left = 0, obs_right = 0
+260-> w_gen : x: -18.848701, z: -15.627002 -> obstacle = False, obs_left = 0, obs_right = 0
+261-> w_gen : x: -18.678053, z: -15.467869 -> obstacle = False, obs_left = 0, obs_right = 0
+262-> w_gen : x: -18.507404, z: -15.308736 -> obstacle = False, obs_left = 0, obs_right = 0
+263-> w_gen : x: -18.336756, z: -15.149603 -> obstacle = False, obs_left = 0, obs_right = 0
+264-> w_gen : x: -18.166107, z: -14.99047 -> obstacle = False, obs_left = 0, obs_right = 0
+265-> w_gen : x: -17.995459, z: -14.831337 -> obstacle = False, obs_left = 0, obs_right = 0
+266-> w_gen : x: -17.82481, z: -14.672204 -> obstacle = False, obs_left = 0, obs_right = 0
+267-> w_gen : x: -17.654161, z: -14.513071 -> obstacle = False, obs_left = 0, obs_right = 0
+268-> w_gen : x: -17.483513, z: -14.353938 -> obstacle = False, obs_left = 0, obs_right = 0
+269-> w_gen : x: -17.312864, z: -14.194805 -> obstacle = False, obs_left = 0, obs_right = 0
+270-> w_gen : x: -17.142216, z: -14.035672 -> obstacle = False, obs_left = 0, obs_right = 0
+271-> w_gen : x: -16.971567, z: -13.876539 -> obstacle = False, obs_left = 0, obs_right = 0
+272-> w_gen : x: -16.800919, z: -13.717406 -> obstacle = False, obs_left = 0, obs_right = 0
+273-> w_gen : x: -16.63027, z: -13.558273 -> obstacle = False, obs_left = 0, obs_right = 0
+274-> w_gen : x: -16.459621, z: -13.39914 -> obstacle = False, obs_left = 0, obs_right = 0
+275-> w_gen : x: -16.288973, z: -13.240007 -> obstacle = False, obs_left = 0, obs_right = 0
+276-> w_gen : x: -16.118324, z: -13.080874 -> obstacle = False, obs_left = 0, obs_right = 0
+277-> w_gen : x: -15.947675, z: -12.9217415 -> obstacle = False, obs_left = 0, obs_right = 0
+278-> w_gen : x: -15.777025, z: -12.762609 -> obstacle = False, obs_left = 0, obs_right = 0
+279-> w_gen : x: -15.606376, z: -12.603476 -> obstacle = False, obs_left = 0, obs_right = 0
+280-> w_gen : x: -15.435726, z: -12.444343 -> obstacle = False, obs_left = 0, obs_right = 0
+281-> w_gen : x: -15.265077, z: -12.28521 -> obstacle = False, obs_left = 0, obs_right = 0
+282-> w_gen : x: -15.094427, z: -12.126077 -> obstacle = False, obs_left = 0, obs_right = 0
+283-> w_gen : x: -14.923778, z: -11.966944 -> obstacle = False, obs_left = 0, obs_right = 0
+284-> w_gen : x: -14.753128, z: -11.807811 -> obstacle = False, obs_left = 0, obs_right = 0
+285-> w_gen : x: -14.582479, z: -11.648678 -> obstacle = False, obs_left = 0, obs_right = 0
+286-> w_gen : x: -14.411829, z: -11.489545 -> obstacle = False, obs_left = 0, obs_right = 0
+287-> w_gen : x: -14.241179, z: -11.330412 -> obstacle = False, obs_left = 0, obs_right = 0
+288: GOAL CORRECTION ACTIVE
+289-> w_gen : x: -13.89988, z: -11.012146 -> obstacle = False, obs_left = 0, obs_right = 0
+290-> w_gen : x: -13.729231, z: -10.853013 -> obstacle = False, obs_left = 0, obs_right = 0
+291-> w_gen : x: -13.558581, z: -10.69388 -> obstacle = False, obs_left = 0, obs_right = 0
+292-> w_gen : x: -13.387932, z: -10.534747 -> obstacle = False, obs_left = 0, obs_right = 0
+293-> w_gen : x: -13.217282, z: -10.375614 -> obstacle = False, obs_left = 0, obs_right = 0
+294-> w_gen : x: -13.046633, z: -10.216481 -> obstacle = False, obs_left = 0, obs_right = 0
+295-> w_gen : x: -12.875983, z: -10.057348 -> obstacle = False, obs_left = 0, obs_right = 0
+296-> w_gen : x: -12.705334, z: -9.898215 -> obstacle = False, obs_left = 0, obs_right = 0
+297-> w_gen : x: -12.534684, z: -9.739082 -> obstacle = False, obs_left = 0, obs_right = 0
+298-> w_gen : x: -12.364035, z: -9.579949 -> obstacle = False, obs_left = 0, obs_right = 0
+299-> w_gen : x: -12.193385, z: -9.420816 -> obstacle = False, obs_left = 0, obs_right = 0
+300-> w_gen : x: -12.022736, z: -9.261683 -> obstacle = False, obs_left = 0, obs_right = 0
+301-> w_gen : x: -11.852086, z: -9.1025505 -> obstacle = False, obs_left = 0, obs_right = 0
+302-> w_gen : x: -11.681437, z: -8.943418 -> obstacle = False, obs_left = 0, obs_right = 0
+303-> w_gen : x: -11.510787, z: -8.784285 -> obstacle = False, obs_left = 0, obs_right = 0
+304-> w_gen : x: -11.3401375, z: -8.625152 -> obstacle = False, obs_left = 0, obs_right = 0
+305-> w_gen : x: -11.169488, z: -8.466019 -> obstacle = False, obs_left = 0, obs_right = 0
+306-> w_gen : x: -10.998838, z: -8.306886 -> obstacle = False, obs_left = 0, obs_right = 0
+307-> w_gen : x: -10.828189, z: -8.147753 -> obstacle = False, obs_left = 0, obs_right = 0
+308-> w_gen : x: -10.657539, z: -7.98862 -> obstacle = False, obs_left = 0, obs_right = 0
+309-> w_gen : x: -10.48689, z: -7.829487 -> obstacle = False, obs_left = 0, obs_right = 0
+310-> l_obs : x: -10.31624, z: -7.670354 -> obstacle = True, obs_left = 1, obs_right = 0
+311-> l_obs : x: -10.31624, z: -7.670354 -> obstacle = True, obs_left = 3, obs_right = 0
+312-> l_obs : x: -10.31624, z: -7.670354 -> obstacle = True, obs_left = 6, obs_right = 0
+313-> l_obs : x: -10.31624, z: -7.670354 -> obstacle = True, obs_left = 8, obs_right = 0
+314-> l_obs : x: -10.31624, z: -7.670354 -> obstacle = True, obs_left = 2, obs_right = 0
+315-> w_gen : x: -10.31624, z: -7.670354 -> obstacle = False, obs_left = 0, obs_right = 0
+316-> l_obs : x: -10.1601095, z: -7.4969535 -> obstacle = True, obs_left = 5, obs_right = 0
+317-> w_gen : x: -10.1601095, z: -7.4969535 -> obstacle = False, obs_left = 0, obs_right = 0
+318-> w_gen : x: -10.00703, z: -7.3208547 -> obstacle = False, obs_left = 0, obs_right = 0
+319-> w_gen : x: -9.85395, z: -7.144756 -> obstacle = False, obs_left = 0, obs_right = 0
+320-> w_gen : x: -9.70087, z: -6.968657 -> obstacle = False, obs_left = 0, obs_right = 0
+321-> w_gen : x: -9.54779, z: -6.792558 -> obstacle = False, obs_left = 0, obs_right = 0
+322-> w_gen : x: -9.39471, z: -6.6164594 -> obstacle = False, obs_left = 0, obs_right = 0
+323-> w_gen : x: -9.24163, z: -6.4403605 -> obstacle = False, obs_left = 0, obs_right = 0
+324-> w_gen : x: -9.08855, z: -6.2642617 -> obstacle = False, obs_left = 0, obs_right = 0
+325-> w_gen : x: -8.93547, z: -6.088163 -> obstacle = False, obs_left = 0, obs_right = 0
+326-> w_gen : x: -8.78239, z: -5.912064 -> obstacle = False, obs_left = 0, obs_right = 0
+327-> w_gen : x: -8.62931, z: -5.7359653 -> obstacle = False, obs_left = 0, obs_right = 0
+328-> w_gen : x: -8.47623, z: -5.5598664 -> obstacle = False, obs_left = 0, obs_right = 0
+329-> w_gen : x: -8.32315, z: -5.3837676 -> obstacle = False, obs_left = 0, obs_right = 0
+330-> w_gen : x: -8.17007, z: -5.207669 -> obstacle = False, obs_left = 0, obs_right = 0
+331-> w_gen : x: -8.01699, z: -5.03157 -> obstacle = False, obs_left = 0, obs_right = 0
+332-> w_gen : x: -7.8639092, z: -4.855471 -> obstacle = False, obs_left = 0, obs_right = 0
+333-> w_gen : x: -7.710829, z: -4.6793723 -> obstacle = False, obs_left = 0, obs_right = 0
+334: GOAL CORRECTION ACTIVE
+335: GOAL CORRECTION ACTIVE
+336: GOAL CORRECTION ACTIVE
+337: GOAL CORRECTION ACTIVE
+338: GOAL CORRECTION ACTIVE
+339: GOAL CORRECTION ACTIVE
+340: GOAL CORRECTION ACTIVE
+341-> w_gen : x: -7.404668, z: -4.3271747 -> obstacle = False, obs_left = 0, obs_right = 0
+342-> w_gen : x: -7.234019, z: -4.1680417 -> obstacle = False, obs_left = 0, obs_right = 0
+343-> w_gen : x: -7.0633698, z: -4.0089087 -> obstacle = False, obs_left = 0, obs_right = 0
+344-> w_gen : x: -6.8927207, z: -3.8497758 -> obstacle = False, obs_left = 0, obs_right = 0
+345-> w_gen : x: -6.7220716, z: -3.6906428 -> obstacle = False, obs_left = 0, obs_right = 0
+346-> w_gen : x: -6.5514226, z: -3.5315099 -> obstacle = False, obs_left = 0, obs_right = 0
+347-> w_gen : x: -6.3807735, z: -3.372377 -> obstacle = False, obs_left = 0, obs_right = 0
+348-> w_gen : x: -6.2101245, z: -3.213244 -> obstacle = False, obs_left = 0, obs_right = 0
+349-> w_gen : x: -6.0394754, z: -3.054111 -> obstacle = False, obs_left = 0, obs_right = 0
+350-> w_gen : x: -5.8688264, z: -2.894978 -> obstacle = False, obs_left = 0, obs_right = 0
+351-> w_gen : x: -5.6981773, z: -2.735845 -> obstacle = False, obs_left = 0, obs_right = 0
+352-> w_gen : x: -5.5275283, z: -2.5767121 -> obstacle = False, obs_left = 0, obs_right = 0
+353-> w_gen : x: -5.356879, z: -2.4175792 -> obstacle = False, obs_left = 0, obs_right = 0
+354-> w_gen : x: -5.18623, z: -2.2584462 -> obstacle = False, obs_left = 0, obs_right = 0
+355-> w_gen : x: -5.015581, z: -2.0993133 -> obstacle = False, obs_left = 0, obs_right = 0
+356-> w_gen : x: -4.844932, z: -1.9401803 -> obstacle = False, obs_left = 0, obs_right = 0
+357-> w_gen : x: -4.674283, z: -1.7810473 -> obstacle = False, obs_left = 0, obs_right = 0
+358-> w_gen : x: -4.503634, z: -1.6219144 -> obstacle = False, obs_left = 0, obs_right = 0
+359-> w_gen : x: -4.332985, z: -1.4627814 -> obstacle = False, obs_left = 0, obs_right = 0
+360-> w_gen : x: -4.162336, z: -1.3036485 -> obstacle = False, obs_left = 0, obs_right = 0
+361-> w_gen : x: -3.9916866, z: -1.1445155 -> obstacle = False, obs_left = 0, obs_right = 0
+362-> w_gen : x: -3.8210373, z: -0.98538256 -> obstacle = False, obs_left = 0, obs_right = 0
+363-> w_gen : x: -3.650388, z: -0.8262496 -> obstacle = False, obs_left = 0, obs_right = 0
+364-> w_gen : x: -3.4797387, z: -0.66711664 -> obstacle = False, obs_left = 0, obs_right = 0
+365-> w_gen : x: -3.3090894, z: -0.5079837 -> obstacle = False, obs_left = 0, obs_right = 0
+366-> w_gen : x: -3.1384401, z: -0.34885073 -> obstacle = False, obs_left = 0, obs_right = 0
+367-> w_gen : x: -2.9677908, z: -0.18971777 -> obstacle = False, obs_left = 0, obs_right = 0
+368-> w_gen : x: -2.7971416, z: -0.030584812 -> obstacle = False, obs_left = 0, obs_right = 0
+369-> w_gen : x: -2.6264923, z: 0.12854815 -> obstacle = False, obs_left = 0, obs_right = 0
+370-> w_gen : x: -2.455843, z: 0.2876811 -> obstacle = False, obs_left = 0, obs_right = 0
+371-> w_gen : x: -2.2851937, z: 0.44681406 -> obstacle = False, obs_left = 0, obs_right = 0
+372-> w_gen : x: -2.1145444, z: 0.605947 -> obstacle = False, obs_left = 0, obs_right = 0
+373-> w_gen : x: -1.9438952, z: 0.76508 -> obstacle = False, obs_left = 0, obs_right = 0
+374-> w_gen : x: -1.773246, z: 0.92421293 -> obstacle = False, obs_left = 0, obs_right = 0
+375-> w_gen : x: -1.6025969, z: 1.0833459 -> obstacle = False, obs_left = 0, obs_right = 0
+376-> w_gen : x: -1.4319477, z: 1.2424788 -> obstacle = False, obs_left = 0, obs_right = 0
+377-> w_gen : x: -1.2612985, z: 1.4016118 -> obstacle = False, obs_left = 0, obs_right = 0
+378-> w_gen : x: -1.0906494, z: 1.5607448 -> obstacle = False, obs_left = 0, obs_right = 0
+379-> w_gen : x: -0.92000014, z: 1.7198777 -> obstacle = False, obs_left = 0, obs_right = 0
+380: GOAL CORRECTION ACTIVE
+381-> w_gen : x: -0.5787017, z: 2.0381436 -> obstacle = False, obs_left = 0, obs_right = 0
+382-> w_gen : x: -0.40805244, z: 2.1972766 -> obstacle = False, obs_left = 0, obs_right = 0
+383-> w_gen : x: -0.23740323, z: 2.3564095 -> obstacle = False, obs_left = 0, obs_right = 0
+384-> w_gen : x: -0.06675401, z: 2.5155425 -> obstacle = False, obs_left = 0, obs_right = 0
+385-> w_gen : x: 0.1038952, z: 2.6746755 -> obstacle = False, obs_left = 0, obs_right = 0
+386-> w_gen : x: 0.27454442, z: 2.8338084 -> obstacle = False, obs_left = 0, obs_right = 0
+387-> w_gen : x: 0.44519365, z: 2.9929414 -> obstacle = False, obs_left = 0, obs_right = 0
+388-> w_gen : x: 0.6158429, z: 3.1520743 -> obstacle = False, obs_left = 0, obs_right = 0
+389-> w_gen : x: 0.7864921, z: 3.3112073 -> obstacle = False, obs_left = 0, obs_right = 0
+390-> w_gen : x: 0.95714134, z: 3.4703403 -> obstacle = False, obs_left = 0, obs_right = 0
+391-> w_gen : x: 1.1277906, z: 3.6294732 -> obstacle = False, obs_left = 0, obs_right = 0
+392-> w_gen : x: 1.2984397, z: 3.7886062 -> obstacle = False, obs_left = 0, obs_right = 0
+393-> w_gen : x: 1.4690889, z: 3.9477391 -> obstacle = False, obs_left = 0, obs_right = 0
+394-> w_gen : x: 1.6397381, z: 4.106872 -> obstacle = False, obs_left = 0, obs_right = 0
+395-> w_gen : x: 1.8103873, z: 4.266005 -> obstacle = False, obs_left = 0, obs_right = 0
+396-> w_gen : x: 1.9810364, z: 4.425138 -> obstacle = False, obs_left = 0, obs_right = 0
+397-> w_gen : x: 2.1516857, z: 4.584271 -> obstacle = False, obs_left = 0, obs_right = 0
+398-> w_gen : x: 2.322335, z: 4.743404 -> obstacle = False, obs_left = 0, obs_right = 0
+399-> w_gen : x: 2.4929843, z: 4.902537 -> obstacle = False, obs_left = 0, obs_right = 0
+400-> w_gen : x: 2.6636336, z: 5.06167 -> obstacle = False, obs_left = 0, obs_right = 0
+401-> w_gen : x: 2.8342829, z: 5.220803 -> obstacle = False, obs_left = 0, obs_right = 0
+402-> w_gen : x: 3.0049322, z: 5.3799357 -> obstacle = False, obs_left = 0, obs_right = 0
+403-> w_gen : x: 3.1755815, z: 5.5390687 -> obstacle = False, obs_left = 0, obs_right = 0
+404-> w_gen : x: 3.3462307, z: 5.6982017 -> obstacle = False, obs_left = 0, obs_right = 0
+405-> w_gen : x: 3.51688, z: 5.8573346 -> obstacle = False, obs_left = 0, obs_right = 0
+406-> w_gen : x: 3.6875293, z: 6.0164676 -> obstacle = False, obs_left = 0, obs_right = 0
+407-> w_gen : x: 3.8581786, z: 6.1756005 -> obstacle = False, obs_left = 0, obs_right = 0
+408-> w_gen : x: 4.0288277, z: 6.3347335 -> obstacle = False, obs_left = 0, obs_right = 0
+409-> w_gen : x: 4.1994767, z: 6.4938664 -> obstacle = False, obs_left = 0, obs_right = 0
+410-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 22, obs_right = 0
+411-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 19, obs_right = 0
+412-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 27, obs_right = 0
+413-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 30, obs_right = 0
+414-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 34, obs_right = 0
+415-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 38, obs_right = 0
+416-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 37, obs_right = 0
+417-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 34, obs_right = 0
+418-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 35, obs_right = 0
+419-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 33, obs_right = 0
+420-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 28, obs_right = 0
+421-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 24, obs_right = 0
+422-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 20, obs_right = 0
+423-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 19, obs_right = 0
+424-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 14, obs_right = 0
+425-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 12, obs_right = 0
+426-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 9, obs_right = 0
+427-> l_obs : x: 4.370126, z: 6.6529994 -> obstacle = True, obs_left = 1, obs_right = 0
+428-> w_gen : x: 4.370126, z: 6.6529994 -> obstacle = False, obs_left = 0, obs_right = 0
+429-> w_gen : x: 4.483248, z: 6.857077 -> obstacle = False, obs_left = 0, obs_right = 0
+430-> w_gen : x: 4.5963707, z: 7.061155 -> obstacle = False, obs_left = 0, obs_right = 0
+431-> w_gen : x: 4.709493, z: 7.2652326 -> obstacle = False, obs_left = 0, obs_right = 0
+432-> w_gen : x: 4.8226156, z: 7.4693103 -> obstacle = False, obs_left = 0, obs_right = 0
+433-> w_gen : x: 4.935738, z: 7.673388 -> obstacle = False, obs_left = 0, obs_right = 0
+434-> w_gen : x: 5.0488605, z: 7.8774657 -> obstacle = False, obs_left = 0, obs_right = 0
+435-> w_gen : x: 5.161983, z: 8.081544 -> obstacle = False, obs_left = 0, obs_right = 0
+436-> w_gen : x: 5.2751055, z: 8.285622 -> obstacle = False, obs_left = 0, obs_right = 0
+437-> w_gen : x: 5.388228, z: 8.489699 -> obstacle = False, obs_left = 0, obs_right = 0
+438: GOAL CORRECTION ACTIVE
+439: GOAL CORRECTION ACTIVE
+440: GOAL CORRECTION ACTIVE
+441: GOAL CORRECTION ACTIVE
+442: GOAL CORRECTION ACTIVE
+443: GOAL CORRECTION ACTIVE
+444: GOAL CORRECTION ACTIVE
+445: GOAL CORRECTION ACTIVE
+446: GOAL CORRECTION ACTIVE
+447: GOAL CORRECTION ACTIVE
+448: GOAL CORRECTION ACTIVE
+449: GOAL CORRECTION ACTIVE
+450: GOAL CORRECTION ACTIVE
+451: GOAL CORRECTION ACTIVE
+452: GOAL CORRECTION ACTIVE
+453: GOAL CORRECTION ACTIVE
+454: GOAL CORRECTION ACTIVE
+455: GOAL CORRECTION ACTIVE
+456: GOAL CORRECTION ACTIVE
+457-> w_gen : x: 5.614473, z: 8.897855 -> obstacle = False, obs_left = 0, obs_right = 0
+458-> w_gen : x: 5.785122, z: 9.056988 -> obstacle = False, obs_left = 0, obs_right = 0
+459-> w_gen : x: 5.955771, z: 9.216121 -> obstacle = False, obs_left = 0, obs_right = 0
+460-> w_gen : x: 6.12642, z: 9.375254 -> obstacle = False, obs_left = 0, obs_right = 0
+461-> w_gen : x: 6.297069, z: 9.534387 -> obstacle = False, obs_left = 0, obs_right = 0
+462-> w_gen : x: 6.467718, z: 9.69352 -> obstacle = False, obs_left = 0, obs_right = 0
+463-> w_gen : x: 6.638367, z: 9.852653 -> obstacle = False, obs_left = 0, obs_right = 0
+464-> w_gen : x: 6.809016, z: 10.0117855 -> obstacle = False, obs_left = 0, obs_right = 0
+465-> w_gen : x: 6.9796653, z: 10.170918 -> obstacle = False, obs_left = 0, obs_right = 0
+466-> w_gen : x: 7.1503143, z: 10.330051 -> obstacle = False, obs_left = 0, obs_right = 0
+467-> w_gen : x: 7.3209634, z: 10.489184 -> obstacle = False, obs_left = 0, obs_right = 0
+468-> w_gen : x: 7.4916124, z: 10.648317 -> obstacle = False, obs_left = 0, obs_right = 0
+469-> w_gen : x: 7.6622615, z: 10.80745 -> obstacle = False, obs_left = 0, obs_right = 0
+470-> w_gen : x: 7.8329105, z: 10.966583 -> obstacle = False, obs_left = 0, obs_right = 0
+471-> w_gen : x: 8.00356, z: 11.125716 -> obstacle = False, obs_left = 0, obs_right = 0
+472-> w_gen : x: 8.17421, z: 11.284849 -> obstacle = False, obs_left = 0, obs_right = 0
+473-> w_gen : x: 8.344859, z: 11.443982 -> obstacle = False, obs_left = 0, obs_right = 0
+474-> w_gen : x: 8.515509, z: 11.603115 -> obstacle = False, obs_left = 0, obs_right = 0
+475-> w_gen : x: 8.686158, z: 11.762248 -> obstacle = False, obs_left = 0, obs_right = 0
+476-> w_gen : x: 8.856808, z: 11.921381 -> obstacle = False, obs_left = 0, obs_right = 0
+477-> w_gen : x: 9.027457, z: 12.080514 -> obstacle = False, obs_left = 0, obs_right = 0
+478-> w_gen : x: 9.198107, z: 12.239647 -> obstacle = False, obs_left = 0, obs_right = 0
+479-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 2
+480-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 2
+481-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 3
+482-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 2
+483-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 2
+484-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 3
+485-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 4
+486-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 4
+487-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 4
+488-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 6
+489-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 6
+490-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 3
+491-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 5
+492-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 1
+493-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 6
+494-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 7
+495-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 8
+496-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 13
+497-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 15
+498-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 18
+499-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 19
+500-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 13
+501-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 8
+502-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 8
+503-> j_obs : x: 9.368756, z: 12.39878 -> obstacle = True, obs_left = 0, obs_right = 5
+504-> w_gen : x: 9.368756, z: 12.39878 -> obstacle = False, obs_left = 0, obs_right = 0
+505-> w_gen : x: 9.59067, z: 12.470883 -> obstacle = False, obs_left = 0, obs_right = 0
+506-> w_gen : x: 9.812583, z: 12.542987 -> obstacle = False, obs_left = 0, obs_right = 0
+507-> w_gen : x: 10.034496, z: 12.61509 -> obstacle = False, obs_left = 0, obs_right = 0
+508-> w_gen : x: 10.25641, z: 12.687194 -> obstacle = False, obs_left = 0, obs_right = 0
+509-> w_gen : x: 10.478323, z: 12.759297 -> obstacle = False, obs_left = 0, obs_right = 0
+510-> w_gen : x: 10.700236, z: 12.831401 -> obstacle = False, obs_left = 0, obs_right = 0
+511-> w_gen : x: 10.92215, z: 12.903504 -> obstacle = False, obs_left = 0, obs_right = 0
+512-> w_gen : x: 11.144063, z: 12.975608 -> obstacle = False, obs_left = 0, obs_right = 0
+513-> w_gen : x: 11.365976, z: 13.047711 -> obstacle = False, obs_left = 0, obs_right = 0
+514-> w_gen : x: 11.58789, z: 13.119815 -> obstacle = False, obs_left = 0, obs_right = 0
+515-> w_gen : x: 11.809803, z: 13.191918 -> obstacle = False, obs_left = 0, obs_right = 0
+516-> w_gen : x: 12.031716, z: 13.264022 -> obstacle = False, obs_left = 0, obs_right = 0
+517-> w_gen : x: 12.25363, z: 13.336125 -> obstacle = False, obs_left = 0, obs_right = 0
+518-> w_gen : x: 12.475543, z: 13.408229 -> obstacle = False, obs_left = 0, obs_right = 0
+519-> w_gen : x: 12.697456, z: 13.480332 -> obstacle = False, obs_left = 0, obs_right = 0
+520-> w_gen : x: 12.91937, z: 13.552436 -> obstacle = False, obs_left = 0, obs_right = 0
+521: GOAL CORRECTION ACTIVE
+522: GOAL CORRECTION ACTIVE
+523: GOAL CORRECTION ACTIVE
+524: GOAL CORRECTION ACTIVE
+525: GOAL CORRECTION ACTIVE
+526: GOAL CORRECTION ACTIVE
+527: GOAL CORRECTION ACTIVE
+528: GOAL CORRECTION ACTIVE
+529: GOAL CORRECTION ACTIVE
+530: GOAL CORRECTION ACTIVE
+531: GOAL CORRECTION ACTIVE
+532: GOAL CORRECTION ACTIVE
+533: GOAL CORRECTION ACTIVE
+534: GOAL CORRECTION ACTIVE
+535: GOAL CORRECTION ACTIVE
+536: GOAL CORRECTION ACTIVE
+537: GOAL CORRECTION ACTIVE
+538: GOAL CORRECTION ACTIVE
+539: GOAL CORRECTION ACTIVE
+540: GOAL CORRECTION ACTIVE
+541: GOAL CORRECTION ACTIVE
+542: GOAL CORRECTION ACTIVE
+543: GOAL CORRECTION ACTIVE
+544: GOAL CORRECTION ACTIVE
+545: GOAL CORRECTION ACTIVE
+546: GOAL CORRECTION ACTIVE
+547: GOAL CORRECTION ACTIVE
+548: GOAL CORRECTION ACTIVE
+549-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 1, obs_right = 0
+550-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 3, obs_right = 0
+551-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 2, obs_right = 0
+552-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 9, obs_right = 0
+553-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 10, obs_right = 0
+554-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 13, obs_right = 0
+555-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 8, obs_right = 0
+556-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 8, obs_right = 0
+557-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 12, obs_right = 0
+558-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 10, obs_right = 0
+559-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 14, obs_right = 0
+560-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 18, obs_right = 0
+561-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 18, obs_right = 0
+562-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 23, obs_right = 0
+563-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 20, obs_right = 0
+564-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 24, obs_right = 0
+565-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 22, obs_right = 0
+566-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 21, obs_right = 0
+567-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 17, obs_right = 0
+568-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 11, obs_right = 0
+569-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 11, obs_right = 0
+570-> l_obs : x: 13.363196, z: 13.696643 -> obstacle = True, obs_left = 2, obs_right = 0
+571-> w_gen : x: 13.363196, z: 13.696643 -> obstacle = False, obs_left = 0, obs_right = 0
+572-> w_gen : x: 13.454367, z: 13.9114275 -> obstacle = False, obs_left = 0, obs_right = 0
+573-> w_gen : x: 13.545537, z: 14.126212 -> obstacle = False, obs_left = 0, obs_right = 0
+574-> w_gen : x: 13.636707, z: 14.340997 -> obstacle = False, obs_left = 0, obs_right = 0
+575-> w_gen : x: 13.727878, z: 14.555781 -> obstacle = False, obs_left = 0, obs_right = 0
+576-> w_gen : x: 13.819048, z: 14.770566 -> obstacle = False, obs_left = 0, obs_right = 0
+577-> w_gen : x: 13.910218, z: 14.985351 -> obstacle = False, obs_left = 0, obs_right = 0
+578-> w_gen : x: 14.001389, z: 15.200135 -> obstacle = False, obs_left = 0, obs_right = 0
+579-> w_gen : x: 14.092559, z: 15.41492 -> obstacle = False, obs_left = 0, obs_right = 0
+580-> w_gen : x: 14.183729, z: 15.629704 -> obstacle = False, obs_left = 0, obs_right = 0
+581-> w_gen : x: 14.2748995, z: 15.844489 -> obstacle = False, obs_left = 0, obs_right = 0
+582-> w_gen : x: 14.36607, z: 16.059273 -> obstacle = False, obs_left = 0, obs_right = 0
+583-> w_gen : x: 14.45724, z: 16.274057 -> obstacle = False, obs_left = 0, obs_right = 0
+584-> w_gen : x: 14.54841, z: 16.488842 -> obstacle = False, obs_left = 0, obs_right = 0
+585-> w_gen : x: 14.639581, z: 16.703627 -> obstacle = False, obs_left = 0, obs_right = 0
+586-> w_gen : x: 14.730751, z: 16.918411 -> obstacle = False, obs_left = 0, obs_right = 0
+587-> w_gen : x: 14.821921, z: 17.133196 -> obstacle = False, obs_left = 0, obs_right = 0
+588-> w_gen : x: 14.913092, z: 17.34798 -> obstacle = False, obs_left = 0, obs_right = 0
+589-> w_gen : x: 15.004262, z: 17.562765 -> obstacle = False, obs_left = 0, obs_right = 0
+590-> w_gen : x: 15.095432, z: 17.77755 -> obstacle = False, obs_left = 0, obs_right = 0
+591-> w_gen : x: 15.186603, z: 17.992334 -> obstacle = False, obs_left = 0, obs_right = 0
+592-> w_gen : x: 15.277773, z: 18.207119 -> obstacle = False, obs_left = 0, obs_right = 0
+593-> w_gen : x: 15.368943, z: 18.421904 -> obstacle = False, obs_left = 0, obs_right = 0
+594-> w_gen : x: 15.460114, z: 18.636688 -> obstacle = False, obs_left = 0, obs_right = 0
+595-> w_gen : x: 15.551284, z: 18.851473 -> obstacle = False, obs_left = 0, obs_right = 0
+596-> w_gen : x: 15.642454, z: 19.066257 -> obstacle = False, obs_left = 0, obs_right = 0
+597-> w_gen : x: 15.733624, z: 19.281042 -> obstacle = False, obs_left = 0, obs_right = 0
+598-> w_gen : x: 15.824795, z: 19.495827 -> obstacle = False, obs_left = 0, obs_right = 0
+599-> w_gen : x: 15.915965, z: 19.710611 -> obstacle = False, obs_left = 0, obs_right = 0
+600-> w_gen : x: 16.007135, z: 19.925396 -> obstacle = False, obs_left = 0, obs_right = 0
+601-> w_gen : x: 16.098307, z: 20.14018 -> obstacle = False, obs_left = 0, obs_right = 0
+602-> w_gen : x: 16.189478, z: 20.354965 -> obstacle = False, obs_left = 0, obs_right = 0
+603-> w_gen : x: 16.28065, z: 20.56975 -> obstacle = False, obs_left = 0, obs_right = 0
+604-> w_gen : x: 16.37182, z: 20.784534 -> obstacle = False, obs_left = 0, obs_right = 0
+605-> w_gen : x: 16.462992, z: 20.99932 -> obstacle = False, obs_left = 0, obs_right = 0
+606-> w_gen : x: 16.554163, z: 21.214104 -> obstacle = False, obs_left = 0, obs_right = 0
+607-> w_gen : x: 16.645334, z: 21.428888 -> obstacle = False, obs_left = 0, obs_right = 0
+608-> w_gen : x: 16.736506, z: 21.643673 -> obstacle = False, obs_left = 0, obs_right = 0
+609-> w_gen : x: 16.827677, z: 21.858458 -> obstacle = False, obs_left = 0, obs_right = 0
+610: GOAL CORRECTION ACTIVE
+611: GOAL CORRECTION ACTIVE
+612: GOAL CORRECTION ACTIVE
+613: GOAL CORRECTION ACTIVE
+614: GOAL CORRECTION ACTIVE
+615: GOAL CORRECTION ACTIVE
+616: GOAL CORRECTION ACTIVE
+617: GOAL CORRECTION ACTIVE
+618: GOAL CORRECTION ACTIVE
+619: GOAL CORRECTION ACTIVE
+620: GOAL CORRECTION ACTIVE
+621: GOAL CORRECTION ACTIVE
+622: GOAL CORRECTION ACTIVE
+623: GOAL CORRECTION ACTIVE
+624: GOAL CORRECTION ACTIVE
+625: GOAL CORRECTION ACTIVE
+626: GOAL CORRECTION ACTIVE
+627: GOAL CORRECTION ACTIVE
+628: GOAL CORRECTION ACTIVE
+629: GOAL CORRECTION ACTIVE
+630: GOAL CORRECTION ACTIVE
+631: GOAL CORRECTION ACTIVE
+632: GOAL CORRECTION ACTIVE
+633: GOAL CORRECTION ACTIVE
+634: GOAL CORRECTION ACTIVE
+635: GOAL CORRECTION ACTIVE
+636: GOAL CORRECTION ACTIVE
+637: GOAL CORRECTION ACTIVE
+638: GOAL CORRECTION ACTIVE
+639-> w_gen : x: 17.01002, z: 22.288027 -> obstacle = False, obs_left = 0, obs_right = 0
+640-> w_gen : x: 17.191353, z: 22.434868 -> obstacle = False, obs_left = 0, obs_right = 0
+641-> w_gen : x: 17.372686, z: 22.581709 -> obstacle = False, obs_left = 0, obs_right = 0
+642-> w_gen : x: 17.55402, z: 22.72855 -> obstacle = False, obs_left = 0, obs_right = 0
+643-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 3
+644-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 5
+645-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 9
+646-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 11
+647-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 14
+648-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 21
+649-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 21
+650-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 20
+651-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 21
+652-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 16
+653-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 23
+654-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 24
+655-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 27
+656-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 27
+657-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 27
+658-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 25
+659-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 20
+660-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 21
+661-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 19
+662-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 13
+663-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 11
+664-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 11
+665-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 4
+666-> j_obs : x: 17.735353, z: 22.875391 -> obstacle = True, obs_left = 0, obs_right = 1
+667-> w_gen : x: 17.735353, z: 22.875391 -> obstacle = False, obs_left = 0, obs_right = 0
+668-> w_gen : x: 17.960735, z: 22.935781 -> obstacle = False, obs_left = 0, obs_right = 0
+669-> w_gen : x: 18.186117, z: 22.996172 -> obstacle = False, obs_left = 0, obs_right = 0
+670-> w_gen : x: 18.411499, z: 23.056562 -> obstacle = False, obs_left = 0, obs_right = 0
+671-> w_gen : x: 18.63688, z: 23.116953 -> obstacle = False, obs_left = 0, obs_right = 0
+672-> w_gen : x: 18.862263, z: 23.177343 -> obstacle = False, obs_left = 0, obs_right = 0
+673-> w_gen : x: 19.087645, z: 23.237734 -> obstacle = False, obs_left = 0, obs_right = 0
+674-> w_gen : x: 19.313026, z: 23.298124 -> obstacle = False, obs_left = 0, obs_right = 0
+675-> w_gen : x: 19.538408, z: 23.358515 -> obstacle = False, obs_left = 0, obs_right = 0
+676-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 71
+677-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 73
+678-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 75
+679-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 76
+680-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 73
+681-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 68
+682-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 66
+683-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 63
+684-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 60
+685-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 56
+686-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 55
+687-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 49
+688-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 47
+689-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 43
+690-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 41
+691-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 38
+692-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 33
+693-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 31
+694-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 27
+695-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 24
+696-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 20
+697-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 16
+698-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 13
+699-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 10
+700-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 5
+701-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 4
+702-> j_obs : x: 19.76379, z: 23.418905 -> obstacle = True, obs_left = 0, obs_right = 2
+703-> w_gen : x: 19.76379, z: 23.418905 -> obstacle = False, obs_left = 0, obs_right = 0
+704-> w_gen : x: 19.992025, z: 23.370392 -> obstacle = False, obs_left = 0, obs_right = 0
+705-> w_gen : x: 20.22026, z: 23.321878 -> obstacle = False, obs_left = 0, obs_right = 0
+706-> w_gen : x: 20.448496, z: 23.273365 -> obstacle = False, obs_left = 0, obs_right = 0
+707-> w_gen : x: 20.676731, z: 23.224852 -> obstacle = False, obs_left = 0, obs_right = 0
+708-> w_gen : x: 20.904966, z: 23.176338 -> obstacle = False, obs_left = 0, obs_right = 0
+709-> w_gen : x: 21.133202, z: 23.127825 -> obstacle = False, obs_left = 0, obs_right = 0
+710-> w_gen : x: 21.361437, z: 23.079311 -> obstacle = False, obs_left = 0, obs_right = 0
+711-> w_gen : x: 21.589672, z: 23.030798 -> obstacle = False, obs_left = 0, obs_right = 0
+712-> w_gen : x: 21.817907, z: 22.982285 -> obstacle = False, obs_left = 0, obs_right = 0
+713-> w_gen : x: 22.046143, z: 22.933771 -> obstacle = False, obs_left = 0, obs_right = 0
+714-> w_gen : x: 22.274378, z: 22.885258 -> obstacle = False, obs_left = 0, obs_right = 0
+715-> w_gen : x: 22.502613, z: 22.836744 -> obstacle = False, obs_left = 0, obs_right = 0
+716-> w_gen : x: 22.730848, z: 22.78823 -> obstacle = False, obs_left = 0, obs_right = 0
+717-> w_gen : x: 22.959084, z: 22.739717 -> obstacle = False, obs_left = 0, obs_right = 0
+718-> w_gen : x: 23.187319, z: 22.691204 -> obstacle = False, obs_left = 0, obs_right = 0
+719-> w_gen : x: 23.415554, z: 22.64269 -> obstacle = False, obs_left = 0, obs_right = 0
+720-> w_gen : x: 23.64379, z: 22.594177 -> obstacle = False, obs_left = 0, obs_right = 0
+721-> w_gen : x: 23.872025, z: 22.545664 -> obstacle = False, obs_left = 0, obs_right = 0
+722-> w_gen : x: 24.10026, z: 22.49715 -> obstacle = False, obs_left = 0, obs_right = 0
+723-> w_gen : x: 24.328495, z: 22.448637 -> obstacle = False, obs_left = 0, obs_right = 0
+724-> w_gen : x: 24.55673, z: 22.400124 -> obstacle = False, obs_left = 0, obs_right = 0
+725-> w_gen : x: 24.784966, z: 22.35161 -> obstacle = False, obs_left = 0, obs_right = 0
+726-> w_gen : x: 25.0132, z: 22.303097 -> obstacle = False, obs_left = 0, obs_right = 0
+727-> w_gen : x: 25.241436, z: 22.254583 -> obstacle = False, obs_left = 0, obs_right = 0
+728-> w_gen : x: 25.469671, z: 22.20607 -> obstacle = False, obs_left = 0, obs_right = 0
+729: GOAL CORRECTION ACTIVE
+730: GOAL CORRECTION ACTIVE
+731: GOAL CORRECTION ACTIVE
+732: GOAL CORRECTION ACTIVE
+733: GOAL CORRECTION ACTIVE
+734: GOAL CORRECTION ACTIVE
+735: GOAL CORRECTION ACTIVE
+736: GOAL CORRECTION ACTIVE
+737: GOAL CORRECTION ACTIVE
+738: GOAL CORRECTION ACTIVE
+739: GOAL CORRECTION ACTIVE
+740: GOAL CORRECTION ACTIVE
+741: GOAL CORRECTION ACTIVE
+742: GOAL CORRECTION ACTIVE
+743: GOAL CORRECTION ACTIVE
+744: GOAL CORRECTION ACTIVE
+745: GOAL CORRECTION ACTIVE
+746: GOAL CORRECTION ACTIVE
+747: GOAL CORRECTION ACTIVE
+748: GOAL CORRECTION ACTIVE
+749: GOAL CORRECTION ACTIVE
+750: GOAL CORRECTION ACTIVE
+751: GOAL CORRECTION ACTIVE
+752: GOAL CORRECTION ACTIVE
+753: GOAL CORRECTION ACTIVE
+754: GOAL CORRECTION ACTIVE
+755: GOAL CORRECTION ACTIVE
+756: GOAL CORRECTION ACTIVE
+757: GOAL CORRECTION ACTIVE
+758: GOAL CORRECTION ACTIVE
+759: GOAL CORRECTION ACTIVE
+760: GOAL CORRECTION ACTIVE
+761: GOAL CORRECTION ACTIVE
+762: GOAL CORRECTION ACTIVE
+763: GOAL CORRECTION ACTIVE
+764: GOAL CORRECTION ACTIVE
+765: GOAL CORRECTION ACTIVE
+766: GOAL CORRECTION ACTIVE
+767: GOAL CORRECTION ACTIVE
+768: GOAL CORRECTION ACTIVE
+769: GOAL CORRECTION ACTIVE
+770: GOAL CORRECTION ACTIVE
+771: GOAL CORRECTION ACTIVE
+772: GOAL CORRECTION ACTIVE
+773: GOAL CORRECTION ACTIVE
+774: GOAL CORRECTION ACTIVE
+775: GOAL CORRECTION ACTIVE
+776: GOAL CORRECTION ACTIVE
+777: GOAL CORRECTION ACTIVE
+778: GOAL CORRECTION ACTIVE
+779: GOAL CORRECTION ACTIVE
+780: GOAL CORRECTION ACTIVE
+781: GOAL CORRECTION ACTIVE
+782: GOAL CORRECTION ACTIVE
+783: GOAL CORRECTION ACTIVE
+784: GOAL CORRECTION ACTIVE
+785: GOAL CORRECTION ACTIVE
+786: GOAL CORRECTION ACTIVE
+787: GOAL CORRECTION ACTIVE
+788: GOAL CORRECTION ACTIVE
+789: GOAL CORRECTION ACTIVE
+790: GOAL CORRECTION ACTIVE
+791: GOAL CORRECTION ACTIVE
+792-> w_gen : x: 25.926142, z: 22.109043 -> obstacle = False, obs_left = 0, obs_right = 0
+793-> w_gen : x: 26.076126, z: 22.287786 -> obstacle = False, obs_left = 0, obs_right = 0
+794-> w_gen : x: 26.22611, z: 22.46653 -> obstacle = False, obs_left = 0, obs_right = 0
+795-> w_gen : x: 26.376095, z: 22.645273 -> obstacle = False, obs_left = 0, obs_right = 0
+796-> w_gen : x: 26.52608, z: 22.824017 -> obstacle = False, obs_left = 0, obs_right = 0
+797-> w_gen : x: 26.676064, z: 23.00276 -> obstacle = False, obs_left = 0, obs_right = 0
+798-> w_gen : x: 26.826048, z: 23.181503 -> obstacle = False, obs_left = 0, obs_right = 0
+799-> w_gen : x: 26.976032, z: 23.360247 -> obstacle = False, obs_left = 0, obs_right = 0
+800-> w_gen : x: 27.126017, z: 23.53899 -> obstacle = False, obs_left = 0, obs_right = 0
+801-> w_gen : x: 27.276001, z: 23.717733 -> obstacle = False, obs_left = 0, obs_right = 0
+802-> j_obs : x: 27.425985, z: 23.896477 -> obstacle = True, obs_left = 0, obs_right = 2
+803-> j_obs : x: 27.425985, z: 23.896477 -> obstacle = True, obs_left = 0, obs_right = 2
+804-> j_obs : x: 27.425985, z: 23.896477 -> obstacle = True, obs_left = 0, obs_right = 3
+805-> j_obs : x: 27.425985, z: 23.896477 -> obstacle = True, obs_left = 0, obs_right = 3
+806-> j_obs : x: 27.425985, z: 23.896477 -> obstacle = True, obs_left = 0, obs_right = 3
+807-> w_gen : x: 27.425985, z: 23.896477 -> obstacle = False, obs_left = 0, obs_right = 0
+808-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 13
+809-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 12
+810-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 11
+811-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 12
+812-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 10
+813-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 12
+814-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 8
+815-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 7
+816-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 7
+817-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 3
+818-> j_obs : x: 27.590977, z: 24.061468 -> obstacle = True, obs_left = 0, obs_right = 3
+819-> w_gen : x: 27.590977, z: 24.061468 -> obstacle = False, obs_left = 0, obs_right = 0
+820-> w_gen : x: 27.784418, z: 24.191946 -> obstacle = False, obs_left = 0, obs_right = 0
+821-> w_gen : x: 27.97786, z: 24.322424 -> obstacle = False, obs_left = 0, obs_right = 0
+822-> w_gen : x: 28.1713, z: 24.452902 -> obstacle = False, obs_left = 0, obs_right = 0
+823-> w_gen : x: 28.364742, z: 24.58338 -> obstacle = False, obs_left = 0, obs_right = 0
+824-> w_gen : x: 28.558184, z: 24.713858 -> obstacle = False, obs_left = 0, obs_right = 0
+825-> w_gen : x: 28.751625, z: 24.844336 -> obstacle = False, obs_left = 0, obs_right = 0
+826-> w_gen : x: 28.945066, z: 24.974813 -> obstacle = False, obs_left = 0, obs_right = 0
+827-> w_gen : x: 29.138508, z: 25.105291 -> obstacle = False, obs_left = 0, obs_right = 0
+828-> w_gen : x: 29.33195, z: 25.23577 -> obstacle = False, obs_left = 0, obs_right = 0
+829-> w_gen : x: 29.52539, z: 25.366247 -> obstacle = False, obs_left = 0, obs_right = 0
+830-> w_gen : x: 29.718832, z: 25.496725 -> obstacle = False, obs_left = 0, obs_right = 0
+831-> w_gen : x: 29.912273, z: 25.627203 -> obstacle = False, obs_left = 0, obs_right = 0
+832-> w_gen : x: 30.105715, z: 25.75768 -> obstacle = False, obs_left = 0, obs_right = 0
+833-> w_gen : x: 30.299156, z: 25.888159 -> obstacle = False, obs_left = 0, obs_right = 0
+834-> w_gen : x: 30.492598, z: 26.018637 -> obstacle = False, obs_left = 0, obs_right = 0
+835-> w_gen : x: 30.686039, z: 26.149115 -> obstacle = False, obs_left = 0, obs_right = 0
+836-> w_gen : x: 30.87948, z: 26.279593 -> obstacle = False, obs_left = 0, obs_right = 0
+837-> w_gen : x: 31.072922, z: 26.41007 -> obstacle = False, obs_left = 0, obs_right = 0
+838-> w_gen : x: 31.266363, z: 26.540548 -> obstacle = False, obs_left = 0, obs_right = 0
+839-> w_gen : x: 31.459805, z: 26.671026 -> obstacle = False, obs_left = 0, obs_right = 0
+840-> w_gen : x: 31.653246, z: 26.801504 -> obstacle = False, obs_left = 0, obs_right = 0
+841-> w_gen : x: 31.846687, z: 26.931982 -> obstacle = False, obs_left = 0, obs_right = 0
+842-> w_gen : x: 32.04013, z: 27.06246 -> obstacle = False, obs_left = 0, obs_right = 0
+843-> w_gen : x: 32.233574, z: 27.192938 -> obstacle = False, obs_left = 0, obs_right = 0
+844-> w_gen : x: 32.427017, z: 27.323416 -> obstacle = False, obs_left = 0, obs_right = 0
+845-> w_gen : x: 32.62046, z: 27.453894 -> obstacle = False, obs_left = 0, obs_right = 0
+846-> w_gen : x: 32.813904, z: 27.584372 -> obstacle = False, obs_left = 0, obs_right = 0
+847: GOAL CORRECTION ACTIVE
+848: GOAL CORRECTION ACTIVE
+849: GOAL CORRECTION ACTIVE
+850: GOAL CORRECTION ACTIVE
+851: GOAL CORRECTION ACTIVE
+852: GOAL CORRECTION ACTIVE
+853: GOAL CORRECTION ACTIVE
+854: GOAL CORRECTION ACTIVE
+855: GOAL CORRECTION ACTIVE
+856: GOAL CORRECTION ACTIVE
+857: GOAL CORRECTION ACTIVE
+858: GOAL CORRECTION ACTIVE
+859: GOAL CORRECTION ACTIVE
+860: GOAL CORRECTION ACTIVE
+861: GOAL CORRECTION ACTIVE
+862: GOAL CORRECTION ACTIVE
+863: GOAL CORRECTION ACTIVE
+864: GOAL CORRECTION ACTIVE
+865: GOAL CORRECTION ACTIVE
+866: GOAL CORRECTION ACTIVE
+867: GOAL CORRECTION ACTIVE
+868: GOAL CORRECTION ACTIVE
+869-> w_gen : x: 33.20079, z: 27.845327 -> obstacle = False, obs_left = 0, obs_right = 0
+870-> w_gen : x: 33.334625, z: 28.036463 -> obstacle = False, obs_left = 0, obs_right = 0
+871-> w_gen : x: 33.46846, z: 28.227598 -> obstacle = False, obs_left = 0, obs_right = 0
+872-> w_gen : x: 33.602295, z: 28.418734 -> obstacle = False, obs_left = 0, obs_right = 0
+873-> w_gen : x: 33.73613, z: 28.609869 -> obstacle = False, obs_left = 0, obs_right = 0
+874-> w_gen : x: 33.869965, z: 28.801004 -> obstacle = False, obs_left = 0, obs_right = 0
+875-> w_gen : x: 34.0038, z: 28.99214 -> obstacle = False, obs_left = 0, obs_right = 0
+876-> w_gen : x: 34.137634, z: 29.183275 -> obstacle = False, obs_left = 0, obs_right = 0
+877-> w_gen : x: 34.27147, z: 29.37441 -> obstacle = False, obs_left = 0, obs_right = 0
+878-> w_gen : x: 34.405304, z: 29.565546 -> obstacle = False, obs_left = 0, obs_right = 0
+879-> w_gen : x: 34.53914, z: 29.756681 -> obstacle = False, obs_left = 0, obs_right = 0
+880-> w_gen : x: 34.672974, z: 29.947817 -> obstacle = False, obs_left = 0, obs_right = 0
+881-> w_gen : x: 34.80681, z: 30.138952 -> obstacle = False, obs_left = 0, obs_right = 0
+882-> w_gen : x: 34.940643, z: 30.330088 -> obstacle = False, obs_left = 0, obs_right = 0
+883-> w_gen : x: 35.07448, z: 30.521223 -> obstacle = False, obs_left = 0, obs_right = 0
+884-> w_gen : x: 35.208313, z: 30.712358 -> obstacle = False, obs_left = 0, obs_right = 0
+885-> w_gen : x: 35.342148, z: 30.903494 -> obstacle = False, obs_left = 0, obs_right = 0
+886-> w_gen : x: 35.475983, z: 31.09463 -> obstacle = False, obs_left = 0, obs_right = 0
+887-> w_gen : x: 35.609818, z: 31.285765 -> obstacle = False, obs_left = 0, obs_right = 0
+888-> w_gen : x: 35.743652, z: 31.4769 -> obstacle = False, obs_left = 0, obs_right = 0
+889-> w_gen : x: 35.877487, z: 31.668036 -> obstacle = False, obs_left = 0, obs_right = 0
+890-> w_gen : x: 36.011322, z: 31.85917 -> obstacle = False, obs_left = 0, obs_right = 0
+891-> w_gen : x: 36.145157, z: 32.05031 -> obstacle = False, obs_left = 0, obs_right = 0
+892-> w_gen : x: 36.27899, z: 32.241444 -> obstacle = False, obs_left = 0, obs_right = 0
+893-> w_gen : x: 36.412827, z: 32.43258 -> obstacle = False, obs_left = 0, obs_right = 0
+894-> w_gen : x: 36.54666, z: 32.623714 -> obstacle = False, obs_left = 0, obs_right = 0
+895-> w_gen : x: 36.680496, z: 32.81485 -> obstacle = False, obs_left = 0, obs_right = 0
+896-> w_gen : x: 36.81433, z: 33.005985 -> obstacle = False, obs_left = 0, obs_right = 0
+897-> w_gen : x: 36.948166, z: 33.19712 -> obstacle = False, obs_left = 0, obs_right = 0
+898-> w_gen : x: 37.082, z: 33.388256 -> obstacle = False, obs_left = 0, obs_right = 0
+899-> w_gen : x: 37.215836, z: 33.57939 -> obstacle = False, obs_left = 0, obs_right = 0
+900-> w_gen : x: 37.34967, z: 33.770527 -> obstacle = False, obs_left = 0, obs_right = 0
+901-> w_gen : x: 37.483505, z: 33.961662 -> obstacle = False, obs_left = 0, obs_right = 0
+902-> w_gen : x: 37.61734, z: 34.152798 -> obstacle = False, obs_left = 0, obs_right = 0
+903-> w_gen : x: 37.751175, z: 34.343933 -> obstacle = False, obs_left = 0, obs_right = 0
+904-> w_gen : x: 37.88501, z: 34.53507 -> obstacle = False, obs_left = 0, obs_right = 0
+905-> w_gen : x: 38.018845, z: 34.726204 -> obstacle = False, obs_left = 0, obs_right = 0
+906-> w_gen : x: 38.15268, z: 34.91734 -> obstacle = False, obs_left = 0, obs_right = 0
+907-> w_gen : x: 38.286514, z: 35.108475 -> obstacle = False, obs_left = 0, obs_right = 0
+908: GOAL CORRECTION ACTIVE
+909: GOAL CORRECTION ACTIVE
+910-> w_gen : x: 38.554184, z: 35.490746 -> obstacle = False, obs_left = 0, obs_right = 0
+911-> w_gen : x: 38.68466, z: 35.68419 -> obstacle = False, obs_left = 0, obs_right = 0
+912-> w_gen : x: 38.81514, z: 35.877632 -> obstacle = False, obs_left = 0, obs_right = 0
+913-> w_gen : x: 38.945618, z: 36.071075 -> obstacle = False, obs_left = 0, obs_right = 0
+914-> w_gen : x: 39.076096, z: 36.26452 -> obstacle = False, obs_left = 0, obs_right = 0
+915-> w_gen : x: 39.206573, z: 36.457962 -> obstacle = False, obs_left = 0, obs_right = 0
+916-> w_gen : x: 39.33705, z: 36.651405 -> obstacle = False, obs_left = 0, obs_right = 0
+917-> w_gen : x: 39.46753, z: 36.84485 -> obstacle = False, obs_left = 0, obs_right = 0
+918-> w_gen : x: 39.598007, z: 37.038292 -> obstacle = False, obs_left = 0, obs_right = 0
+919-> w_gen : x: 39.728485, z: 37.231735 -> obstacle = False, obs_left = 0, obs_right = 0
+920-> w_gen : x: 39.858963, z: 37.42518 -> obstacle = False, obs_left = 0, obs_right = 0
+921-> w_gen : x: 39.98944, z: 37.61862 -> obstacle = False, obs_left = 0, obs_right = 0
+922-> w_gen : x: 40.11992, z: 37.812065 -> obstacle = False, obs_left = 0, obs_right = 0
+923-> w_gen : x: 40.250397, z: 38.00551 -> obstacle = False, obs_left = 0, obs_right = 0
+924-> w_gen : x: 40.380875, z: 38.19895 -> obstacle = False, obs_left = 0, obs_right = 0
+925-> w_gen : x: 40.511353, z: 38.392395 -> obstacle = False, obs_left = 0, obs_right = 0
+926-> w_gen : x: 40.64183, z: 38.58584 -> obstacle = False, obs_left = 0, obs_right = 0
+927-> w_gen : x: 40.77231, z: 38.77928 -> obstacle = False, obs_left = 0, obs_right = 0
+928-> w_gen : x: 40.902786, z: 38.972725 -> obstacle = False, obs_left = 0, obs_right = 0
+929-> w_gen : x: 41.033264, z: 39.16617 -> obstacle = False, obs_left = 0, obs_right = 0
+930-> w_gen : x: 41.163742, z: 39.35961 -> obstacle = False, obs_left = 0, obs_right = 0
+931-> w_gen : x: 41.29422, z: 39.553055 -> obstacle = False, obs_left = 0, obs_right = 0
+932-> w_gen : x: 41.424698, z: 39.7465 -> obstacle = False, obs_left = 0, obs_right = 0
+933-> w_gen : x: 41.555176, z: 39.93994 -> obstacle = False, obs_left = 0, obs_right = 0
+934-> w_gen : x: 41.685654, z: 40.133385 -> obstacle = False, obs_left = 0, obs_right = 0
+935-> w_gen : x: 41.81613, z: 40.326828 -> obstacle = False, obs_left = 0, obs_right = 0
+936-> w_gen : x: 41.94661, z: 40.52027 -> obstacle = False, obs_left = 0, obs_right = 0
+937-> w_gen : x: 42.077087, z: 40.713715 -> obstacle = False, obs_left = 0, obs_right = 0
+938-> w_gen : x: 42.207565, z: 40.907158 -> obstacle = False, obs_left = 0, obs_right = 0
+939-> w_gen : x: 42.338043, z: 41.1006 -> obstacle = False, obs_left = 0, obs_right = 0
+940-> w_gen : x: 42.46852, z: 41.294044 -> obstacle = False, obs_left = 0, obs_right = 0
+941-> w_gen : x: 42.599, z: 41.487488 -> obstacle = False, obs_left = 0, obs_right = 0
+942-> w_gen : x: 42.729477, z: 41.68093 -> obstacle = False, obs_left = 0, obs_right = 0
+943-> w_gen : x: 42.859955, z: 41.874374 -> obstacle = False, obs_left = 0, obs_right = 0
+944-> w_gen : x: 42.990433, z: 42.067818 -> obstacle = False, obs_left = 0, obs_right = 0
+945-> w_gen : x: 43.12091, z: 42.26126 -> obstacle = False, obs_left = 0, obs_right = 0
+946-> w_gen : x: 43.25139, z: 42.454704 -> obstacle = False, obs_left = 0, obs_right = 0
+947-> w_gen : x: 43.381866, z: 42.648148 -> obstacle = False, obs_left = 0, obs_right = 0
+948-> w_gen : x: 43.512344, z: 42.84159 -> obstacle = False, obs_left = 0, obs_right = 0
+949: GOAL CORRECTION ACTIVE
+950: GOAL CORRECTION ACTIVE
+951-> w_gen : x: 43.7733, z: 43.228477 -> obstacle = False, obs_left = 0, obs_right = 0
+952-> w_gen : x: 43.907135, z: 43.419613 -> obstacle = False, obs_left = 0, obs_right = 0
+953-> w_gen : x: 44.04097, z: 43.61075 -> obstacle = False, obs_left = 0, obs_right = 0
+954-> w_gen : x: 44.174805, z: 43.801884 -> obstacle = False, obs_left = 0, obs_right = 0
+955-> w_gen : x: 44.30864, z: 43.99302 -> obstacle = False, obs_left = 0, obs_right = 0
+956-> w_gen : x: 44.442474, z: 44.184155 -> obstacle = False, obs_left = 0, obs_right = 0
+957-> w_gen : x: 44.57631, z: 44.37529 -> obstacle = False, obs_left = 0, obs_right = 0
+958-> w_gen : x: 44.710144, z: 44.566425 -> obstacle = False, obs_left = 0, obs_right = 0

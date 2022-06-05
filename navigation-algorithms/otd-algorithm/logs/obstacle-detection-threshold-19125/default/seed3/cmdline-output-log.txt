@@ -1,0 +1,2081 @@
+Random seed: 3
+Parameters loaded from file: /home/matt-ip/Desktop/logs/algorithm1/density/default/seed3/default3.yaml
+Running LWJGL 3.2.3 SNAPSHOT
+Initialising GLFW
+Initialising window
+Getting video mode
+Window initialised, creating OpenGL Capabilities
+Running OpenGL 4.3.0 NVIDIA 510.54
+Skybox HDR loaded
+Terrain and ground cover: 6.25% generated 
+Terrain and ground cover: 12.50% generated 
+Terrain and ground cover: 18.75% generated 
+Terrain and ground cover: 25.00% generated 
+Terrain and ground cover: 31.25% generated 
+Terrain and ground cover: 37.50% generated 
+Terrain and ground cover: 43.75% generated 
+Terrain and ground cover: 50.00% generated 
+Terrain and ground cover: 56.25% generated 
+Terrain and ground cover: 62.50% generated 
+Terrain and ground cover: 68.75% generated 
+Terrain and ground cover: 75.00% generated 
+Terrain and ground cover: 81.25% generated 
+Terrain and ground cover: 87.50% generated 
+Terrain and ground cover: 93.75% generated 
+Terrain and ground cover: 100.00% generated 
+Calculating tree masks
+Simulating ecosystem
+Initial plant count: 192
+Ecosystem simulated: 0.00% 
+Ecosystem simulated: 5.00% 
+Ecosystem simulated: 10.00% 
+Ecosystem simulated: 15.00% 
+Ecosystem simulated: 20.00% 
+Ecosystem simulated: 25.00% 
+Ecosystem simulated: 30.00% 
+Ecosystem simulated: 35.00% 
+Ecosystem simulated: 40.00% 
+Ecosystem simulated: 45.00% 
+Ecosystem simulated: 50.00% 
+Ecosystem simulated: 55.00% 
+Ecosystem simulated: 60.00% 
+Ecosystem simulated: 65.00% 
+Ecosystem simulated: 70.00% 
+Ecosystem simulated: 75.00% 
+Ecosystem simulated: 80.00% 
+Ecosystem simulated: 85.00% 
+Ecosystem simulated: 90.00% 
+Ecosystem simulated: 95.00% 
+Generating tree models for 294 plants
+15 tree model(s) generated for tree: tree 1
+15 tree model(s) generated for tree: Oak
+18 tree model(s) generated for tree: Monopodial Tree
+20 tree model(s) generated for tree: Aspen
+30 tree model(s) generated for tree: Poplar
+26 tree model(s) generated for tree: Pine Tree
+Shadow map generated
+Render loop started
+Checkpoint: 2022-04-18_18-14-00.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 1.000E+0  0.000E+0  0.000E+0)
+Checkpoint: 2022-04-18_18-14-02.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.998E-1  0.000E+0  1.745E-2)
+Checkpoint: 2022-04-18_18-14-03.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.994E-1  0.000E+0  3.490E-2)
+Checkpoint: 2022-04-18_18-14-04.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.986E-1  0.000E+0  5.234E-2)
+Checkpoint: 2022-04-18_18-14-06.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.976E-1  0.000E+0  6.976E-2)
+Checkpoint: 2022-04-18_18-14-07.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.962E-1  0.000E+0  8.716E-2)
+Checkpoint: 2022-04-18_18-14-08.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-14-10.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.925E-1  0.000E+0  1.219E-1)
+Checkpoint: 2022-04-18_18-14-11.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.903E-1  0.000E+0  1.392E-1)
+Checkpoint: 2022-04-18_18-14-12.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.877E-1  0.000E+0  1.564E-1)
+Checkpoint: 2022-04-18_18-14-14.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.848E-1  0.000E+0  1.736E-1)
+Checkpoint: 2022-04-18_18-14-15.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.816E-1  0.000E+0  1.908E-1)
+Checkpoint: 2022-04-18_18-14-16.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.781E-1  0.000E+0  2.079E-1)
+Checkpoint: 2022-04-18_18-14-17.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.744E-1  0.000E+0  2.250E-1)
+Checkpoint: 2022-04-18_18-14-19.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.703E-1  0.000E+0  2.419E-1)
+Checkpoint: 2022-04-18_18-14-20.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-14-21.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.613E-1  0.000E+0  2.756E-1)
+Checkpoint: 2022-04-18_18-14-23.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.563E-1  0.000E+0  2.924E-1)
+Checkpoint: 2022-04-18_18-14-24.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-14-25.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-14-27.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-14-28.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-14-29.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-14-31.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-14-32.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-14-33.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-14-35.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-14-36.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-14-37.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-14-38.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-14-40.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-14-41.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-14-42.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-14-44.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-14-45.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-14-46.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-14-48.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-14-49.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-14-50.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-14-52.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-14-53.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-14-54.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-14-55.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-14-57.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-14-58.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-14-59.yaml created
+Pos: (-4.500E+1  3.000E-1 -4.500E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-15-01.yaml created
+Pos: (-4.484E+1  3.000E-1 -4.484E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-15-02.yaml created
+Pos: (-4.467E+1  3.000E-1 -4.467E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-15-03.yaml created
+Pos: (-4.451E+1  3.000E-1 -4.451E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-15-05.yaml created
+Pos: (-4.434E+1  3.000E-1 -4.434E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-15-06.yaml created
+Pos: (-4.418E+1  3.000E-1 -4.418E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-15-07.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-15-09.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-15-10.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-15-11.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-15-12.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-15-14.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-15-15.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-15-16.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-15-18.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-15-19.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-15-20.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-15-22.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-15-23.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-15-24.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-15-26.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-15-27.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-15-28.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-15-29.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-15-31.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-15-32.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-15-33.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-15-35.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-15-36.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-15-37.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-15-39.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-15-40.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-15-41.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-15-43.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-15-44.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.563E-1  0.000E+0  2.924E-1)
+Checkpoint: 2022-04-18_18-15-45.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.613E-1  0.000E+0  2.756E-1)
+Checkpoint: 2022-04-18_18-15-46.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-15-48.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.703E-1  0.000E+0  2.419E-1)
+Checkpoint: 2022-04-18_18-15-49.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.744E-1  0.000E+0  2.250E-1)
+Checkpoint: 2022-04-18_18-15-50.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.781E-1  0.000E+0  2.079E-1)
+Checkpoint: 2022-04-18_18-15-52.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.816E-1  0.000E+0  1.908E-1)
+Checkpoint: 2022-04-18_18-15-53.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.848E-1  0.000E+0  1.736E-1)
+Checkpoint: 2022-04-18_18-15-54.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.877E-1  0.000E+0  1.564E-1)
+Checkpoint: 2022-04-18_18-15-56.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.903E-1  0.000E+0  1.392E-1)
+Checkpoint: 2022-04-18_18-15-57.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.925E-1  0.000E+0  1.219E-1)
+Checkpoint: 2022-04-18_18-15-58.yaml created
+Pos: (-4.401E+1  3.000E-1 -4.401E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-00.yaml created
+Pos: (-4.378E+1  3.000E-1 -4.399E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-01.yaml created
+Pos: (-4.355E+1  3.000E-1 -4.396E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-02.yaml created
+Pos: (-4.331E+1  3.000E-1 -4.394E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-04.yaml created
+Pos: (-4.308E+1  3.000E-1 -4.391E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-05.yaml created
+Pos: (-4.285E+1  3.000E-1 -4.389E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-06.yaml created
+Pos: (-4.262E+1  3.000E-1 -4.386E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-07.yaml created
+Pos: (-4.239E+1  3.000E-1 -4.384E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-09.yaml created
+Pos: (-4.215E+1  3.000E-1 -4.381E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-10.yaml created
+Pos: (-4.192E+1  3.000E-1 -4.379E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-11.yaml created
+Pos: (-4.169E+1  3.000E-1 -4.377E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-13.yaml created
+Pos: (-4.146E+1  3.000E-1 -4.374E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-14.yaml created
+Pos: (-4.123E+1  3.000E-1 -4.372E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-15.yaml created
+Pos: (-4.099E+1  3.000E-1 -4.369E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-17.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.945E-1  0.000E+0  1.045E-1)
+Checkpoint: 2022-04-18_18-16-18.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.925E-1  0.000E+0  1.219E-1)
+Checkpoint: 2022-04-18_18-16-19.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.903E-1  0.000E+0  1.392E-1)
+Checkpoint: 2022-04-18_18-16-21.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.877E-1  0.000E+0  1.564E-1)
+Checkpoint: 2022-04-18_18-16-22.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.848E-1  0.000E+0  1.736E-1)
+Checkpoint: 2022-04-18_18-16-23.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.816E-1  0.000E+0  1.908E-1)
+Checkpoint: 2022-04-18_18-16-24.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.781E-1  0.000E+0  2.079E-1)
+Checkpoint: 2022-04-18_18-16-26.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.744E-1  0.000E+0  2.250E-1)
+Checkpoint: 2022-04-18_18-16-27.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.703E-1  0.000E+0  2.419E-1)
+Checkpoint: 2022-04-18_18-16-28.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-16-30.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.613E-1  0.000E+0  2.756E-1)
+Checkpoint: 2022-04-18_18-16-31.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.563E-1  0.000E+0  2.924E-1)
+Checkpoint: 2022-04-18_18-16-32.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-16-34.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-16-35.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-16-36.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-16-38.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-16-39.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-16-40.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-16-41.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-16-43.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-16-44.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-16-45.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-16-47.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-16-48.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-16-49.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-16-51.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-16-52.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-16-53.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-16-55.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-16-56.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-16-57.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-16-58.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-17-00.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-17-01.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-17-02.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-17-04.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-17-05.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-17-06.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-17-08.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-17-09.yaml created
+Pos: (-4.076E+1  3.000E-1 -4.367E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-10.yaml created
+Pos: (-4.060E+1  3.000E-1 -4.350E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-12.yaml created
+Pos: (-4.044E+1  3.000E-1 -4.333E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-13.yaml created
+Pos: (-4.028E+1  3.000E-1 -4.317E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-14.yaml created
+Pos: (-4.011E+1  3.000E-1 -4.300E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-15.yaml created
+Pos: (-3.995E+1  3.000E-1 -4.283E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-17.yaml created
+Pos: (-3.979E+1  3.000E-1 -4.266E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-18.yaml created
+Pos: (-3.963E+1  3.000E-1 -4.249E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-19.yaml created
+Pos: (-3.946E+1  3.000E-1 -4.233E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-21.yaml created
+Pos: (-3.930E+1  3.000E-1 -4.216E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-22.yaml created
+Pos: (-3.914E+1  3.000E-1 -4.199E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-23.yaml created
+Pos: (-3.898E+1  3.000E-1 -4.182E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-25.yaml created
+Pos: (-3.882E+1  3.000E-1 -4.165E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-26.yaml created
+Pos: (-3.865E+1  3.000E-1 -4.149E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-27.yaml created
+Pos: (-3.849E+1  3.000E-1 -4.132E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-29.yaml created
+Pos: (-3.833E+1  3.000E-1 -4.115E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-30.yaml created
+Pos: (-3.817E+1  3.000E-1 -4.098E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-31.yaml created
+Pos: (-3.801E+1  3.000E-1 -4.082E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-32.yaml created
+Pos: (-3.784E+1  3.000E-1 -4.065E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-34.yaml created
+Pos: (-3.768E+1  3.000E-1 -4.048E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-35.yaml created
+Pos: (-3.752E+1  3.000E-1 -4.031E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-36.yaml created
+Pos: (-3.736E+1  3.000E-1 -4.014E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-38.yaml created
+Pos: (-3.720E+1  3.000E-1 -3.998E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-39.yaml created
+Pos: (-3.703E+1  3.000E-1 -3.981E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-40.yaml created
+Pos: (-3.687E+1  3.000E-1 -3.964E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-42.yaml created
+Pos: (-3.671E+1  3.000E-1 -3.947E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-43.yaml created
+Pos: (-3.655E+1  3.000E-1 -3.930E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-44.yaml created
+Pos: (-3.638E+1  3.000E-1 -3.914E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-46.yaml created
+Pos: (-3.622E+1  3.000E-1 -3.897E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-47.yaml created
+Pos: (-3.606E+1  3.000E-1 -3.880E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-48.yaml created
+Pos: (-3.590E+1  3.000E-1 -3.863E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-50.yaml created
+Pos: (-3.574E+1  3.000E-1 -3.847E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-51.yaml created
+Pos: (-3.557E+1  3.000E-1 -3.830E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-52.yaml created
+Pos: (-3.541E+1  3.000E-1 -3.813E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-53.yaml created
+Pos: (-3.525E+1  3.000E-1 -3.796E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-55.yaml created
+Pos: (-3.509E+1  3.000E-1 -3.779E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-56.yaml created
+Pos: (-3.493E+1  3.000E-1 -3.763E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-57.yaml created
+Pos: (-3.476E+1  3.000E-1 -3.746E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-17-59.yaml created
+Pos: (-3.460E+1  3.000E-1 -3.729E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-00.yaml created
+Pos: (-3.444E+1  3.000E-1 -3.712E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-01.yaml created
+Pos: (-3.428E+1  3.000E-1 -3.695E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-03.yaml created
+Pos: (-3.412E+1  3.000E-1 -3.679E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-04.yaml created
+Pos: (-3.395E+1  3.000E-1 -3.662E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-05.yaml created
+Pos: (-3.379E+1  3.000E-1 -3.645E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-07.yaml created
+Pos: (-3.363E+1  3.000E-1 -3.628E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-08.yaml created
+Pos: (-3.347E+1  3.000E-1 -3.612E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-09.yaml created
+Pos: (-3.331E+1  3.000E-1 -3.595E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-10.yaml created
+Pos: (-3.314E+1  3.000E-1 -3.578E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-12.yaml created
+Pos: (-3.298E+1  3.000E-1 -3.561E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-13.yaml created
+Pos: (-3.282E+1  3.000E-1 -3.544E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-14.yaml created
+Pos: (-3.266E+1  3.000E-1 -3.528E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-16.yaml created
+Pos: (-3.249E+1  3.000E-1 -3.511E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-17.yaml created
+Pos: (-3.233E+1  3.000E-1 -3.494E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-18.yaml created
+Pos: (-3.217E+1  3.000E-1 -3.477E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-20.yaml created
+Pos: (-3.201E+1  3.000E-1 -3.460E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-21.yaml created
+Pos: (-3.185E+1  3.000E-1 -3.444E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-22.yaml created
+Pos: (-3.168E+1  3.000E-1 -3.427E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-24.yaml created
+Pos: (-3.152E+1  3.000E-1 -3.410E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-25.yaml created
+Pos: (-3.136E+1  3.000E-1 -3.393E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-26.yaml created
+Pos: (-3.120E+1  3.000E-1 -3.377E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-27.yaml created
+Pos: (-3.104E+1  3.000E-1 -3.360E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-29.yaml created
+Pos: (-3.087E+1  3.000E-1 -3.343E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-30.yaml created
+Pos: (-3.071E+1  3.000E-1 -3.326E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-31.yaml created
+Pos: (-3.055E+1  3.000E-1 -3.309E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-33.yaml created
+Pos: (-3.039E+1  3.000E-1 -3.293E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-34.yaml created
+Pos: (-3.023E+1  3.000E-1 -3.276E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-35.yaml created
+Pos: (-3.006E+1  3.000E-1 -3.259E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-37.yaml created
+Pos: (-2.990E+1  3.000E-1 -3.242E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-38.yaml created
+Pos: (-2.974E+1  3.000E-1 -3.225E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-39.yaml created
+Pos: (-2.958E+1  3.000E-1 -3.209E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-41.yaml created
+Pos: (-2.942E+1  3.000E-1 -3.192E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-42.yaml created
+Pos: (-2.925E+1  3.000E-1 -3.175E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-43.yaml created
+Pos: (-2.909E+1  3.000E-1 -3.158E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-45.yaml created
+Pos: (-2.893E+1  3.000E-1 -3.142E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-46.yaml created
+Pos: (-2.877E+1  3.000E-1 -3.125E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-47.yaml created
+Pos: (-2.860E+1  3.000E-1 -3.108E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-48.yaml created
+Pos: (-2.844E+1  3.000E-1 -3.091E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-50.yaml created
+Pos: (-2.828E+1  3.000E-1 -3.074E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-51.yaml created
+Pos: (-2.812E+1  3.000E-1 -3.058E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-52.yaml created
+Pos: (-2.796E+1  3.000E-1 -3.041E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-54.yaml created
+Pos: (-2.779E+1  3.000E-1 -3.024E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-55.yaml created
+Pos: (-2.763E+1  3.000E-1 -3.007E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-56.yaml created
+Pos: (-2.747E+1  3.000E-1 -2.991E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-58.yaml created
+Pos: (-2.731E+1  3.000E-1 -2.974E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-18-59.yaml created
+Pos: (-2.715E+1  3.000E-1 -2.957E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-00.yaml created
+Pos: (-2.698E+1  3.000E-1 -2.940E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-02.yaml created
+Pos: (-2.682E+1  3.000E-1 -2.923E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-03.yaml created
+Pos: (-2.666E+1  3.000E-1 -2.907E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-04.yaml created
+Pos: (-2.650E+1  3.000E-1 -2.890E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-05.yaml created
+Pos: (-2.634E+1  3.000E-1 -2.873E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-07.yaml created
+Pos: (-2.617E+1  3.000E-1 -2.856E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-08.yaml created
+Pos: (-2.601E+1  3.000E-1 -2.839E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-09.yaml created
+Pos: (-2.585E+1  3.000E-1 -2.823E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-11.yaml created
+Pos: (-2.569E+1  3.000E-1 -2.806E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-12.yaml created
+Pos: (-2.553E+1  3.000E-1 -2.789E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-13.yaml created
+Pos: (-2.536E+1  3.000E-1 -2.772E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-15.yaml created
+Pos: (-2.520E+1  3.000E-1 -2.756E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-16.yaml created
+Pos: (-2.504E+1  3.000E-1 -2.739E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-17.yaml created
+Pos: (-2.488E+1  3.000E-1 -2.722E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-19.yaml created
+Pos: (-2.471E+1  3.000E-1 -2.705E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-20.yaml created
+Pos: (-2.455E+1  3.000E-1 -2.688E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-21.yaml created
+Pos: (-2.439E+1  3.000E-1 -2.672E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-23.yaml created
+Pos: (-2.423E+1  3.000E-1 -2.655E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-24.yaml created
+Pos: (-2.407E+1  3.000E-1 -2.638E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-25.yaml created
+Pos: (-2.390E+1  3.000E-1 -2.621E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-26.yaml created
+Pos: (-2.374E+1  3.000E-1 -2.604E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-28.yaml created
+Pos: (-2.358E+1  3.000E-1 -2.588E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-29.yaml created
+Pos: (-2.342E+1  3.000E-1 -2.571E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-30.yaml created
+Pos: (-2.326E+1  3.000E-1 -2.554E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-32.yaml created
+Pos: (-2.309E+1  3.000E-1 -2.537E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-33.yaml created
+Pos: (-2.293E+1  3.000E-1 -2.521E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-34.yaml created
+Pos: (-2.277E+1  3.000E-1 -2.504E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-36.yaml created
+Pos: (-2.261E+1  3.000E-1 -2.487E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-37.yaml created
+Pos: (-2.245E+1  3.000E-1 -2.470E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-38.yaml created
+Pos: (-2.228E+1  3.000E-1 -2.453E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-40.yaml created
+Pos: (-2.212E+1  3.000E-1 -2.437E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-41.yaml created
+Pos: (-2.196E+1  3.000E-1 -2.420E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-42.yaml created
+Pos: (-2.180E+1  3.000E-1 -2.403E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-43.yaml created
+Pos: (-2.164E+1  3.000E-1 -2.386E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-45.yaml created
+Pos: (-2.147E+1  3.000E-1 -2.369E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-46.yaml created
+Pos: (-2.131E+1  3.000E-1 -2.353E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-47.yaml created
+Pos: (-2.115E+1  3.000E-1 -2.336E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-49.yaml created
+Pos: (-2.099E+1  3.000E-1 -2.319E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-50.yaml created
+Pos: (-2.082E+1  3.000E-1 -2.302E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-51.yaml created
+Pos: (-2.066E+1  3.000E-1 -2.286E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-53.yaml created
+Pos: (-2.050E+1  3.000E-1 -2.269E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-54.yaml created
+Pos: (-2.034E+1  3.000E-1 -2.252E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-55.yaml created
+Pos: (-2.018E+1  3.000E-1 -2.235E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-57.yaml created
+Pos: (-2.001E+1  3.000E-1 -2.218E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-58.yaml created
+Pos: (-1.985E+1  3.000E-1 -2.202E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-19-59.yaml created
+Pos: (-1.969E+1  3.000E-1 -2.185E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-01.yaml created
+Pos: (-1.953E+1  3.000E-1 -2.168E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-02.yaml created
+Pos: (-1.937E+1  3.000E-1 -2.151E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-03.yaml created
+Pos: (-1.920E+1  3.000E-1 -2.134E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-04.yaml created
+Pos: (-1.904E+1  3.000E-1 -2.118E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-06.yaml created
+Pos: (-1.888E+1  3.000E-1 -2.101E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-07.yaml created
+Pos: (-1.872E+1  3.000E-1 -2.084E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-08.yaml created
+Pos: (-1.856E+1  3.000E-1 -2.067E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-10.yaml created
+Pos: (-1.839E+1  3.000E-1 -2.051E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-11.yaml created
+Pos: (-1.823E+1  3.000E-1 -2.034E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-12.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-20-14.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-20-15.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-20-16.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 6.561E-1  0.000E+0  7.547E-1)
+Checkpoint: 2022-04-18_18-20-18.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 6.428E-1  0.000E+0  7.660E-1)
+Checkpoint: 2022-04-18_18-20-19.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 6.293E-1  0.000E+0  7.771E-1)
+Checkpoint: 2022-04-18_18-20-20.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 6.157E-1  0.000E+0  7.880E-1)
+Checkpoint: 2022-04-18_18-20-21.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 6.018E-1  0.000E+0  7.986E-1)
+Checkpoint: 2022-04-18_18-20-23.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 5.878E-1  0.000E+0  8.090E-1)
+Checkpoint: 2022-04-18_18-20-24.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 5.736E-1  0.000E+0  8.192E-1)
+Checkpoint: 2022-04-18_18-20-25.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 5.592E-1  0.000E+0  8.290E-1)
+Checkpoint: 2022-04-18_18-20-27.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 5.446E-1  0.000E+0  8.387E-1)
+Checkpoint: 2022-04-18_18-20-28.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 5.299E-1  0.000E+0  8.480E-1)
+Checkpoint: 2022-04-18_18-20-29.yaml created
+Pos: (-1.807E+1  3.000E-1 -2.017E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-31.yaml created
+Pos: (-1.795E+1  3.000E-1 -1.997E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-32.yaml created
+Pos: (-1.783E+1  3.000E-1 -1.977E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-33.yaml created
+Pos: (-1.771E+1  3.000E-1 -1.957E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-35.yaml created
+Pos: (-1.759E+1  3.000E-1 -1.937E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-36.yaml created
+Pos: (-1.747E+1  3.000E-1 -1.917E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-37.yaml created
+Pos: (-1.735E+1  3.000E-1 -1.897E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-39.yaml created
+Pos: (-1.723E+1  3.000E-1 -1.877E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-40.yaml created
+Pos: (-1.711E+1  3.000E-1 -1.857E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-41.yaml created
+Pos: (-1.699E+1  3.000E-1 -1.837E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-42.yaml created
+Pos: (-1.687E+1  3.000E-1 -1.817E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-44.yaml created
+Pos: (-1.675E+1  3.000E-1 -1.797E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-45.yaml created
+Pos: (-1.663E+1  3.000E-1 -1.777E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-46.yaml created
+Pos: (-1.651E+1  3.000E-1 -1.757E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-48.yaml created
+Pos: (-1.639E+1  3.000E-1 -1.737E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-49.yaml created
+Pos: (-1.627E+1  3.000E-1 -1.717E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-50.yaml created
+Pos: (-1.615E+1  3.000E-1 -1.697E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-52.yaml created
+Pos: (-1.603E+1  3.000E-1 -1.677E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-53.yaml created
+Pos: (-1.591E+1  3.000E-1 -1.657E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-54.yaml created
+Pos: (-1.579E+1  3.000E-1 -1.637E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-56.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-20-57.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 5.299E-1  0.000E+0  8.480E-1)
+Checkpoint: 2022-04-18_18-20-58.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 5.446E-1  0.000E+0  8.387E-1)
+Checkpoint: 2022-04-18_18-20-59.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 5.592E-1  0.000E+0  8.290E-1)
+Checkpoint: 2022-04-18_18-21-01.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 5.736E-1  0.000E+0  8.192E-1)
+Checkpoint: 2022-04-18_18-21-02.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 5.878E-1  0.000E+0  8.090E-1)
+Checkpoint: 2022-04-18_18-21-03.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 6.018E-1  0.000E+0  7.986E-1)
+Checkpoint: 2022-04-18_18-21-05.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 6.157E-1  0.000E+0  7.880E-1)
+Checkpoint: 2022-04-18_18-21-06.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 6.293E-1  0.000E+0  7.771E-1)
+Checkpoint: 2022-04-18_18-21-07.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 6.428E-1  0.000E+0  7.660E-1)
+Checkpoint: 2022-04-18_18-21-09.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 6.561E-1  0.000E+0  7.547E-1)
+Checkpoint: 2022-04-18_18-21-10.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-21-11.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-21-13.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-21-14.yaml created
+Pos: (-1.567E+1  3.000E-1 -1.617E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-15.yaml created
+Pos: (-1.550E+1  3.000E-1 -1.600E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-17.yaml created
+Pos: (-1.534E+1  3.000E-1 -1.584E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-18.yaml created
+Pos: (-1.517E+1  3.000E-1 -1.567E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-19.yaml created
+Pos: (-1.501E+1  3.000E-1 -1.551E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-20.yaml created
+Pos: (-1.484E+1  3.000E-1 -1.534E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-22.yaml created
+Pos: (-1.468E+1  3.000E-1 -1.518E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-23.yaml created
+Pos: (-1.451E+1  3.000E-1 -1.501E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-24.yaml created
+Pos: (-1.435E+1  3.000E-1 -1.485E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-26.yaml created
+Pos: (-1.418E+1  3.000E-1 -1.468E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-27.yaml created
+Pos: (-1.402E+1  3.000E-1 -1.452E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-28.yaml created
+Pos: (-1.385E+1  3.000E-1 -1.435E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-30.yaml created
+Pos: (-1.369E+1  3.000E-1 -1.419E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-31.yaml created
+Pos: (-1.352E+1  3.000E-1 -1.403E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-32.yaml created
+Pos: (-1.336E+1  3.000E-1 -1.386E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-34.yaml created
+Pos: (-1.319E+1  3.000E-1 -1.370E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-35.yaml created
+Pos: (-1.303E+1  3.000E-1 -1.353E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-36.yaml created
+Pos: (-1.286E+1  3.000E-1 -1.337E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-37.yaml created
+Pos: (-1.270E+1  3.000E-1 -1.320E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-39.yaml created
+Pos: (-1.253E+1  3.000E-1 -1.304E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-40.yaml created
+Pos: (-1.237E+1  3.000E-1 -1.287E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-41.yaml created
+Pos: (-1.220E+1  3.000E-1 -1.271E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-43.yaml created
+Pos: (-1.204E+1  3.000E-1 -1.254E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-44.yaml created
+Pos: (-1.187E+1  3.000E-1 -1.238E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-45.yaml created
+Pos: (-1.171E+1  3.000E-1 -1.221E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-47.yaml created
+Pos: (-1.154E+1  3.000E-1 -1.205E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-48.yaml created
+Pos: (-1.138E+1  3.000E-1 -1.188E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-49.yaml created
+Pos: (-1.121E+1  3.000E-1 -1.172E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-51.yaml created
+Pos: (-1.105E+1  3.000E-1 -1.155E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-52.yaml created
+Pos: (-1.088E+1  3.000E-1 -1.139E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-53.yaml created
+Pos: (-1.072E+1  3.000E-1 -1.122E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-55.yaml created
+Pos: (-1.055E+1  3.000E-1 -1.106E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-56.yaml created
+Pos: (-1.039E+1  3.000E-1 -1.089E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-57.yaml created
+Pos: (-1.022E+1  3.000E-1 -1.073E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-21-58.yaml created
+Pos: (-1.006E+1  3.000E-1 -1.056E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-00.yaml created
+Pos: (-9.891E+0  3.000E-1 -1.040E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-01.yaml created
+Pos: (-9.726E+0  3.000E-1 -1.023E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-02.yaml created
+Pos: (-9.561E+0  3.000E-1 -1.007E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-04.yaml created
+Pos: (-9.396E+0  3.000E-1 -9.900E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-05.yaml created
+Pos: (-9.231E+0  3.000E-1 -9.735E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-06.yaml created
+Pos: (-9.066E+0  3.000E-1 -9.570E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-08.yaml created
+Pos: (-8.901E+0  3.000E-1 -9.405E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-09.yaml created
+Pos: (-8.736E+0  3.000E-1 -9.240E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-10.yaml created
+Pos: (-8.571E+0  3.000E-1 -9.075E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-12.yaml created
+Pos: (-8.406E+0  3.000E-1 -8.910E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-13.yaml created
+Pos: (-8.241E+0  3.000E-1 -8.745E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-14.yaml created
+Pos: (-8.076E+0  3.000E-1 -8.580E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-16.yaml created
+Pos: (-7.911E+0  3.000E-1 -8.415E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-17.yaml created
+Pos: (-7.746E+0  3.000E-1 -8.250E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-18.yaml created
+Pos: (-7.581E+0  3.000E-1 -8.085E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-19.yaml created
+Pos: (-7.416E+0  3.000E-1 -7.920E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-21.yaml created
+Pos: (-7.251E+0  3.000E-1 -7.755E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-22.yaml created
+Pos: (-7.086E+0  3.000E-1 -7.590E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-23.yaml created
+Pos: (-6.921E+0  3.000E-1 -7.425E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-25.yaml created
+Pos: (-6.756E+0  3.000E-1 -7.260E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-26.yaml created
+Pos: (-6.591E+0  3.000E-1 -7.095E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-27.yaml created
+Pos: (-6.426E+0  3.000E-1 -6.930E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-29.yaml created
+Pos: (-6.261E+0  3.000E-1 -6.765E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-30.yaml created
+Pos: (-6.096E+0  3.000E-1 -6.600E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-31.yaml created
+Pos: (-5.931E+0  3.000E-1 -6.435E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-33.yaml created
+Pos: (-5.766E+0  3.000E-1 -6.270E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-34.yaml created
+Pos: (-5.601E+0  3.000E-1 -6.105E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-35.yaml created
+Pos: (-5.436E+0  3.000E-1 -5.940E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-36.yaml created
+Pos: (-5.271E+0  3.000E-1 -5.775E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-38.yaml created
+Pos: (-5.106E+0  3.000E-1 -5.610E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-39.yaml created
+Pos: (-4.941E+0  3.000E-1 -5.445E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-40.yaml created
+Pos: (-4.776E+0  3.000E-1 -5.280E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-42.yaml created
+Pos: (-4.611E+0  3.000E-1 -5.115E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-43.yaml created
+Pos: (-4.446E+0  3.000E-1 -4.950E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-44.yaml created
+Pos: (-4.281E+0  3.000E-1 -4.785E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-46.yaml created
+Pos: (-4.116E+0  3.000E-1 -4.621E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-47.yaml created
+Pos: (-3.951E+0  3.000E-1 -4.456E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-48.yaml created
+Pos: (-3.786E+0  3.000E-1 -4.291E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-50.yaml created
+Pos: (-3.621E+0  3.000E-1 -4.126E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-51.yaml created
+Pos: (-3.456E+0  3.000E-1 -3.961E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-52.yaml created
+Pos: (-3.291E+0  3.000E-1 -3.796E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-54.yaml created
+Pos: (-3.126E+0  3.000E-1 -3.631E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-55.yaml created
+Pos: (-2.961E+0  3.000E-1 -3.466E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-56.yaml created
+Pos: (-2.796E+0  3.000E-1 -3.301E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-57.yaml created
+Pos: (-2.631E+0  3.000E-1 -3.136E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-22-59.yaml created
+Pos: (-2.466E+0  3.000E-1 -2.971E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-00.yaml created
+Pos: (-2.301E+0  3.000E-1 -2.806E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-01.yaml created
+Pos: (-2.136E+0  3.000E-1 -2.641E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-03.yaml created
+Pos: (-1.971E+0  3.000E-1 -2.476E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-04.yaml created
+Pos: (-1.806E+0  3.000E-1 -2.311E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-05.yaml created
+Pos: (-1.641E+0  3.000E-1 -2.146E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-07.yaml created
+Pos: (-1.476E+0  3.000E-1 -1.981E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-08.yaml created
+Pos: (-1.311E+0  3.000E-1 -1.816E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-09.yaml created
+Pos: (-1.146E+0  3.000E-1 -1.651E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-11.yaml created
+Pos: (-9.814E-1  3.000E-1 -1.486E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-12.yaml created
+Pos: (-8.164E-1  3.000E-1 -1.321E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-13.yaml created
+Pos: (-6.514E-1  3.000E-1 -1.156E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-15.yaml created
+Pos: (-4.864E-1  3.000E-1 -9.907E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-16.yaml created
+Pos: (-3.214E-1  3.000E-1 -8.257E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-17.yaml created
+Pos: (-1.564E-1  3.000E-1 -6.607E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-18.yaml created
+Pos: ( 8.558E-3  3.000E-1 -4.957E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-20.yaml created
+Pos: ( 1.735E-1  3.000E-1 -3.307E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-21.yaml created
+Pos: ( 3.385E-1  3.000E-1 -1.657E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-22.yaml created
+Pos: ( 5.035E-1  3.000E-1 -7.379E-4) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-24.yaml created
+Pos: ( 6.685E-1  3.000E-1  1.643E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-25.yaml created
+Pos: ( 8.335E-1  3.000E-1  3.292E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-26.yaml created
+Pos: ( 9.985E-1  3.000E-1  4.942E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-28.yaml created
+Pos: ( 1.163E+0  3.000E-1  6.592E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-29.yaml created
+Pos: ( 1.328E+0  3.000E-1  8.242E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-30.yaml created
+Pos: ( 1.493E+0  3.000E-1  9.892E-1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-32.yaml created
+Pos: ( 1.658E+0  3.000E-1  1.154E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-33.yaml created
+Pos: ( 1.823E+0  3.000E-1  1.319E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-34.yaml created
+Pos: ( 1.988E+0  3.000E-1  1.484E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-36.yaml created
+Pos: ( 2.153E+0  3.000E-1  1.649E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-37.yaml created
+Pos: ( 2.318E+0  3.000E-1  1.814E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-38.yaml created
+Pos: ( 2.483E+0  3.000E-1  1.979E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-39.yaml created
+Pos: ( 2.648E+0  3.000E-1  2.144E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-41.yaml created
+Pos: ( 2.813E+0  3.000E-1  2.309E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-42.yaml created
+Pos: ( 2.978E+0  3.000E-1  2.474E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-43.yaml created
+Pos: ( 3.143E+0  3.000E-1  2.639E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-45.yaml created
+Pos: ( 3.308E+0  3.000E-1  2.804E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-46.yaml created
+Pos: ( 3.473E+0  3.000E-1  2.969E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-47.yaml created
+Pos: ( 3.638E+0  3.000E-1  3.134E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-49.yaml created
+Pos: ( 3.803E+0  3.000E-1  3.299E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-50.yaml created
+Pos: ( 3.968E+0  3.000E-1  3.464E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-51.yaml created
+Pos: ( 4.133E+0  3.000E-1  3.629E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-53.yaml created
+Pos: ( 4.298E+0  3.000E-1  3.794E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-54.yaml created
+Pos: ( 4.463E+0  3.000E-1  3.959E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-55.yaml created
+Pos: ( 4.628E+0  3.000E-1  4.124E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-57.yaml created
+Pos: ( 4.793E+0  3.000E-1  4.289E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-58.yaml created
+Pos: ( 4.958E+0  3.000E-1  4.454E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-23-59.yaml created
+Pos: ( 5.123E+0  3.000E-1  4.619E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-24-00.yaml created
+Pos: ( 5.288E+0  3.000E-1  4.784E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-24-02.yaml created
+Pos: ( 5.453E+0  3.000E-1  4.949E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-24-03.yaml created
+Pos: ( 5.618E+0  3.000E-1  5.114E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-24-04.yaml created
+Pos: ( 5.783E+0  3.000E-1  5.279E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-24-06.yaml created
+Pos: ( 5.948E+0  3.000E-1  5.444E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-24-07.yaml created
+Pos: ( 5.948E+0  3.000E-1  5.444E+0) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-24-08.yaml created
+Pos: ( 5.948E+0  3.000E-1  5.444E+0) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-24-10.yaml created
+Pos: ( 5.948E+0  3.000E-1  5.444E+0) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-24-11.yaml created
+Pos: ( 5.948E+0  3.000E-1  5.444E+0) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-24-12.yaml created
+Pos: ( 5.948E+0  3.000E-1  5.444E+0) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-24-14.yaml created
+Pos: ( 6.127E+0  3.000E-1  5.594E+0) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-24-15.yaml created
+Pos: ( 6.127E+0  3.000E-1  5.594E+0) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-24-16.yaml created
+Pos: ( 6.127E+0  3.000E-1  5.594E+0) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-24-18.yaml created
+Pos: ( 6.127E+0  3.000E-1  5.594E+0) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-24-19.yaml created
+Pos: ( 6.127E+0  3.000E-1  5.594E+0) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-24-20.yaml created
+Pos: ( 6.127E+0  3.000E-1  5.594E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-22.yaml created
+Pos: ( 6.318E+0  3.000E-1  5.728E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-23.yaml created
+Pos: ( 6.509E+0  3.000E-1  5.862E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-24.yaml created
+Pos: ( 6.700E+0  3.000E-1  5.995E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-25.yaml created
+Pos: ( 6.892E+0  3.000E-1  6.129E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-27.yaml created
+Pos: ( 7.083E+0  3.000E-1  6.263E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-28.yaml created
+Pos: ( 7.274E+0  3.000E-1  6.397E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-29.yaml created
+Pos: ( 7.465E+0  3.000E-1  6.531E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-31.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-24-32.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-24-33.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-24-35.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-24-36.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-24-37.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-24-39.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-24-40.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-24-41.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-24-43.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-24-44.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-24-45.yaml created
+Pos: ( 7.656E+0  3.000E-1  6.665E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-46.yaml created
+Pos: ( 7.818E+0  3.000E-1  6.832E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-48.yaml created
+Pos: ( 7.980E+0  3.000E-1  7.000E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-49.yaml created
+Pos: ( 8.142E+0  3.000E-1  7.168E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-50.yaml created
+Pos: ( 8.304E+0  3.000E-1  7.336E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-52.yaml created
+Pos: ( 8.467E+0  3.000E-1  7.504E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-53.yaml created
+Pos: ( 8.629E+0  3.000E-1  7.672E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-54.yaml created
+Pos: ( 8.791E+0  3.000E-1  7.840E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-56.yaml created
+Pos: ( 8.953E+0  3.000E-1  8.007E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-57.yaml created
+Pos: ( 9.115E+0  3.000E-1  8.175E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-24-58.yaml created
+Pos: ( 9.277E+0  3.000E-1  8.343E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-00.yaml created
+Pos: ( 9.439E+0  3.000E-1  8.511E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-01.yaml created
+Pos: ( 9.601E+0  3.000E-1  8.679E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-02.yaml created
+Pos: ( 9.763E+0  3.000E-1  8.847E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-04.yaml created
+Pos: ( 9.925E+0  3.000E-1  9.014E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-05.yaml created
+Pos: ( 1.009E+1  3.000E-1  9.182E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-06.yaml created
+Pos: ( 1.025E+1  3.000E-1  9.350E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-07.yaml created
+Pos: ( 1.041E+1  3.000E-1  9.518E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-09.yaml created
+Pos: ( 1.057E+1  3.000E-1  9.686E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-10.yaml created
+Pos: ( 1.074E+1  3.000E-1  9.854E+0) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-11.yaml created
+Pos: ( 1.090E+1  3.000E-1  1.002E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-13.yaml created
+Pos: ( 1.106E+1  3.000E-1  1.019E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-14.yaml created
+Pos: ( 1.122E+1  3.000E-1  1.036E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-15.yaml created
+Pos: ( 1.138E+1  3.000E-1  1.053E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-17.yaml created
+Pos: ( 1.155E+1  3.000E-1  1.069E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-18.yaml created
+Pos: ( 1.171E+1  3.000E-1  1.086E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-19.yaml created
+Pos: ( 1.187E+1  3.000E-1  1.103E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-21.yaml created
+Pos: ( 1.203E+1  3.000E-1  1.120E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-22.yaml created
+Pos: ( 1.219E+1  3.000E-1  1.136E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-23.yaml created
+Pos: ( 1.236E+1  3.000E-1  1.153E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-25.yaml created
+Pos: ( 1.252E+1  3.000E-1  1.170E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-26.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-25-27.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-25-28.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-25-30.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-25-31.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-25-32.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-25-34.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-25-35.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-25-36.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-25-38.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-25-39.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-25-40.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-25-42.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-25-43.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-25-44.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-25-46.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-25-47.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-25-48.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-25-49.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-25-51.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-25-52.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-25-53.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-25-55.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-25-56.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-25-57.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-25-59.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-26-00.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-26-01.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-26-03.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-26-04.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.563E-1  0.000E+0  2.924E-1)
+Checkpoint: 2022-04-18_18-26-05.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.613E-1  0.000E+0  2.756E-1)
+Checkpoint: 2022-04-18_18-26-07.yaml created
+Pos: ( 1.268E+1  3.000E-1  1.187E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-08.yaml created
+Pos: ( 1.291E+1  3.000E-1  1.193E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-09.yaml created
+Pos: ( 1.313E+1  3.000E-1  1.199E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-10.yaml created
+Pos: ( 1.336E+1  3.000E-1  1.205E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-12.yaml created
+Pos: ( 1.358E+1  3.000E-1  1.211E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-13.yaml created
+Pos: ( 1.381E+1  3.000E-1  1.217E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-14.yaml created
+Pos: ( 1.403E+1  3.000E-1  1.223E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-16.yaml created
+Pos: ( 1.426E+1  3.000E-1  1.229E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-17.yaml created
+Pos: ( 1.448E+1  3.000E-1  1.235E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-18.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-26-20.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.613E-1  0.000E+0  2.756E-1)
+Checkpoint: 2022-04-18_18-26-21.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.563E-1  0.000E+0  2.924E-1)
+Checkpoint: 2022-04-18_18-26-22.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-26-24.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-26-25.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-26-26.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-26-28.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-26-29.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-26-30.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-26-31.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-26-33.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-26-34.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-26-35.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-26-37.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-26-38.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-26-39.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-26-41.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-26-42.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-26-43.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-26-45.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-26-46.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-26-47.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-26-49.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-26-50.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-26-51.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-26-52.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-26-54.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-26-55.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-26-56.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-26-58.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-26-59.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-27-00.yaml created
+Pos: ( 1.471E+1  3.000E-1  1.241E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-02.yaml created
+Pos: ( 1.487E+1  3.000E-1  1.258E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-03.yaml created
+Pos: ( 1.503E+1  3.000E-1  1.275E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-04.yaml created
+Pos: ( 1.519E+1  3.000E-1  1.292E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-06.yaml created
+Pos: ( 1.535E+1  3.000E-1  1.309E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-07.yaml created
+Pos: ( 1.550E+1  3.000E-1  1.326E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-08.yaml created
+Pos: ( 1.566E+1  3.000E-1  1.344E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-10.yaml created
+Pos: ( 1.582E+1  3.000E-1  1.361E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-11.yaml created
+Pos: ( 1.598E+1  3.000E-1  1.378E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-12.yaml created
+Pos: ( 1.614E+1  3.000E-1  1.395E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-13.yaml created
+Pos: ( 1.630E+1  3.000E-1  1.412E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-15.yaml created
+Pos: ( 1.646E+1  3.000E-1  1.429E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-16.yaml created
+Pos: ( 1.662E+1  3.000E-1  1.446E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-17.yaml created
+Pos: ( 1.678E+1  3.000E-1  1.463E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-19.yaml created
+Pos: ( 1.694E+1  3.000E-1  1.480E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-20.yaml created
+Pos: ( 1.710E+1  3.000E-1  1.497E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-21.yaml created
+Pos: ( 1.726E+1  3.000E-1  1.514E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-23.yaml created
+Pos: ( 1.741E+1  3.000E-1  1.531E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-24.yaml created
+Pos: ( 1.757E+1  3.000E-1  1.548E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-25.yaml created
+Pos: ( 1.773E+1  3.000E-1  1.565E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-27.yaml created
+Pos: ( 1.789E+1  3.000E-1  1.582E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-28.yaml created
+Pos: ( 1.805E+1  3.000E-1  1.600E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-29.yaml created
+Pos: ( 1.821E+1  3.000E-1  1.617E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-31.yaml created
+Pos: ( 1.837E+1  3.000E-1  1.634E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-32.yaml created
+Pos: ( 1.853E+1  3.000E-1  1.651E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-33.yaml created
+Pos: ( 1.869E+1  3.000E-1  1.668E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-35.yaml created
+Pos: ( 1.885E+1  3.000E-1  1.685E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-36.yaml created
+Pos: ( 1.901E+1  3.000E-1  1.702E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-37.yaml created
+Pos: ( 1.916E+1  3.000E-1  1.719E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-38.yaml created
+Pos: ( 1.932E+1  3.000E-1  1.736E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-40.yaml created
+Pos: ( 1.948E+1  3.000E-1  1.753E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-41.yaml created
+Pos: ( 1.964E+1  3.000E-1  1.770E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-42.yaml created
+Pos: ( 1.980E+1  3.000E-1  1.787E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-44.yaml created
+Pos: ( 1.996E+1  3.000E-1  1.804E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-45.yaml created
+Pos: ( 2.012E+1  3.000E-1  1.821E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-46.yaml created
+Pos: ( 2.028E+1  3.000E-1  1.838E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-48.yaml created
+Pos: ( 2.044E+1  3.000E-1  1.855E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-49.yaml created
+Pos: ( 2.060E+1  3.000E-1  1.873E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-50.yaml created
+Pos: ( 2.076E+1  3.000E-1  1.890E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-52.yaml created
+Pos: ( 2.092E+1  3.000E-1  1.907E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-53.yaml created
+Pos: ( 2.107E+1  3.000E-1  1.924E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-54.yaml created
+Pos: ( 2.123E+1  3.000E-1  1.941E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-56.yaml created
+Pos: ( 2.139E+1  3.000E-1  1.958E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-57.yaml created
+Pos: ( 2.155E+1  3.000E-1  1.975E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-27-58.yaml created
+Pos: ( 2.171E+1  3.000E-1  1.992E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-00.yaml created
+Pos: ( 2.187E+1  3.000E-1  2.009E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-01.yaml created
+Pos: ( 2.203E+1  3.000E-1  2.026E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-02.yaml created
+Pos: ( 2.219E+1  3.000E-1  2.043E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-03.yaml created
+Pos: ( 2.235E+1  3.000E-1  2.060E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-05.yaml created
+Pos: ( 2.251E+1  3.000E-1  2.077E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-06.yaml created
+Pos: ( 2.267E+1  3.000E-1  2.094E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-07.yaml created
+Pos: ( 2.283E+1  3.000E-1  2.111E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-09.yaml created
+Pos: ( 2.298E+1  3.000E-1  2.129E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-10.yaml created
+Pos: ( 2.314E+1  3.000E-1  2.146E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-11.yaml created
+Pos: ( 2.330E+1  3.000E-1  2.163E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-13.yaml created
+Pos: ( 2.346E+1  3.000E-1  2.180E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-14.yaml created
+Pos: ( 2.362E+1  3.000E-1  2.197E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-15.yaml created
+Pos: ( 2.378E+1  3.000E-1  2.214E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-17.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-28-18.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-28-19.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 6.561E-1  0.000E+0  7.547E-1)
+Checkpoint: 2022-04-18_18-28-21.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 6.428E-1  0.000E+0  7.660E-1)
+Checkpoint: 2022-04-18_18-28-22.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 6.293E-1  0.000E+0  7.771E-1)
+Checkpoint: 2022-04-18_18-28-23.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 6.157E-1  0.000E+0  7.880E-1)
+Checkpoint: 2022-04-18_18-28-24.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 6.018E-1  0.000E+0  7.986E-1)
+Checkpoint: 2022-04-18_18-28-26.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 5.878E-1  0.000E+0  8.090E-1)
+Checkpoint: 2022-04-18_18-28-27.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 5.736E-1  0.000E+0  8.192E-1)
+Checkpoint: 2022-04-18_18-28-28.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 5.592E-1  0.000E+0  8.290E-1)
+Checkpoint: 2022-04-18_18-28-30.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 5.446E-1  0.000E+0  8.387E-1)
+Checkpoint: 2022-04-18_18-28-31.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 5.299E-1  0.000E+0  8.480E-1)
+Checkpoint: 2022-04-18_18-28-32.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-28-34.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 5.000E-1  0.000E+0  8.660E-1)
+Checkpoint: 2022-04-18_18-28-35.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 4.848E-1  0.000E+0  8.746E-1)
+Checkpoint: 2022-04-18_18-28-36.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 4.695E-1  0.000E+0  8.829E-1)
+Checkpoint: 2022-04-18_18-28-38.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 4.540E-1  0.000E+0  8.910E-1)
+Checkpoint: 2022-04-18_18-28-39.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-28-40.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 4.226E-1  0.000E+0  9.063E-1)
+Checkpoint: 2022-04-18_18-28-42.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-28-43.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 3.907E-1  0.000E+0  9.205E-1)
+Checkpoint: 2022-04-18_18-28-44.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 3.746E-1  0.000E+0  9.272E-1)
+Checkpoint: 2022-04-18_18-28-46.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 3.584E-1  0.000E+0  9.336E-1)
+Checkpoint: 2022-04-18_18-28-47.yaml created
+Pos: ( 2.394E+1  3.000E-1  2.231E+1) Dir: ( 3.420E-1  0.000E+0  9.397E-1)
+Checkpoint: 2022-04-18_18-28-48.yaml created
+Pos: ( 2.402E+1  3.000E-1  2.253E+1) Dir: ( 3.420E-1  0.000E+0  9.397E-1)
+Checkpoint: 2022-04-18_18-28-49.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 3.420E-1  0.000E+0  9.397E-1)
+Checkpoint: 2022-04-18_18-28-51.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 3.584E-1  0.000E+0  9.336E-1)
+Checkpoint: 2022-04-18_18-28-52.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 3.746E-1  0.000E+0  9.272E-1)
+Checkpoint: 2022-04-18_18-28-53.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 3.907E-1  0.000E+0  9.205E-1)
+Checkpoint: 2022-04-18_18-28-55.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-28-56.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.226E-1  0.000E+0  9.063E-1)
+Checkpoint: 2022-04-18_18-28-57.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-28-59.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.540E-1  0.000E+0  8.910E-1)
+Checkpoint: 2022-04-18_18-29-00.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.695E-1  0.000E+0  8.829E-1)
+Checkpoint: 2022-04-18_18-29-01.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.848E-1  0.000E+0  8.746E-1)
+Checkpoint: 2022-04-18_18-29-03.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.000E-1  0.000E+0  8.660E-1)
+Checkpoint: 2022-04-18_18-29-04.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-29-05.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.299E-1  0.000E+0  8.480E-1)
+Checkpoint: 2022-04-18_18-29-07.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.446E-1  0.000E+0  8.387E-1)
+Checkpoint: 2022-04-18_18-29-08.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.592E-1  0.000E+0  8.290E-1)
+Checkpoint: 2022-04-18_18-29-09.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.736E-1  0.000E+0  8.192E-1)
+Checkpoint: 2022-04-18_18-29-10.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.878E-1  0.000E+0  8.090E-1)
+Checkpoint: 2022-04-18_18-29-12.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.018E-1  0.000E+0  7.986E-1)
+Checkpoint: 2022-04-18_18-29-13.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.157E-1  0.000E+0  7.880E-1)
+Checkpoint: 2022-04-18_18-29-14.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.293E-1  0.000E+0  7.771E-1)
+Checkpoint: 2022-04-18_18-29-16.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.428E-1  0.000E+0  7.660E-1)
+Checkpoint: 2022-04-18_18-29-17.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.561E-1  0.000E+0  7.547E-1)
+Checkpoint: 2022-04-18_18-29-18.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-29-20.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-29-21.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-29-22.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.561E-1  0.000E+0  7.547E-1)
+Checkpoint: 2022-04-18_18-29-24.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.428E-1  0.000E+0  7.660E-1)
+Checkpoint: 2022-04-18_18-29-25.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.293E-1  0.000E+0  7.771E-1)
+Checkpoint: 2022-04-18_18-29-26.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.157E-1  0.000E+0  7.880E-1)
+Checkpoint: 2022-04-18_18-29-28.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 6.018E-1  0.000E+0  7.986E-1)
+Checkpoint: 2022-04-18_18-29-29.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.878E-1  0.000E+0  8.090E-1)
+Checkpoint: 2022-04-18_18-29-30.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.736E-1  0.000E+0  8.192E-1)
+Checkpoint: 2022-04-18_18-29-32.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.592E-1  0.000E+0  8.290E-1)
+Checkpoint: 2022-04-18_18-29-33.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.446E-1  0.000E+0  8.387E-1)
+Checkpoint: 2022-04-18_18-29-34.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.299E-1  0.000E+0  8.480E-1)
+Checkpoint: 2022-04-18_18-29-35.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-29-37.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 5.000E-1  0.000E+0  8.660E-1)
+Checkpoint: 2022-04-18_18-29-38.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.848E-1  0.000E+0  8.746E-1)
+Checkpoint: 2022-04-18_18-29-39.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.695E-1  0.000E+0  8.829E-1)
+Checkpoint: 2022-04-18_18-29-41.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.540E-1  0.000E+0  8.910E-1)
+Checkpoint: 2022-04-18_18-29-42.yaml created
+Pos: ( 2.410E+1  3.000E-1  2.275E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-43.yaml created
+Pos: ( 2.420E+1  3.000E-1  2.296E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-45.yaml created
+Pos: ( 2.430E+1  3.000E-1  2.317E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-46.yaml created
+Pos: ( 2.441E+1  3.000E-1  2.338E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-47.yaml created
+Pos: ( 2.451E+1  3.000E-1  2.359E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-49.yaml created
+Pos: ( 2.461E+1  3.000E-1  2.380E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-50.yaml created
+Pos: ( 2.471E+1  3.000E-1  2.401E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-51.yaml created
+Pos: ( 2.481E+1  3.000E-1  2.422E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-53.yaml created
+Pos: ( 2.492E+1  3.000E-1  2.443E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-54.yaml created
+Pos: ( 2.502E+1  3.000E-1  2.464E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-55.yaml created
+Pos: ( 2.512E+1  3.000E-1  2.484E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-56.yaml created
+Pos: ( 2.522E+1  3.000E-1  2.505E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-58.yaml created
+Pos: ( 2.533E+1  3.000E-1  2.526E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-29-59.yaml created
+Pos: ( 2.543E+1  3.000E-1  2.547E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-30-00.yaml created
+Pos: ( 2.553E+1  3.000E-1  2.568E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-30-02.yaml created
+Pos: ( 2.563E+1  3.000E-1  2.589E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-30-03.yaml created
+Pos: ( 2.574E+1  3.000E-1  2.610E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-30-04.yaml created
+Pos: ( 2.584E+1  3.000E-1  2.631E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-30-06.yaml created
+Pos: ( 2.594E+1  3.000E-1  2.652E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-30-07.yaml created
+Pos: ( 2.604E+1  3.000E-1  2.673E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-30-08.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-30-10.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 4.540E-1  0.000E+0  8.910E-1)
+Checkpoint: 2022-04-18_18-30-11.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 4.695E-1  0.000E+0  8.829E-1)
+Checkpoint: 2022-04-18_18-30-12.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 4.848E-1  0.000E+0  8.746E-1)
+Checkpoint: 2022-04-18_18-30-14.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 5.000E-1  0.000E+0  8.660E-1)
+Checkpoint: 2022-04-18_18-30-15.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-30-16.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 5.299E-1  0.000E+0  8.480E-1)
+Checkpoint: 2022-04-18_18-30-18.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 5.446E-1  0.000E+0  8.387E-1)
+Checkpoint: 2022-04-18_18-30-19.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 5.592E-1  0.000E+0  8.290E-1)
+Checkpoint: 2022-04-18_18-30-20.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 5.736E-1  0.000E+0  8.192E-1)
+Checkpoint: 2022-04-18_18-30-22.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 5.878E-1  0.000E+0  8.090E-1)
+Checkpoint: 2022-04-18_18-30-23.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 6.018E-1  0.000E+0  7.986E-1)
+Checkpoint: 2022-04-18_18-30-24.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 6.157E-1  0.000E+0  7.880E-1)
+Checkpoint: 2022-04-18_18-30-25.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 6.293E-1  0.000E+0  7.771E-1)
+Checkpoint: 2022-04-18_18-30-27.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 6.428E-1  0.000E+0  7.660E-1)
+Checkpoint: 2022-04-18_18-30-28.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 6.561E-1  0.000E+0  7.547E-1)
+Checkpoint: 2022-04-18_18-30-29.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-30-31.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-30-32.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-30-33.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-30-35.yaml created
+Pos: ( 2.614E+1  3.000E-1  2.694E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-36.yaml created
+Pos: ( 2.631E+1  3.000E-1  2.710E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-37.yaml created
+Pos: ( 2.648E+1  3.000E-1  2.727E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-39.yaml created
+Pos: ( 2.665E+1  3.000E-1  2.743E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-40.yaml created
+Pos: ( 2.682E+1  3.000E-1  2.759E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-41.yaml created
+Pos: ( 2.698E+1  3.000E-1  2.775E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-43.yaml created
+Pos: ( 2.715E+1  3.000E-1  2.791E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-44.yaml created
+Pos: ( 2.732E+1  3.000E-1  2.808E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-45.yaml created
+Pos: ( 2.749E+1  3.000E-1  2.824E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-46.yaml created
+Pos: ( 2.765E+1  3.000E-1  2.840E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-48.yaml created
+Pos: ( 2.782E+1  3.000E-1  2.856E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-49.yaml created
+Pos: ( 2.799E+1  3.000E-1  2.872E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-50.yaml created
+Pos: ( 2.816E+1  3.000E-1  2.889E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-52.yaml created
+Pos: ( 2.833E+1  3.000E-1  2.905E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-53.yaml created
+Pos: ( 2.849E+1  3.000E-1  2.921E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-54.yaml created
+Pos: ( 2.866E+1  3.000E-1  2.937E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-56.yaml created
+Pos: ( 2.883E+1  3.000E-1  2.954E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-57.yaml created
+Pos: ( 2.900E+1  3.000E-1  2.970E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-30-58.yaml created
+Pos: ( 2.917E+1  3.000E-1  2.986E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-00.yaml created
+Pos: ( 2.933E+1  3.000E-1  3.002E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-01.yaml created
+Pos: ( 2.950E+1  3.000E-1  3.018E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-02.yaml created
+Pos: ( 2.967E+1  3.000E-1  3.035E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-04.yaml created
+Pos: ( 2.984E+1  3.000E-1  3.051E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-05.yaml created
+Pos: ( 3.000E+1  3.000E-1  3.067E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-06.yaml created
+Pos: ( 3.017E+1  3.000E-1  3.083E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-08.yaml created
+Pos: ( 3.034E+1  3.000E-1  3.099E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-09.yaml created
+Pos: ( 3.051E+1  3.000E-1  3.116E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-10.yaml created
+Pos: ( 3.068E+1  3.000E-1  3.132E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-12.yaml created
+Pos: ( 3.084E+1  3.000E-1  3.148E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-13.yaml created
+Pos: ( 3.101E+1  3.000E-1  3.164E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-14.yaml created
+Pos: ( 3.118E+1  3.000E-1  3.180E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-15.yaml created
+Pos: ( 3.135E+1  3.000E-1  3.197E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-17.yaml created
+Pos: ( 3.152E+1  3.000E-1  3.213E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-18.yaml created
+Pos: ( 3.168E+1  3.000E-1  3.229E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-19.yaml created
+Pos: ( 3.185E+1  3.000E-1  3.245E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-21.yaml created
+Pos: ( 3.202E+1  3.000E-1  3.261E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-22.yaml created
+Pos: ( 3.219E+1  3.000E-1  3.278E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-23.yaml created
+Pos: ( 3.235E+1  3.000E-1  3.294E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-25.yaml created
+Pos: ( 3.252E+1  3.000E-1  3.310E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-26.yaml created
+Pos: ( 3.269E+1  3.000E-1  3.326E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-27.yaml created
+Pos: ( 3.286E+1  3.000E-1  3.343E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-29.yaml created
+Pos: ( 3.303E+1  3.000E-1  3.359E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-30.yaml created
+Pos: ( 3.319E+1  3.000E-1  3.375E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-31.yaml created
+Pos: ( 3.336E+1  3.000E-1  3.391E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-33.yaml created
+Pos: ( 3.353E+1  3.000E-1  3.407E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-34.yaml created
+Pos: ( 3.370E+1  3.000E-1  3.424E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-35.yaml created
+Pos: ( 3.387E+1  3.000E-1  3.440E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-37.yaml created
+Pos: ( 3.403E+1  3.000E-1  3.456E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-38.yaml created
+Pos: ( 3.420E+1  3.000E-1  3.472E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-39.yaml created
+Pos: ( 3.437E+1  3.000E-1  3.488E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-40.yaml created
+Pos: ( 3.454E+1  3.000E-1  3.505E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-42.yaml created
+Pos: ( 3.470E+1  3.000E-1  3.521E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-43.yaml created
+Pos: ( 3.487E+1  3.000E-1  3.537E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-44.yaml created
+Pos: ( 3.504E+1  3.000E-1  3.553E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-46.yaml created
+Pos: ( 3.521E+1  3.000E-1  3.569E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-47.yaml created
+Pos: ( 3.538E+1  3.000E-1  3.586E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-48.yaml created
+Pos: ( 3.554E+1  3.000E-1  3.602E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-50.yaml created
+Pos: ( 3.571E+1  3.000E-1  3.618E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-51.yaml created
+Pos: ( 3.588E+1  3.000E-1  3.634E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-52.yaml created
+Pos: ( 3.605E+1  3.000E-1  3.651E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-54.yaml created
+Pos: ( 3.622E+1  3.000E-1  3.667E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-55.yaml created
+Pos: ( 3.638E+1  3.000E-1  3.683E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-56.yaml created
+Pos: ( 3.655E+1  3.000E-1  3.699E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-58.yaml created
+Pos: ( 3.672E+1  3.000E-1  3.715E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-31-59.yaml created
+Pos: ( 3.689E+1  3.000E-1  3.732E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-00.yaml created
+Pos: ( 3.705E+1  3.000E-1  3.748E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-02.yaml created
+Pos: ( 3.722E+1  3.000E-1  3.764E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-03.yaml created
+Pos: ( 3.739E+1  3.000E-1  3.780E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-04.yaml created
+Pos: ( 3.756E+1  3.000E-1  3.796E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-05.yaml created
+Pos: ( 3.773E+1  3.000E-1  3.813E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-07.yaml created
+Pos: ( 3.789E+1  3.000E-1  3.829E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-08.yaml created
+Pos: ( 3.806E+1  3.000E-1  3.845E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-09.yaml created
+Pos: ( 3.823E+1  3.000E-1  3.861E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-11.yaml created
+Pos: ( 3.840E+1  3.000E-1  3.877E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-12.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-32-13.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-32-15.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-32-16.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-32-17.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-32-19.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-32-20.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-32-21.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-32-23.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-32-24.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-32-25.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-32-27.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-32-28.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-32-29.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-32-31.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-32-32.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-32-33.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-32-34.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-32-36.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-32-37.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-32-38.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-32-40.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-32-41.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-32-42.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-32-44.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-32-45.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-32-46.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-32-48.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.563E-1  0.000E+0  2.924E-1)
+Checkpoint: 2022-04-18_18-32-49.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.613E-1  0.000E+0  2.756E-1)
+Checkpoint: 2022-04-18_18-32-50.yaml created
+Pos: ( 3.856E+1  3.000E-1  3.894E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-32-52.yaml created
+Pos: ( 3.879E+1  3.000E-1  3.900E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-32-53.yaml created
+Pos: ( 3.902E+1  3.000E-1  3.906E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-32-54.yaml created
+Pos: ( 3.924E+1  3.000E-1  3.912E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-32-56.yaml created
+Pos: ( 3.947E+1  3.000E-1  3.918E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-32-57.yaml created
+Pos: ( 3.969E+1  3.000E-1  3.924E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-32-58.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.659E-1  0.000E+0  2.588E-1)
+Checkpoint: 2022-04-18_18-32-59.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.613E-1  0.000E+0  2.756E-1)
+Checkpoint: 2022-04-18_18-33-01.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.563E-1  0.000E+0  2.924E-1)
+Checkpoint: 2022-04-18_18-33-02.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-33-03.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-33-05.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-33-06.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-33-07.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-33-09.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-33-10.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-33-11.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-33-13.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-33-14.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-33-15.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-33-17.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-33-18.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-33-19.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-33-21.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-33-22.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-33-23.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-33-24.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-33-26.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-33-27.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-33-28.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-33-30.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-33-31.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-33-32.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-33-34.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-33-35.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-33-36.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-33-38.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-33-39.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-33-40.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-33-42.yaml created
+Pos: ( 3.992E+1  3.000E-1  3.930E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-43.yaml created
+Pos: ( 4.007E+1  3.000E-1  3.947E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-44.yaml created
+Pos: ( 4.023E+1  3.000E-1  3.965E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-46.yaml created
+Pos: ( 4.039E+1  3.000E-1  3.982E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-47.yaml created
+Pos: ( 4.054E+1  3.000E-1  3.999E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-48.yaml created
+Pos: ( 4.070E+1  3.000E-1  4.017E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-49.yaml created
+Pos: ( 4.085E+1  3.000E-1  4.034E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-51.yaml created
+Pos: ( 4.101E+1  3.000E-1  4.051E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-52.yaml created
+Pos: ( 4.117E+1  3.000E-1  4.069E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-53.yaml created
+Pos: ( 4.132E+1  3.000E-1  4.086E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-55.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-33-56.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-33-57.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-33-59.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-34-00.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-34-01.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-34-03.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-34-04.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-34-05.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-34-07.yaml created
+Pos: ( 4.148E+1  3.000E-1  4.103E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-34-08.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-34-09.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-34-11.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-34-12.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-34-13.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-34-15.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-34-16.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-34-17.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-34-18.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-34-20.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-34-21.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-34-22.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-34-24.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-34-25.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-34-26.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-34-28.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-34-29.yaml created
+Pos: ( 4.166E+1  3.000E-1  4.118E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-34-30.yaml created
+Pos: ( 4.187E+1  3.000E-1  4.127E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-34-32.yaml created
+Pos: ( 4.187E+1  3.000E-1  4.127E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-34-33.yaml created
+Pos: ( 4.187E+1  3.000E-1  4.127E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-34-34.yaml created
+Pos: ( 4.209E+1  3.000E-1  4.135E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-34-36.yaml created
+Pos: ( 4.209E+1  3.000E-1  4.135E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-34-37.yaml created
+Pos: ( 4.231E+1  3.000E-1  4.143E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-34-38.yaml created
+Pos: ( 4.231E+1  3.000E-1  4.143E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-34-40.yaml created
+Pos: ( 4.253E+1  3.000E-1  4.151E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-34-41.yaml created
+Pos: ( 4.275E+1  3.000E-1  4.159E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-34-42.yaml created
+Pos: ( 4.275E+1  3.000E-1  4.159E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-34-44.yaml created
+Pos: ( 4.297E+1  3.000E-1  4.166E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-34-45.yaml created
+Pos: ( 4.320E+1  3.000E-1  4.173E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-34-46.yaml created
+Pos: ( 4.342E+1  3.000E-1  4.180E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-34-47.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 9.511E-1  0.000E+0  3.090E-1)
+Checkpoint: 2022-04-18_18-34-49.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 9.455E-1  0.000E+0  3.256E-1)
+Checkpoint: 2022-04-18_18-34-50.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 9.397E-1  0.000E+0  3.420E-1)
+Checkpoint: 2022-04-18_18-34-51.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 9.336E-1  0.000E+0  3.584E-1)
+Checkpoint: 2022-04-18_18-34-53.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 9.272E-1  0.000E+0  3.746E-1)
+Checkpoint: 2022-04-18_18-34-54.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 9.205E-1  0.000E+0  3.907E-1)
+Checkpoint: 2022-04-18_18-34-55.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 9.135E-1  0.000E+0  4.067E-1)
+Checkpoint: 2022-04-18_18-34-57.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 9.063E-1  0.000E+0  4.226E-1)
+Checkpoint: 2022-04-18_18-34-58.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.988E-1  0.000E+0  4.384E-1)
+Checkpoint: 2022-04-18_18-34-59.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.910E-1  0.000E+0  4.540E-1)
+Checkpoint: 2022-04-18_18-35-01.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.829E-1  0.000E+0  4.695E-1)
+Checkpoint: 2022-04-18_18-35-02.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.746E-1  0.000E+0  4.848E-1)
+Checkpoint: 2022-04-18_18-35-03.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.660E-1  0.000E+0  5.000E-1)
+Checkpoint: 2022-04-18_18-35-05.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.572E-1  0.000E+0  5.150E-1)
+Checkpoint: 2022-04-18_18-35-06.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.480E-1  0.000E+0  5.299E-1)
+Checkpoint: 2022-04-18_18-35-07.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.387E-1  0.000E+0  5.446E-1)
+Checkpoint: 2022-04-18_18-35-09.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.290E-1  0.000E+0  5.592E-1)
+Checkpoint: 2022-04-18_18-35-10.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.192E-1  0.000E+0  5.736E-1)
+Checkpoint: 2022-04-18_18-35-11.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 8.090E-1  0.000E+0  5.878E-1)
+Checkpoint: 2022-04-18_18-35-12.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.986E-1  0.000E+0  6.018E-1)
+Checkpoint: 2022-04-18_18-35-14.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.880E-1  0.000E+0  6.157E-1)
+Checkpoint: 2022-04-18_18-35-15.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.771E-1  0.000E+0  6.293E-1)
+Checkpoint: 2022-04-18_18-35-16.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.660E-1  0.000E+0  6.428E-1)
+Checkpoint: 2022-04-18_18-35-18.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.547E-1  0.000E+0  6.561E-1)
+Checkpoint: 2022-04-18_18-35-19.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.431E-1  0.000E+0  6.691E-1)
+Checkpoint: 2022-04-18_18-35-20.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.314E-1  0.000E+0  6.820E-1)
+Checkpoint: 2022-04-18_18-35-22.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.193E-1  0.000E+0  6.947E-1)
+Checkpoint: 2022-04-18_18-35-23.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 7.071E-1  0.000E+0  7.071E-1)
+Checkpoint: 2022-04-18_18-35-24.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 6.947E-1  0.000E+0  7.193E-1)
+Checkpoint: 2022-04-18_18-35-26.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 6.820E-1  0.000E+0  7.314E-1)
+Checkpoint: 2022-04-18_18-35-27.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 6.691E-1  0.000E+0  7.431E-1)
+Checkpoint: 2022-04-18_18-35-28.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 6.561E-1  0.000E+0  7.547E-1)
+Checkpoint: 2022-04-18_18-35-30.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 6.428E-1  0.000E+0  7.660E-1)
+Checkpoint: 2022-04-18_18-35-31.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 6.293E-1  0.000E+0  7.771E-1)
+Checkpoint: 2022-04-18_18-35-32.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 6.157E-1  0.000E+0  7.880E-1)
+Checkpoint: 2022-04-18_18-35-34.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 6.018E-1  0.000E+0  7.986E-1)
+Checkpoint: 2022-04-18_18-35-35.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 5.878E-1  0.000E+0  8.090E-1)
+Checkpoint: 2022-04-18_18-35-36.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 5.736E-1  0.000E+0  8.192E-1)
+Checkpoint: 2022-04-18_18-35-37.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 5.592E-1  0.000E+0  8.290E-1)
+Checkpoint: 2022-04-18_18-35-39.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 5.446E-1  0.000E+0  8.387E-1)
+Checkpoint: 2022-04-18_18-35-40.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 5.299E-1  0.000E+0  8.480E-1)
+Checkpoint: 2022-04-18_18-35-41.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 5.150E-1  0.000E+0  8.572E-1)
+Checkpoint: 2022-04-18_18-35-43.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 5.000E-1  0.000E+0  8.660E-1)
+Checkpoint: 2022-04-18_18-35-44.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 4.848E-1  0.000E+0  8.746E-1)
+Checkpoint: 2022-04-18_18-35-45.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 4.695E-1  0.000E+0  8.829E-1)
+Checkpoint: 2022-04-18_18-35-47.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 4.540E-1  0.000E+0  8.910E-1)
+Checkpoint: 2022-04-18_18-35-48.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 4.384E-1  0.000E+0  8.988E-1)
+Checkpoint: 2022-04-18_18-35-49.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 4.226E-1  0.000E+0  9.063E-1)
+Checkpoint: 2022-04-18_18-35-51.yaml created
+Pos: ( 4.364E+1  3.000E-1  4.187E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-35-52.yaml created
+Pos: ( 4.374E+1  3.000E-1  4.209E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-35-53.yaml created
+Pos: ( 4.383E+1  3.000E-1  4.230E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-35-55.yaml created
+Pos: ( 4.393E+1  3.000E-1  4.251E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-35-56.yaml created
+Pos: ( 4.402E+1  3.000E-1  4.273E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-35-57.yaml created
+Pos: ( 4.412E+1  3.000E-1  4.294E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-35-59.yaml created
+Pos: ( 4.421E+1  3.000E-1  4.315E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-36-00.yaml created
+Pos: ( 4.431E+1  3.000E-1  4.337E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-36-01.yaml created
+Pos: ( 4.440E+1  3.000E-1  4.358E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-36-03.yaml created
+Pos: ( 4.449E+1  3.000E-1  4.379E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-36-04.yaml created
+Pos: ( 4.459E+1  3.000E-1  4.401E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-36-05.yaml created
+Pos: ( 4.468E+1  3.000E-1  4.422E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-36-07.yaml created
+Pos: ( 4.478E+1  3.000E-1  4.443E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
+Checkpoint: 2022-04-18_18-36-08.yaml created
+Pos: ( 4.487E+1  3.000E-1  4.465E+1) Dir: ( 4.067E-1  0.000E+0  9.135E-1)
